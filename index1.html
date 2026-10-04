@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimple Bags - Industrial Packaging Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Dimple Bags Color Palette based on Logo */
+            --primary-accent: #1657A8; /* Logo Blue */
+            --primary-accent-hover: #10407A;
+            --logo-grey: #939598; /* Logo Grey */
+            
+            --bg-main: #FFFFFF;
+            --bg-alt: #F4F7F9; /* Very light cool grey/blue */
+            --dark-bg: #0D1623; /* Deep Navy */
+            --darker-bg: #070B12; /* Darkest Navy */
+            
+            --text-main: #111827; /* Near black */
+            --text-light: #F3F4F6;
+            --text-muted: #6B7280;
+            
+            --border-color: rgba(0, 0, 0, 0.08);
+            --border-light: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, .display-text {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .section-padding {
+            padding: 120px 0;
+        }
+
+        .section-title {
+            font-size: 64px;
+            line-height: 1;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--primary-accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-accent);
+            color: #fff;
+            padding: 16px 36px;
+            font-weight: 600;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(22, 87, 168, 0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-accent);
+            color: var(--primary-accent);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-accent);
+            color: #fff;
+        }
+
+        /* --- Header --- */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+
+        .logo img {
+            height: 60px; /* Slightly larger to fit white background naturally */
+            object-fit: contain;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-accent);
+        }
+
+        .nav-cta {
+            background: var(--primary-accent);
+            padding: 10px 24px;
+            color: white !important;
+        }
+        
+        .nav-cta:hover {
+            background: var(--primary-accent-hover);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: relative;
+            padding-bottom: 100px;
+            background: radial-gradient(circle at 70% 50%, var(--bg-alt) 0%, var(--bg-main) 60%);
+            border-bottom: 1px solid var(--border-color);
+            padding-top: 150px;
+        }
+
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 60px;
+        }
+
+        .hero-title {
+            font-size: 8vw;
+            line-height: 0.85;
+            color: var(--text-main);
+            margin: 0;
+        }
+
+        .hero-title span {
+            display: block;
+            color: var(--primary-accent);
+        }
+
+        .hero-desc {
+            max-width: 350px;
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .stats-bar {
+            display: flex;
+            background: var(--bg-main);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.04);
+        }
+
+        .stat-box {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .stat-box.primary {
+            background-color: var(--primary-accent);
+            color: #fff;
+        }
+
+        .stat-box.secondary {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+        }
+
+        .stat-number {
+            font-size: 5vw;
+            font-family: 'Bebas Neue', sans-serif;
+            line-height: 1;
+            margin: 0;
+        }
+
+        .stat-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-label {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .stat-sub {
+            font-size: 14px;
+            opacity: 0.8;
+            max-width: 250px;
+        }
+
+        .stat-box.secondary .stat-sub {
+            color: var(--text-muted);
+        }
+
+        /* --- About Section --- */
+        .about-section {
+            background-color: var(--bg-main);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .about-text p {
+            color: var(--text-muted);
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p.lead {
+            color: var(--primary-accent);
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 1.4;
+            margin-bottom: 30px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-item h4 {
+            font-size: 24px;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-item h4::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background-color: var(--primary-accent);
+            margin-right: 12px;
+        }
+
+        .feature-item p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        /* --- Products Section --- */
+        .products-section {
+            background-color: var(--bg-alt);
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .products-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 80px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            background: var(--bg-main);
+            border: 1px solid var(--border-color);
+            padding: 40px 30px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(22, 87, 168, 0.08);
+            border-color: var(--primary-accent);
+        }
+
+        .product-card::before {
+            content: '0' counter(product-counter);
+            counter-increment: product-counter;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 48px;
+            color: var(--bg-alt);
+            line-height: 1;
+            z-index: 0;
+        }
+
+        body { counter-reset: product-counter; }
+
+        .product-card h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-card ul {
+            list-style: none;
+            margin-bottom: 30px;
+            min-height: 120px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-card ul li {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .product-card ul li::before {
+            content: '→';
+            color: var(--primary-accent);
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .link-arrow {
+            color: var(--primary-accent);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .link-arrow:hover {
+            color: var(--primary-accent-hover);
+            text-decoration: underline;
+        }
+
+        /* --- Showcase Section --- */
+        .showcase-panel {
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            overflow: hidden;
+            position: relative;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .showcase-panel .section-title {
+            color: var(--text-light);
+        }
+
+        .bg-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 15vw;
+            font-family: 'Bebas Neue', sans-serif;
+            color: rgba(255,255,255,0.03);
+            white-space: nowrap;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .showcase-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .floating-element {
+            width: 450px;
+            height: 450px;
+            background: var(--bg-main); /* White circle for the logo */
+            border-radius: 50%;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5), inset 0 0 0 10px var(--bg-alt);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: float 6s ease-in-out infinite;
+            position: relative;
+        }
+
+        .floating-element::before {
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            border: 2px dashed rgba(255,255,255,0.1);
+            border-radius: 50%;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .showcase-text-block {
+            max-width: 500px;
+        }
+
+        .showcase-text-block h2 {
+            font-size: 56px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .showcase-text-block p {
+            color: #9CA3AF;
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        /* --- Chart Section --- */
+        .chart-panel {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            padding: 120px 0;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .chart-title {
+            font-size: 5vw;
+            line-height: 0.9;
+            margin-bottom: 30px;
+            color: var(--text-main);
+        }
+
+        .chart-desc {
+            font-size: 18px;
+            color: var(--text-muted);
+            max-width: 400px;
+        }
+
+        .chart-bars {
+            display: flex;
+            align-items: flex-end;
+            height: 400px;
+            gap: 20px;
+            padding-bottom: 40px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .bar-wrapper {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+            position: relative;
+        }
+
+        .bar {
+            width: 100%;
+            background-color: var(--bg-alt);
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 20px;
+            transition: height 1s ease-out;
+        }
+
+        .bar.highlight {
+            background-color: var(--primary-accent);
+            border-color: var(--primary-accent);
+            color: #fff;
+        }
+
+        .bar-percent {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 42px;
+            line-height: 1;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        .bar.highlight .bar-percent {
+            color: #fff;
+        }
+
+        .bar-label {
+            font-size: 12px;
+            text-align: center;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            padding: 0 10px;
+        }
+
+        .bar.highlight .bar-label {
+            color: rgba(255,255,255,0.9);
+        }
+
+        .bar-bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg-alt);
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        /* --- Footer --- */
+        footer {
+            background-color: var(--darker-bg);
+            padding: 80px 0 40px;
+            border-top: 1px solid var(--border-light);
+            color: var(--text-light);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
+
+        .footer-logo-box {
+            background-color: #fff;
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo-box img {
+            height: 50px;
+            display: block;
+        }
+
+        .footer-about {
+            color: #9CA3AF;
+            font-size: 14px;
+            max-width: 300px;
+        }
+
+        .footer-title {
+            color: #fff;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 24px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #9CA3AF;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-size: 15px;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-accent);
+        }
+
+        .footer-contact {
+            color: #9CA3AF;
+            font-size: 15px;
+        }
+
+        .footer-contact p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .footer-contact strong {
+            color: #fff;
+            margin-right: 10px;
+            min-width: 60px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding-top: 30px;
+            text-align: center;
+            color: #6B7280;
+            font-size: 14px;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 1200px) {
+            .hero-title { font-size: 9vw; }
+            .products-grid { grid-template-columns: repeat(2, 1fr); }
+            .chart-grid { grid-template-columns: 1fr; gap: 40px; }
+            .chart-bars { height: 350px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+        }
+
+        @media (max-width: 900px) {
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .showcase-content { flex-direction: column; text-align: center; gap: 60px; }
+            .showcase-text-block { max-width: 100%; }
+        }
+
+        @media (max-width: 768px) {
+            header { padding: 15px 20px; }
+            nav { display: none; }
+            .hero-content { flex-direction: column; align-items: flex-start; gap: 30px; }
+            .hero-title { font-size: 14vw; line-height: 0.9; }
+            .stats-bar { flex-direction: column; }
+            .stat-box { padding: 30px; }
+            .products-grid { grid-template-columns: 1fr; }
+            .feature-grid { grid-template-columns: 1fr; }
+            .floating-element { width: 300px; height: 300px; }
+            .chart-title { font-size: 12vw; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#"><img src="logo-hd2.png" alt="Dimple Bags Logo"></a>
+        </div>
+        <nav>
+            <a href="#company">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#standards">Standards</a>
+            <a href="#contact" class="nav-cta">Get an Estimate</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">PROVEN. <span>TRUSTED.</span> SCALABLE.</h1>
+                <div class="hero-desc">
+                    Real-world packaging results that drive efficiency, protection, and industrial adoption across sectors.
+                </div>
+            </div>
+            
+            <div class="stats-bar">
+                <div class="stat-box primary">
+                    <h2 class="stat-number">450+</h2>
+                    <div class="stat-text">
+                        <span class="stat-label">Businesses Served</span>
+                        <span class="stat-sub">From retail to heavy industry—leaders rely on Dimple Bags.</span>
+                    </div>
+                </div>
+                <div class="stat-box secondary">
+                    <h2 class="stat-number">32%</h2>
+                    <div class="stat-text">
+                        <span class="stat-label">Cost Reduction</span>
+                        <span class="stat-sub">Clients report significant savings on storage and transit protection.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section section-padding" id="company">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <span class="section-subtitle">Who We Are</span>
+                    <h2 class="section-title">Your Hometown Packaging Partner</h2>
+                    <p class="lead">As a trusted local packaging partner, we bring years of industry experience to help businesses choose the right packaging solutions for their specific needs and budgets.</p>
+                    <p>Our goal is to provide dependable products that perform consistently in real-world applications. We believe in building long-term relationships by working closely with our clients from start to finish. Every project is handled with care, transparency, and a commitment to helping your business succeed.</p>
+                    <a href="#contact" class="btn" style="margin-top: 20px;">Contact Our Experts</a>
+                </div>
+                <div class="about-features">
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <h4>Qualified Expert</h4>
+                            <p>Our experienced packaging specialists help you select the right materials and formats for every application.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Flexible Production</h4>
+                            <p>We adapt to your volume requirements, timelines, and custom specifications without compromising quality.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Workmanship Quality</h4>
+                            <p>Every product is manufactured with strict quality control to ensure strength, reliability, and uniform performance.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>Value-Added Offers</h4>
+                            <p>Competitive pricing and tailored solutions that help you reduce packaging costs and improve efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section section-padding" id="products">
+        <div class="container">
+            <div class="products-header">
+                <span class="section-subtitle">Our Capabilities</span>
+                <h2 class="section-title">Comprehensive Packaging Solutions</h2>
+                <p style="color: var(--text-muted); font-size: 18px;">Leading packaging solutions for every application and budget. We provide dependable options backed by industry expertise.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <h3>Plastic Films & Wraps</h3>
+                    <ul>
+                        <li>LDPE Stretch Wrap Film</li>
+                        <li>Mulching Film</li>
+                        <li>Clean Film</li>
+                        <li>LDPE Shrink Wrap Film</li>
+                    </ul>
+                    <p>High-performance plastic films designed for protection, wrapping, and agricultural and industrial applications.</p>
+                    <a href="#contact" class="link-arrow">Request Quote →</a>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <h3>Plastic Sheets & Bags</h3>
+                    <ul>
+                        <li>LDPE Plastic Sheet & Roll</li>
+                        <li>VCI Bags & Rolls</li>
+                        <li>LD Liner Bags</li>
+                        <li>Garbage Bags</li>
+                    </ul>
+                    <p>Durable plastic sheets and bags engineered for storage, lining, waste management, and corrosion protection needs.</p>
+                    <a href="#contact" class="link-arrow">Request Quote →</a>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <h3>Industrial Packaging</h3>
+                    <ul>
+                        <li>Wooden Box</li>
+                        <li>Wooden Pallet</li>
+                        <li>Corrugated Box</li>
+                        <li>Mono-Carton</li>
+                    </ul>
+                    <p>Robust packaging solutions ensuring safe handling, storage, and transportation of goods across industries.</p>
+                    <a href="#contact" class="link-arrow">Request Quote →</a>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <h3>Custom Protective</h3>
+                    <ul>
+                        <li>Custom Combinations</li>
+                        <li>Tailor-made Dimensions</li>
+                        <li>Protection Workflows</li>
+                    </ul>
+                    <p>Tailor-made packaging solutions customized to product dimensions, protection requirements, and operational workflows.</p>
+                    <a href="#contact" class="link-arrow">Request Quote →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase / Standards Section -->
+    <section class="showcase-panel section-padding" id="standards">
+        <div class="bg-text">QUALITY ASSURED</div>
+        <div class="container showcase-content">
+            
+            <div class="showcase-text-block">
+                <span class="section-subtitle">Compliance & Quality</span>
+                <h2 class="section-title">Pack and protect effortlessly for every application</h2>
+                <p>Our packaging solutions are manufactured in compliance with recognized quality and industry standards. We follow structured processes to ensure consistency, safety, and reliability across all products.</p>
+                <p>Every product we deliver is designed to protect your goods, optimize costs, and support your business operations.</p>
+                <a href="#contact" class="btn" style="margin-top: 20px;">GET FREE ESTIMATE</a>
+            </div>
+
+            <div class="floating-element">
+                <img src="logo-hd2.png" alt="Dimple Bags" style="max-width: 70%; position: relative; z-index: 10;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Chart / Savings Section -->
+    <section class="chart-panel" id="savings">
+        <div class="container">
+            <div class="chart-grid">
+                <div class="chart-info">
+                    <h2 class="chart-title">OPTIMIZED FOR SAVINGS</h2>
+                    <p class="chart-desc">Dimple Bags solutions outperform traditional industrial packaging on cost-efficiency and durability. We analyze your requirements to find the most economical configurations.</p>
+                    <div style="margin-top: 40px;">
+                        <a href="#contact" class="btn btn-outline" style="color: var(--text-main); border-color: var(--text-main);">Analyze Your Costs</a>
+                    </div>
+                </div>
+                
+                <div class="chart-bars">
+                    <div class="bar-wrapper">
+                        <div class="bar-bg"></div>
+                        <div class="bar" style="height: 35%;">
+                            <span class="bar-percent">14%</span>
+                            <span class="bar-label">Other Exp.</span>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper">
+                        <div class="bar-bg"></div>
+                        <div class="bar" style="height: 45%;">
+                            <span class="bar-percent">18%</span>
+                            <span class="bar-label">Custom</span>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper">
+                        <div class="bar-bg"></div>
+                        <div class="bar" style="height: 70%;">
+                            <span class="bar-percent">28%</span>
+                            <span class="bar-label">Warehousing</span>
+                        </div>
+                    </div>
+                    <div class="bar-wrapper">
+                        <div class="bar-bg"></div>
+                        <div class="bar highlight" style="height: 100%;">
+                            <span class="bar-percent">40%</span>
+                            <span class="bar-label">Traditional</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo-box">
+                        <img src="logo-hd2.png" alt="Dimple Bags Logo">
+                    </div>
+                    <p class="footer-about">Leading Packaging Solution for every application and budget. Your trusted partner for high-quality packaging designed to protect, perform, and deliver value.</p>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#company">About Us</a></li>
+                        <li><a href="#products">Our Services</a></li>
+                        <li><a href="#standards">Quality Standards</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="#products">Plastic Films</a></li>
+                        <li><a href="#products">Plastic Sheets</a></li>
+                        <li><a href="#products">Industrial Boxes</a></li>
+                        <li><a href="#products">Custom Packaging</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="footer-contact">
+                        <p><strong>Address:</strong> Plot No. 814, Gidc Estate, Panchmahal, Gujarat, Halol, Panch Mahals-389350, Gujarat, India</p>
+                        <p style="margin-top: 20px;">
+                            <a href="#" class="btn" style="padding: 12px 24px; font-size: 14px;">Call Us Now</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                &copy; 2026 Dimple Bags. All Rights Reserved. Industrial Packaging Solutions.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
