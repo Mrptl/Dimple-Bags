@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style="opacity: 1 !important; height: auto; min-height: 100vh;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dimple Bags &amp; Synthetics Pvt. Ltd. | Architectural Packaging Engineering</title>
+<!-- Typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "monolith-black": "#050811",
+            "industrial-navy": "#0A1128",
+            "blueprint-dark": "#0F172A",
+            "slate-border": "#1E293B",
+            "blueprint-blue": "#1E40AF",
+            "hyper-blue": "#2563EB",
+            "safety-amber": "#F59E0B",
+            "safety-orange": "#EA580C",
+            "surface-canvas": "#F8FAFC",
+            "surface-pure": "#FFFFFF",
+            "border-subtle": "#E2E8F0",
+            "border-strong": "#CBD5E1",
+            "ink-dim": "#64748B",
+            "ink-primary": "#0B1C30",
+            "metric-green": "#059669"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            display: ["Space Grotesk", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    /* Architectural Blueprint & Technical Grid Utilities */
+    .bg-tech-grid {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(226, 232, 240, 0.6) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(226, 232, 240, 0.6) 1px, transparent 1px);
+    }
+    .bg-dark-grid {
+      background-size: 48px 48px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #CBD5E1;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body class="bg-surface-canvas text-ink-primary font-sans antialiased min-h-screen relative flex flex-col" style="opacity: 1 !important; height: auto; overflow-y: auto !important;">
+<!-- 1. TOP UTILITY BAR & INDUSTRIAL NAVIGATION -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-border-subtle transition-all">
+<!-- Super-header / Industrial Metrology Strip -->
+<div class="bg-industrial-navy text-white text-xs font-mono py-1.5 px-4 md:px-8 border-b border-slate-border">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3 tracking-tight">
+<div class="flex items-center gap-4 flex-wrap">
+<span class="inline-flex items-center gap-1.5 text-slate-300">
+<span class="w-2 h-2 rounded-full bg-metric-green animate-pulse"></span>
+            PLANT 1 &amp; 2 DISPATCH OPERATIONAL • HALOL GIDC
+          </span>
+<span class="text-slate-600 hidden md:inline">|</span>
+<span class="text-slate-400 hidden lg:inline">CO-EXTRUSION TOLERANCE ±2% ASTM D882</span>
+<span class="text-slate-600 hidden lg:inline">|</span>
+<span class="text-amber-400 font-semibold">A RAMDEV GROUP ENTERPRISE (EST. 2009)</span>
+</div>
+<div class="flex items-center gap-4 text-[11px]">
+<span class="bg-blueprint-dark px-2 py-0.5 border border-slate-700 rounded text-slate-200">IPPC: IN-814-HT</span>
+<span class="bg-blueprint-dark px-2 py-0.5 border border-slate-700 rounded text-slate-200">ISO 9001:2015</span>
+<a class="text-slate-300 hover:text-white transition-colors flex items-center gap-1" href="tel:+918128539646">
+<span class="material-symbols-outlined text-[13px] text-amber-400">call</span>+91-8128539646
+          </a>
+</div>
+</div>
+</div>
+<!-- Main Navigation Bar -->
+<div class="max-w-7xl mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
+<!-- Monolithic Logo -->
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-11 h-11 bg-industrial-navy border border-slate-800 flex items-center justify-center text-white font-mono font-bold text-lg shadow-sm group-hover:border-hyper-blue transition-colors">
+          DB
+        </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-display font-bold text-lg md:text-xl tracking-tighter text-industrial-navy leading-none">DIMPLE BAGS</span>
+<span class="text-[10px] font-mono tracking-widest text-white bg-industrial-navy px-1.5 py-0.5 uppercase font-medium">Halol</span>
+</div>
+<span class="font-mono text-[10px] text-ink-dim tracking-wider uppercase mt-1">Synthetics Pvt. Ltd. • Ramdev Group</span>
+</div>
+</a>
+<!-- Primary Links -->
+<nav class="hidden lg:flex items-center gap-1 text-xs font-mono tracking-wider uppercase font-semibold text-slate-700">
+<a class="px-3 py-2 rounded hover:text-hyper-blue hover:bg-slate-100 transition-colors" href="#hero">Home</a>
+<a class="px-3 py-2 rounded hover:text-hyper-blue hover:bg-slate-100 transition-colors" href="#about">About Us</a>
+<a class="px-3 py-2 rounded hover:text-hyper-blue hover:bg-slate-100 transition-colors text-blueprint-blue font-bold" href="#calculator">Spec Matcher</a>
+<a class="px-3 py-2 rounded hover:text-hyper-blue hover:bg-slate-100 transition-colors" href="#verticals">Products &amp; Verticals</a>
+<a class="px-3 py-2 rounded hover:text-hyper-blue hover:bg-slate-100 transition-colors" href="#infrastructure">Halol Bays &amp; Lab</a>
+<a class="px-3 py-2 rounded hover:text-hyper-blue hover:bg-slate-100 transition-colors" href="#group">Ramdev Synergy</a>
+</nav>
+<!-- Action Cluster -->
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-industrial-navy border border-slate-300 font-mono text-xs px-3.5 py-2.5 rounded font-semibold transition-all" href="#rfq">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+          TDS Catalog
+        </a>
+<a class="inline-flex items-center gap-2 bg-industrial-navy hover:bg-hyper-blue text-white font-mono text-xs px-4 py-2.5 rounded font-semibold shadow-sm transition-all" href="#rfq">
+<span class="material-symbols-outlined text-[16px] text-safety-amber">tune</span>
+          REQUEST RFQ
+        </a>
+</div>
+</div>
+</header>
+<main class="flex-grow w-full">
+<!-- 2. HERO SECTION: Architectural Precision & Monolithic Scale -->
+<section class="relative bg-industrial-navy text-white overflow-hidden border-b border-slate-border" id="hero">
+<!-- Dark Blueprint Grid Background -->
+<div class="absolute inset-0 bg-dark-grid opacity-35 pointer-events-none"></div>
+<div class="absolute -top-40 -right-40 w-96 h-96 bg-hyper-blue/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto px-4 md:px-8 pt-12 pb-16 md:pt-16 md:pb-24">
+<!-- Breadcrumb / Status Line -->
+<div class="flex flex-wrap items-center justify-between gap-4 mb-8 pb-4 border-b border-slate-800 text-xs font-mono text-slate-400">
+<div class="flex items-center gap-2">
+<span class="text-safety-amber font-bold">#DS-HALOL-2026</span>
+<span>//</span>
+<span>POLYMERIC FABRICATION &amp; CO-EXTRUSION SUITE</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-safety-amber"></span>
+<span>GIDC PLOT 814 • DIRECT BULK FREIGHT DESPATCH</span>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Main Left Column -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-blueprint-dark border border-slate-700 rounded text-slate-300 font-mono text-xs w-max">
+<span class="material-symbols-outlined text-[14px] text-safety-amber">verified</span>
+              ASTM D882 / D1709 TESTED • ZERO DEFECT LOGISTICS
+            </div>
+<h1 class="font-display font-bold text-3xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.08] text-white">
+              HEAVY-DUTY POLYMER &amp; INDUSTRIAL <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-sky-300 to-indigo-200">PACKAGING ENGINEERING</span>
+</h1>
+<p class="font-sans text-base md:text-lg text-slate-300 max-w-2xl font-light leading-relaxed">
+              Engineered multi-layer films, VCI anti-corrosion barriers, heavy-duty industrial liners, and ISPM-15 export wood packaging fabricated with micron precision in Halol GIDC since 2009.
+            </p>
+<!-- Action CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2.5 bg-safety-orange hover:bg-orange-500 text-white font-mono text-xs font-bold uppercase tracking-wider px-6 py-3.5 rounded transition-all shadow-md" href="#rfq">
+<span class="material-symbols-outlined text-[18px]">engineering</span>
+                Configure Custom Spec RFQ
+              </a>
+<a class="inline-flex items-center gap-2 bg-blueprint-dark hover:bg-slate-800 text-slate-200 border border-slate-700 font-mono text-xs font-semibold px-5 py-3.5 rounded transition-all" href="#infrastructure">
+<span class="material-symbols-outlined text-[18px] text-slate-400">precision_manufacturing</span>
+                Explore Halol Plant Bays
+              </a>
+</div>
+</div>
+<!-- Hero Right Technical Card -->
+<div class="lg:col-span-4 bg-blueprint-dark/90 border border-slate-700/80 p-6 rounded-lg backdrop-blur-md flex flex-col justify-between shadow-2xl">
+<div class="border-b border-slate-800 pb-4 mb-4">
+<div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-1">
+<span>FACILITY TELEMETRY</span>
+<span class="text-metric-green font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-metric-green"></span> ACTIVE
+                </span>
+</div>
+<h2 class="font-display font-bold text-xl text-white">Halol Extrusion Unit 1 &amp; 2</h2>
+</div>
+<div class="space-y-3 font-mono text-xs text-slate-300">
+<div class="flex justify-between items-center py-1.5 border-b border-slate-800/60">
+<span class="text-slate-400">Monthly Run Rate</span>
+<span class="font-bold text-white">850+ Metric Tons</span>
+</div>
+<div class="flex justify-between items-center py-1.5 border-b border-slate-800/60">
+<span class="text-slate-400">Extrusion Gauge Range</span>
+<span class="font-bold text-amber-400">15 to 250 Microns</span>
+</div>
+<div class="flex justify-between items-center py-1.5 border-b border-slate-800/60">
+<span class="text-slate-400">Maximum Slit Layflat</span>
+<span class="font-bold text-white">Up to 2,400 mm</span>
+</div>
+<div class="flex justify-between items-center py-1.5">
+<span class="text-slate-400">ISPM Heat Treat Cycle</span>
+<span class="font-bold text-white">56°C / 30 Min Core</span>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-[11px] font-mono text-slate-400">
+<span>Lot Traceability: Enabled</span>
+<span class="text-blue-400 underline cursor-pointer" onclick="document.getElementById('calculator').scrollIntoView({behavior:'smooth'})">Run Specs →</span>
+</div>
+</div>
+</div>
+<!-- High-Contrast Metric Monolith Strip -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 pt-8 border-t border-slate-800">
+<div class="bg-monolith-black/60 border border-slate-800 p-5 rounded">
+<span class="font-mono text-xs text-slate-400 block mb-1">ANNUAL POLYMER VOLUME</span>
+<div class="font-display text-3xl font-bold text-white flex items-baseline gap-1">
+              10,000+ <span class="text-xs font-mono font-medium text-amber-400">MT/YR</span>
+</div>
+<p class="font-mono text-[11px] text-slate-500 mt-2">Continuous multi-layer extrusion</p>
+</div>
+<div class="bg-monolith-black/60 border border-slate-800 p-5 rounded">
+<span class="font-mono text-xs text-slate-400 block mb-1">GAUGE VARIANCE CONTROL</span>
+<div class="font-display text-3xl font-bold text-white flex items-baseline gap-1">
+              ±2% <span class="text-xs font-mono font-medium text-hyper-blue">TOLERANCE</span>
+</div>
+<p class="font-mono text-[11px] text-slate-500 mt-2">Gravimetric precision blending</p>
+</div>
+<div class="bg-monolith-black/60 border border-slate-800 p-5 rounded">
+<span class="font-mono text-xs text-slate-400 block mb-1">WOOD PACKAGING EXPORT</span>
+<div class="font-display text-3xl font-bold text-white flex items-baseline gap-1">
+              ISPM-15 <span class="text-xs font-mono font-medium text-metric-green">IPPC IN-814</span>
+</div>
+<p class="font-mono text-[11px] text-slate-500 mt-2">Heat-treatment certified kilns</p>
+</div>
+<div class="bg-monolith-black/60 border border-slate-800 p-5 rounded">
+<span class="font-mono text-xs text-slate-400 block mb-1">CORPORATE HERITAGE</span>
+<div class="font-display text-3xl font-bold text-white flex items-baseline gap-1">
+              17+ <span class="text-xs font-mono font-medium text-slate-300">YEARS</span>
+</div>
+<p class="font-mono text-[11px] text-slate-500 mt-2">Ramdev Group polymer foundation</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. INTERACTIVE QUICK SPEC MATCHER & INDUSTRIAL CALCULATOR -->
+<section class="py-16 bg-white border-b border-border-subtle bg-tech-grid relative" id="calculator">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+<div>
+<div class="flex items-center gap-2 text-xs font-mono text-hyper-blue font-bold uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]">calculate</span>
+              Interactive Engineering Configuration
+            </div>
+<h2 class="font-display font-bold text-2xl md:text-3xl text-industrial-navy tracking-tight">
+              Packaging Specification &amp; Dimension Matcher
+            </h2>
+</div>
+<p class="text-xs font-mono text-ink-dim max-w-md">
+            Instantly map ASTM test metrics, recommended micron barriers, and load containment ratings according to your cargo profile.
+          </p>
+</div>
+<!-- Calculator Outer Shell -->
+<div class="bg-surface-canvas border border-border-subtle rounded-lg shadow-sm overflow-hidden">
+<!-- Spec Tabs -->
+<div class="grid grid-cols-2 md:grid-cols-4 border-b border-border-subtle bg-slate-100 text-xs font-mono font-bold">
+<button class="tab-btn py-3.5 px-4 text-center border-r border-border-subtle bg-white text-blueprint-blue border-b-2 border-b-hyper-blue transition-all" id="tab-stretch" onclick="setTab('stretch')">
+              01. STRETCH &amp; HOOD FILM
+            </button>
+<button class="tab-btn py-3.5 px-4 text-center border-r border-border-subtle text-slate-600 hover:text-industrial-navy transition-all" id="tab-vci" onclick="setTab('vci')">
+              02. VCI ANTI-CORROSION
+            </button>
+<button class="tab-btn py-3.5 px-4 text-center border-r border-border-subtle text-slate-600 hover:text-industrial-navy transition-all" id="tab-liner" onclick="setTab('liner')">
+              03. HEAVY LINERS &amp; SHEETS
+            </button>
+<button class="tab-btn py-3.5 px-4 text-center text-slate-600 hover:text-industrial-navy transition-all" id="tab-pallets" onclick="setTab('pallets')">
+              04. TIMBER PALLETS &amp; BOXES
+            </button>
+</div>
+<!-- Dynamic Spec Viewer Area -->
+<div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center" id="tab-content">
+<!-- Content will be swapped via simple pure JS -->
+<div class="lg:col-span-7 space-y-4">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 bg-blue-100 text-blueprint-blue text-xs font-mono font-bold rounded" id="spec-category">
+                  CATEGORY: CAST &amp; BLOWN LLDPE STRETCH
+                </span>
+<span class="text-xs font-mono text-ink-dim" id="spec-astm">ASTM D882 / D1709</span>
+</div>
+<h3 class="font-display font-bold text-2xl text-industrial-navy" id="spec-title">
+                Machine &amp; Manual High-Yield Industrial Stretch Wrap
+              </h3>
+<p class="text-sm text-slate-600 leading-relaxed font-sans" id="spec-desc">
+                Cast 3-layer and 5-layer co-extruded film with high elongation (up to 300%) and puncture resistance. Designed for securing pallet loads during turbulent ocean transit and long-haul intermodal logistics.
+              </p>
+<!-- Spec Grid Parameters -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 font-mono text-xs">
+<div class="bg-white p-3 border border-border-subtle rounded">
+<span class="text-ink-dim block text-[10px] uppercase">Thickness Range</span>
+<span class="font-bold text-industrial-navy text-sm" id="spec-thickness">12 to 50 Microns</span>
+</div>
+<div class="bg-white p-3 border border-border-subtle rounded">
+<span class="text-ink-dim block text-[10px] uppercase">Tensile Strength</span>
+<span class="font-bold text-industrial-navy text-sm" id="spec-tensile">&gt; 35 MPa (MD/TD)</span>
+</div>
+<div class="bg-white p-3 border border-border-subtle rounded">
+<span class="text-ink-dim block text-[10px] uppercase">Pre-Stretch Ratio</span>
+<span class="font-bold text-industrial-navy text-sm" id="spec-yield">Up to 300%</span>
+</div>
+</div>
+</div>
+<!-- Calculated Spec Card / Blueprint Box -->
+<div class="lg:col-span-5 bg-industrial-navy text-white p-6 rounded border border-slate-700 font-mono text-xs space-y-4">
+<div class="flex items-center justify-between border-b border-slate-800 pb-3">
+<span class="text-amber-400 font-bold uppercase tracking-wider">HALOL ENGINEERING SUMMARY</span>
+<span class="material-symbols-outlined text-[16px] text-slate-400">tune</span>
+</div>
+<div class="space-y-2.5">
+<div class="flex justify-between py-1 border-b border-slate-800">
+<span class="text-slate-400">Resin Formulation:</span>
+<span class="font-semibold text-slate-200" id="box-resin">100% Virgin Dow / Reliance Octene LLDPE</span>
+</div>
+<div class="flex justify-between py-1 border-b border-slate-800">
+<span class="text-slate-400">Standard Widths:</span>
+<span class="font-semibold text-slate-200" id="box-width">250mm, 500mm, 1000mm</span>
+</div>
+<div class="flex justify-between py-1 border-b border-slate-800">
+<span class="text-slate-400">Core Diameter:</span>
+<span class="font-semibold text-slate-200" id="box-core">3.0" (76mm) Heavy Paperboard</span>
+</div>
+<div class="flex justify-between py-1 border-b border-slate-800">
+<span class="text-slate-400">Typical Lead Time:</span>
+<span class="font-semibold text-metric-green" id="box-lead">48 Hours for Standard JIT Orders</span>
+</div>
+</div>
+<a class="w-full mt-2 inline-flex items-center justify-center gap-2 bg-hyper-blue hover:bg-blue-600 text-white py-2.5 rounded font-bold transition-colors" href="#rfq">
+<span>Request Sample Swatch or Mill Roll</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. CORE MANUFACTURING VERTICALS (4 High-Density Architectural Cards) -->
+<section class="py-20 bg-surface-canvas border-b border-border-subtle" id="verticals">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+<div>
+<span class="font-mono text-xs text-safety-orange font-bold uppercase tracking-wider block mb-1">
+              MANUFACTURING PORTFOLIO
+            </span>
+<h2 class="font-display font-bold text-3xl md:text-4xl text-industrial-navy tracking-tight">
+              Engineered Industrial Packaging Verticals
+            </h2>
+</div>
+<p class="font-mono text-xs text-ink-dim max-w-md">
+            Heavy-gauge blown extrusion, specialized metallurgical rust inhibitors, gusseted container shrouds, and ISPM-15 phytosanitary wood packaging.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Vertical Card 01: Multi-Layer Barrier & Extrusion Films -->
+<div class="bg-white border border-border-subtle rounded-lg p-6 flex flex-col justify-between hover:border-hyper-blue hover:shadow-lg transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-mono text-xs font-bold text-slate-400 group-hover:text-hyper-blue">SEC. 01</span>
+<span class="bg-slate-100 text-slate-700 text-[10px] font-mono px-2 py-0.5 rounded font-semibold">BLOWN EXTRUSION</span>
+</div>
+<div class="w-12 h-12 bg-slate-50 border border-slate-200 rounded flex items-center justify-center text-hyper-blue mb-4">
+<span class="material-symbols-outlined text-[26px]">layers</span>
+</div>
+<h3 class="font-display font-bold text-lg text-industrial-navy mb-2">
+                Multi-Layer Co-Extruded LDPE / LLDPE Films
+              </h3>
+<p class="text-xs text-slate-600 font-sans leading-relaxed mb-4">
+                Engineered for maximum dart drop impact resistance, uniform gauge profile, and zero pinhole porosity for chemical and bulk fertilizer protection.
+              </p>
+</div>
+<div class="pt-4 border-t border-slate-100 font-mono text-[11px] space-y-1.5 text-slate-500">
+<div class="flex justify-between"><span class="text-slate-400">Gauge Range:</span> <span class="font-bold text-slate-800">20 - 250 μm</span></div>
+<div class="flex justify-between"><span class="text-slate-400">Max Width:</span> <span class="font-bold text-slate-800">2,400 mm Layflat</span></div>
+<div class="flex justify-between"><span class="text-slate-400">Standards:</span> <span class="font-bold text-slate-800">IS 2508 / ASTM D882</span></div>
+</div>
+</div>
+<!-- Vertical Card 02: VCI Anti-Corrosion Active Polymers -->
+<div class="bg-white border border-border-subtle rounded-lg p-6 flex flex-col justify-between hover:border-hyper-blue hover:shadow-lg transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-mono text-xs font-bold text-slate-400 group-hover:text-hyper-blue">SEC. 02</span>
+<span class="bg-blue-50 text-blueprint-blue text-[10px] font-mono px-2 py-0.5 rounded font-semibold">METALLURGY SHIELD</span>
+</div>
+<div class="w-12 h-12 bg-slate-50 border border-slate-200 rounded flex items-center justify-center text-hyper-blue mb-4">
+<span class="material-symbols-outlined text-[26px]">security</span>
+</div>
+<h3 class="font-display font-bold text-lg text-industrial-navy mb-2">
+                VCI Anti-Corrosion Chemical Inhibitor Films
+              </h3>
+<p class="text-xs text-slate-600 font-sans leading-relaxed mb-4">
+                Active molecular vapor phase barrier compounding for automotive, aerospace, and precision steel coils preventing oxidation up to 24 months.
+              </p>
+</div>
+<div class="pt-4 border-t border-slate-100 font-mono text-[11px] space-y-1.5 text-slate-500">
+<div class="flex justify-between"><span class="text-slate-400">Substrates:</span> <span class="font-bold text-slate-800">Ferrous &amp; Non-Ferrous</span></div>
+<div class="flex justify-between"><span class="text-slate-400">Additives:</span> <span class="font-bold text-slate-800">Nitrite-Free Safe</span></div>
+<div class="flex justify-between"><span class="text-slate-400">Compliance:</span> <span class="font-bold text-slate-800">MIL-STD-3010 / RoHS</span></div>
+</div>
+</div>
+<!-- Vertical Card 03: Heavy Gusseted Box Covers & Drum Liners -->
+<div class="bg-white border border-border-subtle rounded-lg p-6 flex flex-col justify-between hover:border-hyper-blue hover:shadow-lg transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-mono text-xs font-bold text-slate-400 group-hover:text-hyper-blue">SEC. 03</span>
+<span class="bg-amber-50 text-amber-800 text-[10px] font-mono px-2 py-0.5 rounded font-semibold">HEAVY CONVERTING</span>
+</div>
+<div class="w-12 h-12 bg-slate-50 border border-slate-200 rounded flex items-center justify-center text-hyper-blue mb-4">
+<span class="material-symbols-outlined text-[26px]">inventory_2</span>
+</div>
+<h3 class="font-display font-bold text-lg text-industrial-navy mb-2">
+                Industrial Liners, Gusseted Bags &amp; Box Hoods
+              </h3>
+<p class="text-xs text-slate-600 font-sans leading-relaxed mb-4">
+                Custom fabricated container liners, pallet top covers, and circular-bottom drum liners engineered to withstand friction and heavy puncture stresses.
+              </p>
+</div>
+<div class="pt-4 border-t border-slate-100 font-mono text-[11px] space-y-1.5 text-slate-500">
+<div class="flex justify-between"><span class="text-slate-400">Perimeter:</span> <span class="font-bold text-slate-800">Up to 6,000 mm Gusset</span></div>
+<div class="flex justify-between"><span class="text-slate-400">Sealing:</span> <span class="font-bold text-slate-800">Continuous Impulse QC</span></div>
+<div class="flex justify-between"><span class="text-slate-400">Variants:</span> <span class="font-bold text-slate-800">Conductive / Anti-Static</span></div>
+</div>
+</div>
+<!-- Vertical Card 04: ISPM-15 Certified Timber & Wooden Packaging -->
+<div class="bg-white border border-border-subtle rounded-lg p-6 flex flex-col justify-between hover:border-hyper-blue hover:shadow-lg transition-all group">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="font-mono text-xs font-bold text-slate-400 group-hover:text-hyper-blue">SEC. 04</span>
+<span class="bg-emerald-50 text-metric-green text-[10px] font-mono px-2 py-0.5 rounded font-semibold">HEAT-TREATED WOOD</span>
+</div>
+<div class="w-12 h-12 bg-slate-50 border border-slate-200 rounded flex items-center justify-center text-hyper-blue mb-4">
+<span class="material-symbols-outlined text-[26px]">pallet</span>
+</div>
+<h3 class="font-display font-bold text-lg text-industrial-navy mb-2">
+                ISPM-15 Pine Pallets, Boxes &amp; Heavy Crates
+              </h3>
+<p class="text-xs text-slate-600 font-sans leading-relaxed mb-4">
+                Heat-treated imported pine and hardwood pallets stamped with official IPPC IN-814 markings, engineered for dynamic loads exceeding 2,500 KG.
+              </p>
+</div>
+<div class="pt-4 border-t border-slate-100 font-mono text-[11px] space-y-1.5 text-slate-500">
+<div class="flex justify-between"><span class="text-slate-400">Kiln Stamp:</span> <span class="font-bold text-slate-800">IPPC IN-814-HT</span></div>
+<div class="flex justify-between"><span class="text-slate-400">Moisture:</span> <span class="font-bold text-slate-800">&lt; 18% Certified</span></div>
+<div class="flex justify-between"><span class="text-slate-400">Dynamic Load:</span> <span class="font-bold text-slate-800">Up to 3,000 KG</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. HALOL PLANT INFRASTRUCTURE & METROLOGY LAB -->
+<section class="py-20 bg-industrial-navy text-white relative overflow-hidden" id="infrastructure">
+<div class="absolute inset-0 bg-dark-grid opacity-20 pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pb-6 border-b border-slate-800">
+<div>
+<div class="flex items-center gap-2 text-xs font-mono text-safety-amber font-bold uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[16px]">factory</span>
+              HALOL GIDC ESTATE • 65,000 SQ. FT. CAMPUS
+            </div>
+<h2 class="font-display font-bold text-3xl md:text-4xl text-white tracking-tight">
+              Manufacturing Infrastructure &amp; QC Laboratory
+            </h2>
+</div>
+<div class="font-mono text-xs text-slate-400">
+<span class="text-white font-bold">2 Dedicated Production Units</span> • Zero Discharge Site • ISO 9001:2015
+          </div>
+</div>
+<!-- 3 Machinery / Lab Bays Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Bay 01 -->
+<div class="bg-blueprint-dark border border-slate-700 rounded-lg overflow-hidden flex flex-col justify-between">
+<div class="p-6">
+<div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+<span class="text-amber-400 font-bold">BAY 01</span>
+<span>EXTRUSION TOWER</span>
+</div>
+<h3 class="font-display font-bold text-xl text-white mb-2">Multi-Layer Blown Film Towers</h3>
+<p class="text-xs text-slate-300 font-sans leading-relaxed mb-4">
+                Equipped with automatic Internal Bubble Cooling (IBC), gravimetric continuous component feeding, and continuous electronic thickness sensors ensuring micro-tolerance consistency across 2,400 mm layflat.
+              </p>
+<!-- Technical Specs -->
+<div class="bg-monolith-black/60 p-3 rounded border border-slate-800 font-mono text-xs space-y-2 text-slate-300">
+<div class="flex justify-between"><span class="text-slate-500">Gauge Range:</span> <span class="font-semibold text-white">15 μm to 250 μm</span></div>
+<div class="flex justify-between"><span class="text-slate-500">Extrusion Ratio:</span> <span class="font-semibold text-white">3-Layer Co-Ex A/B/C</span></div>
+<div class="flex justify-between"><span class="text-slate-500">Capacity:</span> <span class="font-semibold text-amber-400">800 MT / Month</span></div>
+</div>
+</div>
+<div class="bg-slate-900/80 px-6 py-3 border-t border-slate-800 text-[11px] font-mono text-slate-400">
+              Tooling: Automated Air Ring &amp; Rotary Die Head
+            </div>
+</div>
+<!-- Bay 02 -->
+<div class="bg-blueprint-dark border border-slate-700 rounded-lg overflow-hidden flex flex-col justify-between">
+<div class="p-6">
+<div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+<span class="text-amber-400 font-bold">BAY 02</span>
+<span>CONVERTING &amp; SLITTING</span>
+</div>
+<h3 class="font-display font-bold text-xl text-white mb-2">High-Speed Converting &amp; Corona</h3>
+<p class="text-xs text-slate-300 font-sans leading-relaxed mb-4">
+                Duplex slitter rewinders with optical web aligners and precision friction air-shafts. Integrated high-voltage corona discharge stations achieve up to 48 Dyne surface tension for high-fidelity printing.
+              </p>
+<!-- Technical Specs -->
+<div class="bg-monolith-black/60 p-3 rounded border border-slate-800 font-mono text-xs space-y-2 text-slate-300">
+<div class="flex justify-between"><span class="text-slate-500">Corona Energy:</span> <span class="font-semibold text-white">38 to 48 Dyne/cm</span></div>
+<div class="flex justify-between"><span class="text-slate-500">Min Slit Width:</span> <span class="font-semibold text-white">50 mm Razor Slit</span></div>
+<div class="flex justify-between"><span class="text-slate-500">Winding Speed:</span> <span class="font-semibold text-amber-400">450 Meters / Min</span></div>
+</div>
+</div>
+<div class="bg-slate-900/80 px-6 py-3 border-t border-slate-800 text-[11px] font-mono text-slate-400">
+              Automation: Micro-sensor Line Guide &amp; Strobe Inspection
+            </div>
+</div>
+<!-- Bay 03 & Lab -->
+<div class="bg-blueprint-dark border border-slate-700 rounded-lg overflow-hidden flex flex-col justify-between">
+<div class="p-6">
+<div class="flex items-center justify-between text-xs font-mono text-slate-400 mb-3">
+<span class="text-amber-400 font-bold">LAB 01</span>
+<span>METROLOGY &amp; KILN</span>
+</div>
+<h3 class="font-display font-bold text-xl text-white mb-2">ASTM Metrology &amp; ISPM Chamber</h3>
+<p class="text-xs text-slate-300 font-sans leading-relaxed mb-4">
+                In-house quality laboratory verifying dart drop, tensile elongation, and dart puncture. Adjoined to computerized ISPM-15 forced-air heat treatment chambers for phytosanitary timber certification.
+              </p>
+<!-- Technical Specs -->
+<div class="bg-monolith-black/60 p-3 rounded border border-slate-800 font-mono text-xs space-y-2 text-slate-300">
+<div class="flex justify-between"><span class="text-slate-500">Dart Drop Impact:</span> <span class="font-semibold text-white">ASTM D1709 Compliant</span></div>
+<div class="flex justify-between"><span class="text-slate-500">Tensile / Tear:</span> <span class="font-semibold text-white">ASTM D882 / D1922</span></div>
+<div class="flex justify-between"><span class="text-slate-500">Kiln Stamp:</span> <span class="font-semibold text-metric-green">IPPC IN-814-HT</span></div>
+</div>
+</div>
+<div class="bg-slate-900/80 px-6 py-3 border-t border-slate-800 text-[11px] font-mono text-slate-400">
+              Batch MTC (Mill Test Certificate) dispatched per invoice
+            </div>
+</div>
+</div>
+<!-- Plant Floor Blueprint Schema Diagram (Clean Vector) -->
+<div class="mt-12 bg-blueprint-dark/60 border border-slate-800 rounded-lg p-6">
+<div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-800 text-xs font-mono">
+<span class="text-slate-300 font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-hyper-blue">account_tree</span>
+              HALOL MANUFACTURING FLOW &amp; LOGISTICS INTEGRATION
+            </span>
+<span class="text-slate-500 hidden sm:inline">BLUEPRINT REF: DB-ARCH-M01</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-3 text-center font-mono text-xs">
+<div class="p-3 bg-industrial-navy border border-slate-700 rounded">
+<span class="text-slate-500 block text-[10px]">STAGE 01</span>
+<span class="text-slate-200 font-bold">Resin Silos &amp; Dosing</span>
+<span class="text-[10px] text-amber-400 block mt-1">Virgin Dow/Reliance</span>
+</div>
+<div class="p-3 bg-industrial-navy border border-slate-700 rounded">
+<span class="text-slate-500 block text-[10px]">STAGE 02</span>
+<span class="text-slate-200 font-bold">Co-Ex Blown Towers</span>
+<span class="text-[10px] text-hyper-blue block mt-1">IBC Gauge Regulated</span>
+</div>
+<div class="p-3 bg-industrial-navy border border-slate-700 rounded">
+<span class="text-slate-500 block text-[10px]">STAGE 03</span>
+<span class="text-slate-200 font-bold">Slitting &amp; Converting</span>
+<span class="text-[10px] text-slate-400 block mt-1">Dynamic Tension Roll</span>
+</div>
+<div class="p-3 bg-industrial-navy border border-slate-700 rounded">
+<span class="text-slate-500 block text-[10px]">STAGE 04</span>
+<span class="text-slate-200 font-bold">ASTM Lab Clearance</span>
+<span class="text-[10px] text-metric-green block mt-1">Zero Defect Testing</span>
+</div>
+<div class="p-3 bg-industrial-navy border border-slate-700 rounded col-span-2 md:col-span-1">
+<span class="text-slate-500 block text-[10px]">STAGE 05</span>
+<span class="text-slate-200 font-bold">Dispatch &amp; Freight</span>
+<span class="text-[10px] text-white block mt-1">24/7 GIDC Docking</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. RAMDEV GROUP CORPORATE SYNERGY & RAW MATERIAL POWER -->
+<section class="py-20 bg-white border-b border-border-subtle" id="group">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-amber-50 border border-amber-200 rounded text-amber-800 font-mono text-xs font-bold">
+<span class="material-symbols-outlined text-[16px]">corporate_fare</span>
+              ESTABLISHED 1980s • 40+ YEARS ENTERPRISE TRUST
+            </div>
+<h2 class="font-display font-bold text-3xl md:text-4xl text-industrial-navy tracking-tight leading-tight">
+              Backed by the Industrial Power &amp; Procurement Scale of Ramdev Group
+            </h2>
+<p class="font-sans text-sm md:text-base text-slate-600 leading-relaxed font-light">
+              Dimple Bags &amp; Synthetics operates as a specialized industrial packaging wing of the Gujarat-based Ramdev Group. Our tier-one standing affords uncompromised resin availability, massive raw-material purchasing volume, and long-term pricing stability for enterprise buyers.
+            </p>
+<div class="space-y-3 font-mono text-xs text-slate-700 pt-2">
+<div class="flex items-center gap-3">
+<span class="w-5 h-5 rounded bg-blue-100 text-blueprint-blue flex items-center justify-center font-bold text-[11px]">✓</span>
+<span>Direct Primary Resin Contracts: Reliance Industries (RIL), IOCL, GAIL, ONGC Petro.</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-5 h-5 rounded bg-blue-100 text-blueprint-blue flex items-center justify-center font-bold text-[11px]">✓</span>
+<span>Buffer Inventory: Guaranteed 60-day raw polymer stockpile for uninterrupted JIT runs.</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="w-5 h-5 rounded bg-blue-100 text-blueprint-blue flex items-center justify-center font-bold text-[11px]">✓</span>
+<span>Cross-Border Logistics: Direct supply to Kandla, Mundra, and Hazira shipping ports.</span>
+</div>
+</div>
+</div>
+<!-- Group Entity Synergy Cards -->
+<div class="lg:col-span-6 bg-surface-canvas p-8 rounded-lg border border-border-subtle">
+<span class="font-mono text-xs text-ink-dim block mb-4 uppercase tracking-wider">Ramdev Group Enterprise Matrix</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-white p-4 border border-border-subtle rounded">
+<span class="text-xs font-mono font-bold text-blueprint-blue">RAW MATERIAL POWER</span>
+<h4 class="font-display font-bold text-sm text-industrial-navy mt-1">Virgin Polymer Sourcing</h4>
+<p class="text-xs text-slate-500 mt-1">No secondary scrap dilution; guaranteed virgin melt index (MFI) control.</p>
+</div>
+<div class="bg-white p-4 border border-border-subtle rounded">
+<span class="text-xs font-mono font-bold text-safety-orange">LOGISTICS FLEET</span>
+<h4 class="font-display font-bold text-sm text-industrial-navy mt-1">Dedicated Transport Fleet</h4>
+<p class="text-xs text-slate-500 mt-1">Overnight dispatch capabilities across Gujarat, Maharashtra, and MP.</p>
+</div>
+<div class="bg-white p-4 border border-border-subtle rounded">
+<span class="text-xs font-mono font-bold text-metric-green">CIRCULAR POLYMERS</span>
+<h4 class="font-display font-bold text-sm text-industrial-navy mt-1">Zero Plant Waste</h4>
+<p class="text-xs text-slate-500 mt-1">100% in-house regranulation of production trims and PIR compliance.</p>
+</div>
+<div class="bg-white p-4 border border-border-subtle rounded">
+<span class="text-xs font-mono font-bold text-industrial-navy">EXPORT SANCTIONED</span>
+<h4 class="font-display font-bold text-sm text-industrial-navy mt-1">IPPC IN-814 Accredited</h4>
+<p class="text-xs text-slate-500 mt-1">Certified phytosanitary treatment for container stuffing worldwide.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. HIGH-CONVERSION RFQ & TECHNICAL SPEC DOWNLOAD SECTION -->
+<section class="py-20 bg-surface-canvas border-b border-border-subtle relative" id="rfq">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="bg-industrial-navy text-white rounded-xl border border-slate-700 overflow-hidden shadow-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12">
+<!-- Left Info Panel -->
+<div class="lg:col-span-5 p-8 md:p-12 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800">
+<div>
+<span class="font-mono text-xs text-safety-amber font-bold tracking-widest uppercase block mb-2">
+                  DIRECT FACTORY ESTIMATE
+                </span>
+<h2 class="font-display font-bold text-3xl md:text-4xl text-white tracking-tight leading-tight mb-4">
+                  Request Technical Quotation &amp; TDS
+                </h2>
+<p class="text-xs md:text-sm text-slate-300 font-sans leading-relaxed mb-6">
+                  Speak directly with our polymer engineers in Halol. Receive precise cost estimates, minimum order quantities (MOQ), and laboratory technical data sheets within 24 hours.
+                </p>
+<div class="space-y-3 font-mono text-xs text-slate-300">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-amber-400">schedule</span>
+<span>24-Hour Technical RFQ Turnaround</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-hyper-blue">inventory</span>
+<span>Batch Sample Material Swatches Provided</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-metric-green">location_on</span>
+<span>Direct Factory Dispatches from Halol GIDC</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-6 border-t border-slate-800">
+<span class="text-xs font-mono text-slate-400 block mb-1">DIRECT METROLOGY DESK:</span>
+<a class="font-mono text-lg font-bold text-white hover:text-amber-400 transition-colors block" href="tel:+918128539646">
+                  +91-8128539646
+                </a>
+<span class="text-xs font-mono text-slate-400">admin@dimplebags.com</span>
+</div>
+</div>
+<!-- Right Interactive Form -->
+<div class="lg:col-span-7 p-8 md:p-12 bg-blueprint-dark/50">
+<form class="space-y-4" onsubmit="event.preventDefault(); alert('RFQ Received. Halol Technical Engineering Desk will contact you within 24 hours.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-mono text-slate-300 uppercase mb-1">Full Name / Contact Person</label>
+<input class="w-full bg-industrial-navy border border-slate-700 rounded px-3 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-hyper-blue font-mono" placeholder="e.g. Dharmendra Sharma" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-mono text-slate-300 uppercase mb-1">Company / Enterprise Name</label>
+<input class="w-full bg-industrial-navy border border-slate-700 rounded px-3 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-hyper-blue font-mono" placeholder="e.g. Gujarat Polymer Logistics Ltd." required="" type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-mono text-slate-300 uppercase mb-1">Work Email</label>
+<input class="w-full bg-industrial-navy border border-slate-700 rounded px-3 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-hyper-blue font-mono" placeholder="procurement@company.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-xs font-mono text-slate-300 uppercase mb-1">Direct Phone / WhatsApp</label>
+<input class="w-full bg-industrial-navy border border-slate-700 rounded px-3 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-hyper-blue font-mono" placeholder="+91 98000 00000" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div>
+<label class="block text-xs font-mono text-slate-300 uppercase mb-1">Product Category</label>
+<select class="w-full bg-industrial-navy border border-slate-700 rounded px-3 py-2.5 text-xs text-white focus:outline-none focus:border-hyper-blue font-mono">
+<option>Stretch Wrap Film</option>
+<option>VCI Anti-Rust Film</option>
+<option>Heavy LDPE Liners</option>
+<option>ISPM-15 Timber Pallets</option>
+<option>Gusseted Box Shrouds</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-mono text-slate-300 uppercase mb-1">Estimated Gauge (μm)</label>
+<input class="w-full bg-industrial-navy border border-slate-700 rounded px-3 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-hyper-blue font-mono" placeholder="e.g. 50 Micron" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-mono text-slate-300 uppercase mb-1">Monthly Requirement</label>
+<input class="w-full bg-industrial-navy border border-slate-700 rounded px-3 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-hyper-blue font-mono" placeholder="e.g. 5 MT / Month" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-mono text-slate-300 uppercase mb-1">Technical Dimensions / Custom Application Notes</label>
+<textarea class="w-full bg-industrial-navy border border-slate-700 rounded px-3 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-hyper-blue font-mono" placeholder="Provide roll width, core size, dart-drop requirement, or timber pallet dimensions..." rows="3"></textarea>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+<div class="text-[11px] font-mono text-slate-400">
+                    * NDA Protected • Direct Manufacturer Mill-Pricing
+                  </div>
+<button class="w-full sm:w-auto bg-safety-orange hover:bg-orange-500 text-white font-mono text-xs font-bold uppercase tracking-wider px-8 py-3 rounded transition-all shadow-md" type="submit">
+                    Transmit Technical RFQ →
+                  </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ENGINEERING FOOTER -->
+<footer class="bg-industrial-navy text-white border-t border-slate-border font-mono text-xs">
+<div class="max-w-7xl mx-auto px-4 md:px-8 pt-16 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800">
+<!-- Corporate Identifier -->
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 bg-blueprint-dark border border-slate-700 flex items-center justify-center text-white font-mono font-bold">
+              DB
+            </div>
+<div>
+<span class="font-display font-bold text-base text-white tracking-tight block">DIMPLE BAGS &amp; SYNTHETICS</span>
+<span class="text-[10px] text-slate-400 block tracking-widest">A RAMDEV GROUP ENTERPRISE • EST. 2009</span>
+</div>
+</div>
+<p class="text-slate-400 text-xs leading-relaxed max-w-sm font-sans">
+            Heavy-gauge industrial extrusion, volatile corrosion inhibitor compounding, custom polymer shrouds, and certified heat-treated ISPM-15 packaging manufactured under strict ISO 9001:2015 frameworks.
+          </p>
+<div class="flex items-center gap-2 pt-1">
+<span class="bg-blueprint-dark px-2 py-1 border border-slate-700 rounded text-slate-300 text-[10px]">ISO 9001:2015</span>
+<span class="bg-blueprint-dark px-2 py-1 border border-slate-700 rounded text-slate-300 text-[10px]">IPPC IN-814-HT</span>
+<span class="bg-blueprint-dark px-2 py-1 border border-slate-700 rounded text-slate-300 text-[10px]">RoHS / REACH</span>
+</div>
+</div>
+<!-- Verticals Links -->
+<div class="space-y-3">
+<span class="text-safety-amber font-bold uppercase tracking-wider block">Polymer Systems</span>
+<ul class="space-y-2 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#verticals">LLDPE Stretch Films</a></li>
+<li><a class="hover:text-white transition-colors" href="#verticals">VCI Rust Barrier Bags</a></li>
+<li><a class="hover:text-white transition-colors" href="#verticals">Heavy Gusseted Box Covers</a></li>
+<li><a class="hover:text-white transition-colors" href="#verticals">Multi-layer Liner Tubing</a></li>
+<li><a class="hover:text-white transition-colors" href="#verticals">Conductive / Anti-Static Films</a></li>
+</ul>
+</div>
+<!-- Wood & Engineering -->
+<div class="space-y-3">
+<span class="text-safety-amber font-bold uppercase tracking-wider block">Timber &amp; Quality</span>
+<ul class="space-y-2 text-slate-400">
+<li><a class="hover:text-white transition-colors" href="#verticals">ISPM-15 Pine Pallets</a></li>
+<li><a class="hover:text-white transition-colors" href="#infrastructure">ASTM D882 Testing Lab</a></li>
+<li><a class="hover:text-white transition-colors" href="#infrastructure">Kiln Chamber Logging</a></li>
+<li><a class="hover:text-white transition-colors" href="#group">Ramdev Raw Materials</a></li>
+<li><a class="hover:text-white transition-colors" href="#rfq">Certificate of Analysis (COA)</a></li>
+</ul>
+</div>
+<!-- Factory Contact -->
+<div class="space-y-3">
+<span class="text-safety-amber font-bold uppercase tracking-wider block">Manufacturing Plant</span>
+<div class="text-slate-400 space-y-1.5 leading-relaxed text-[11px]">
+<p class="text-slate-300 font-semibold">Plot No. 814, GIDC Industrial Estate,</p>
+<p>Halol, Panchmahal, Gujarat – 389350</p>
+<p class="pt-2"><span class="text-slate-500">T:</span> +91-8128539646</p>
+<p><span class="text-slate-500">E:</span> admin@dimplebags.com</p>
+<p><span class="text-slate-500">Dispatch:</span> Mon–Sat 24 Hours</p>
+</div>
+</div>
+</div>
+<!-- Copyright & Technical Trace -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
+<div>
+          © 2026 Dimple Bags &amp; Synthetics Pvt. Ltd. All rights reserved. A Ramdev Group Company.
+        </div>
+<div class="flex items-center gap-4">
+<a class="hover:text-slate-300 transition-colors" href="#">ASTM Standards</a>
+<span>•</span>
+<a class="hover:text-slate-300 transition-colors" href="#">Phytosanitary Compliance</a>
+<span>•</span>
+<a class="hover:text-slate-300 transition-colors" href="#">Plant Security &amp; Safety</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Simple JavaScript for Tab Switching in Spec Matcher -->
+<script>
+    const specData = {
+      stretch: {
+        category: "CATEGORY: CAST & BLOWN LLDPE STRETCH",
+        astm: "ASTM D882 / D1709",
+        title: "Machine & Manual High-Yield Industrial Stretch Wrap",
+        desc: "Cast 3-layer and 5-layer co-extruded film with high elongation (up to 300%) and puncture resistance. Designed for securing heavy pallet loads during turbulent ocean transit and long-haul intermodal logistics.",
+        thickness: "12 to 50 Microns",
+        tensile: "> 35 MPa (MD/TD)",
+        yield: "Up to 300%",
+        resin: "100% Virgin Dow / Reliance Octene LLDPE",
+        width: "250mm, 500mm, 1000mm",
+        core: '3.0" (76mm) Heavy Paperboard',
+        lead: "48 Hours for Standard JIT Orders"
+      },
+      vci: {
+        category: "CATEGORY: ACTIVE VAPOR CORROSION INHIBITOR",
+        astm: "MIL-STD-3010 / DIN 51360",
+        title: "Molecular Anti-Oxidation VCI Ferrous & Non-Ferrous Films",
+        desc: "Formulated with non-toxic chemical vapor phase inhibitors continuously releasing micro-molecular shields onto metal surfaces. Protects auto crankshafts, bearings, and heavy coils without greasing or degreasing.",
+        thickness: "50 to 180 Microns",
+        tensile: "> 28 MPa Tensile",
+        yield: "Up to 24 Months Shield",
+        resin: "Blended LDPE + VCI Masterbatch (Nitrite-Free)",
+        width: "Rolls up to 2,000mm / Custom Bags",
+        core: '3.0" Moisture-Sealed Core',
+        lead: "3 to 5 Days Custom Extrusion Run"
+      },
+      liner: {
+        category: "CATEGORY: HEAVY-DUTY GUSSETED COVERS & LINERS",
+        astm: "IS 2508 / ASTM D1922",
+        title: "Industrial Bulk Container (IBC) & Drum Liners",
+        desc: "Engineered heavy-gauge polymer tubing, box shrouds, and flat bags specifically made to prevent moisture permeation, chemical weeping, and puncture during harsh industrial warehouse stacking.",
+        thickness: "40 to 250 Microns",
+        tensile: "> 450g Dart Impact",
+        yield: "Zero Pin-Hole Tolerance",
+        resin: "High-Molecular HM-HDPE & Virgin LDPE",
+        width: "Layflat up to 2,400mm (Gusset 6,000mm)",
+        core: "Loose Pack / Perforated on Roll",
+        lead: "48 to 72 Hours Batch Delivery"
+      },
+      pallets: {
+        category: "CATEGORY: HEAT TREATED TIMBER PACKAGING",
+        astm: "ISPM-15 / IPPC REG. IN-814-HT",
+        title: "Export Compliant Pine & Hardwood Pallets & Heavy Crates",
+        desc: "Kiln-dried industrial pine and tropical hardwood pallets subjected to minimum 56°C core heat treatment for 30+ minutes. Fully pest and pathogen-free for frictionless worldwide customs clearance.",
+        thickness: "Core Wood 56°C Chamber",
+        tensile: "Static Load: 4,500 KG",
+        yield: "Moisture < 18%",
+        resin: "Kiln Heat-Treated Pine / Heavy Hardwood",
+        width: "1200x1000mm, 1200x800mm, Custom",
+        core: "IPPC Official Stamped IN-814-HT",
+        lead: "Direct Truckload Dispatch from Halol Yard"
+      }
+    };
+
+    function setTab(tabKey) {
+      // Reset button styles
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-white', 'text-blueprint-blue', 'border-b-2', 'border-b-hyper-blue');
+        btn.classList.add('text-slate-600');
+      });
+
+      // Highlight active button
+      const activeBtn = document.getElementById(`tab-${tabKey}`);
+      if (activeBtn) {
+        activeBtn.classList.add('bg-white', 'text-blueprint-blue', 'border-b-2', 'border-b-hyper-blue');
+        activeBtn.classList.remove('text-slate-600');
+      }
+
+      // Populate data
+      const data = specData[tabKey];
+      if (data) {
+        document.getElementById('spec-category').textContent = data.category;
+        document.getElementById('spec-astm').textContent = data.astm;
+        document.getElementById('spec-title').textContent = data.title;
+        document.getElementById('spec-desc').textContent = data.desc;
+        document.getElementById('spec-thickness').textContent = data.thickness;
+        document.getElementById('spec-tensile').textContent = data.tensile;
+        document.getElementById('spec-yield').textContent = data.yield;
+
+        document.getElementById('box-resin').textContent = data.resin;
+        document.getElementById('box-width').textContent = data.width;
+        document.getElementById('box-core').textContent = data.core;
+        document.getElementById('box-lead').textContent = data.lead;
+      }
+    }
+  </script>
+</body></html>

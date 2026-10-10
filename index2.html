@@ -1,0 +1,3129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimple Bags & Synthetics Pvt. Ltd. | Heavy Industrial Packaging & Polymer Engineering</title>
+    <meta name="description" content="Dimple Bags & Synthetics Pvt. Ltd. (Since 2009) - Leading manufacturer of multi-layer LDPE stretch film, VCI anti-corrosion bags, heavy-gauge liners, corrugated boxes, and ISPM-15 wooden pallets in Halol GIDC, Gujarat.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==========================================================================
+           DIMPLE BAGS DESIGN SYSTEM (Inspired by Reference Industrial Layout)
+           Colors Harmonized with logo-hd2.png (Royal Blue #1657A8, Slate Gray #939598,
+           Warm Horse Bronze #8D4A27, High-Vis Industrial Safety Orange #FF5E14)
+           ========================================================================== */
+        :root {
+            /* Brand Identity Colors */
+            --brand-blue: #1657A8;          /* Primary Blue from Logo Wordmark */
+            --brand-blue-hover: #124484;
+            --brand-blue-light: #EBF3FC;
+            --brand-gray: #939598;          /* Slate Gray from "& SYNTHETICS PVT. LTD." */
+            --brand-bronze: #8D4A27;        /* Galloping Horse Bronze */
+            
+            /* High-Visibility Industrial Safety Accents (from Reference Image) */
+            --accent-orange: #FF5E14;       /* Energetic Industrial Safety Orange */
+            --accent-orange-hover: #E04D09;
+            --accent-orange-glow: rgba(255, 94, 20, 0.35);
+            --accent-amber: #F59E0B;
+            
+            /* Dark Industrial Surfaces & Blueprint Shades */
+            --bg-darkest: #0A0E17;          /* Root canvas */
+            --bg-dark: #101726;             /* Base dark industrial surface */
+            --bg-surface: #151E30;          /* Card & container dark */
+            --bg-surface-elevated: #1B263C; /* Elevated cards */
+            --bg-surface-hover: #22304C;
+            
+            /* Text & Contrast */
+            --text-white: #FFFFFF;
+            --text-heading: #F3F4F6;
+            --text-body: #9CA3AF;
+            --text-muted: #6B7280;
+            
+            /* Borders & Tech Lines */
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-card: rgba(255, 255, 255, 0.12);
+            --border-accent: rgba(255, 94, 20, 0.4);
+            --border-blue: rgba(22, 87, 168, 0.4);
+            
+            /* Shadows & Glassmorphism */
+            --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.35);
+            --shadow-bold: 0 12px 35px rgba(0, 0, 0, 0.6);
+            --shadow-orange: 0 8px 30px rgba(255, 94, 20, 0.28);
+            --shadow-blue: 0 8px 30px rgba(22, 87, 168, 0.25);
+            
+            /* Typography */
+            --font-display: 'Bebas Neue', sans-serif;
+            --font-heading: 'Space Grotesk', sans-serif;
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        /* --- Global Reset & Base Setup --- */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-darkest);
+            color: var(--text-body);
+            line-height: 1.65;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Technical Blueprint Grid Pattern */
+        .tech-grid-overlay {
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* Typography Presets */
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-white);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .display-font {
+            font-family: var(--font-display);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .mono-font {
+            font-family: var(--font-mono);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1360px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Section Headings Styling (Matching Reference) */
+        .section-header {
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto 60px;
+            position: relative;
+        }
+
+        .section-subtitle {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-family: var(--font-mono);
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-orange);
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle::before, .section-subtitle::after {
+            content: '';
+            display: inline-block;
+            width: 18px;
+            height: 2px;
+            background-color: var(--accent-orange);
+        }
+
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--text-white);
+            line-height: 1.15;
+            text-transform: capitalize;
+        }
+
+        .section-desc {
+            color: var(--text-body);
+            font-size: 1.05rem;
+            margin-top: 14px;
+            font-weight: 400;
+        }
+
+        /* Buttons & Interactive Elements (Matching Reference) */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 30px;
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .btn-orange {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, #D44707 100%);
+            color: #FFFFFF;
+            box-shadow: var(--shadow-orange);
+        }
+
+        .btn-orange:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(255, 94, 20, 0.45);
+            background: linear-gradient(135deg, #FF6F2E 0%, var(--accent-orange) 100%);
+        }
+
+        .btn-blue {
+            background: linear-gradient(135deg, var(--brand-blue) 0%, #0F3E7A 100%);
+            color: #FFFFFF;
+            box-shadow: var(--shadow-blue);
+        }
+
+        .btn-blue:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(22, 87, 168, 0.4);
+            background: linear-gradient(135deg, #1C6CD0 0%, var(--brand-blue) 100%);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-white);
+            border: 1px solid var(--border-card);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+            transform: translateY(-2px);
+        }
+
+        /* Circular Play Video Button */
+        .btn-play-trigger {
+            display: inline-flex;
+            align-items: center;
+            gap: 14px;
+            background: transparent;
+            border: none;
+            color: var(--text-white);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.25s ease;
+        }
+
+        .btn-play-trigger:hover {
+            color: var(--accent-orange);
+        }
+
+        .play-icon-pulse {
+            width: 52px;
+            height: 52px;
+            border-radius: 50%;
+            background: rgba(255, 94, 20, 0.15);
+            border: 2px solid var(--accent-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-orange);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .btn-play-trigger:hover .play-icon-pulse {
+            background: var(--accent-orange);
+            color: #FFFFFF;
+            transform: scale(1.08);
+            box-shadow: 0 0 25px var(--accent-orange-glow);
+        }
+
+        .play-icon-pulse::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            border: 2px solid var(--accent-orange);
+            animation: pulse-ring 2s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.6); opacity: 0; }
+        }
+
+        /* ==========================================================================
+           1. TOP METROLOGY & LIVE FACILITY STATUS BAR
+           ========================================================================== */
+        .top-bar {
+            background-color: #070A11;
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 8px 0;
+            font-family: var(--font-mono);
+            font-size: 0.76rem;
+            color: #8E99AA;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .live-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(16, 185, 129, 0.1);
+            padding: 2px 10px;
+            border-radius: 4px;
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            color: #34D399;
+            font-weight: 600;
+        }
+
+        .live-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #10B981;
+            animation: live-blink 1.4s infinite;
+        }
+
+        @keyframes live-blink {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.3; transform: scale(0.8); }
+        }
+
+        .top-bar-right {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .top-bar-right a {
+            color: #8E99AA;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-bar-right a:hover {
+            color: var(--accent-orange);
+        }
+
+        .top-badge {
+            background: rgba(255, 255, 255, 0.06);
+            padding: 2px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--border-subtle);
+            color: #CBD5E1;
+        }
+
+        /* ==========================================================================
+           2. MAIN NAVIGATION HEADER (Dark Glassmorphic, matching Reference)
+           ========================================================================== */
+        header.main-header {
+            position: sticky;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(13, 18, 28, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border-subtle);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 86px;
+        }
+
+        /* Company Logo Badge Container */
+        .brand-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .logo-badge {
+            background: #FFFFFF;
+            padding: 6px 14px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-badge:hover {
+            transform: scale(1.03);
+        }
+
+        .logo-badge img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        /* Main Navigation Links */
+        nav.nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        nav.nav-menu a {
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: #D1D5DB;
+            text-transform: capitalize;
+            letter-spacing: 0.3px;
+            position: relative;
+            padding: 6px 0;
+        }
+
+        nav.nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: var(--accent-orange);
+            transition: width 0.25s ease;
+        }
+
+        nav.nav-menu a:hover, nav.nav-menu a.active {
+            color: var(--text-white);
+        }
+
+        nav.nav-menu a:hover::after, nav.nav-menu a.active::after {
+            width: 100%;
+        }
+
+        /* Header Right Action Cluster */
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .icon-btn {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-card);
+            color: #CBD5E1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .icon-btn:hover {
+            background: rgba(255, 94, 20, 0.15);
+            border-color: var(--accent-orange);
+            color: var(--accent-orange);
+            transform: translateY(-2px);
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-white);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        /* ==========================================================================
+           3. HERO SECTION (Mirroring Reference Image Layout & Visual Drama)
+           ========================================================================== */
+        .hero-section {
+            position: relative;
+            min-height: 94vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(180deg, rgba(10, 14, 23, 0.8) 0%, rgba(10, 14, 23, 0.95) 100%),
+                        url('assets/hero_plant.jpg') center/cover no-repeat;
+            padding-top: 60px;
+            padding-bottom: 140px; /* Space for the floating cards */
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        /* Radial ambient light glows */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 94, 20, 0.15) 0%, rgba(22, 87, 168, 0.08) 50%, transparent 70%);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .hero-tagline {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #FBBF24;
+            margin-bottom: 20px;
+            background: rgba(245, 158, 11, 0.1);
+            padding: 6px 18px;
+            border-radius: 50px;
+            border: 1px solid rgba(245, 158, 11, 0.25);
+        }
+
+        /* Stenciled Bracket Headline (Exact Reference Motif) */
+        .hero-title-wrap {
+            position: relative;
+            margin-bottom: 28px;
+        }
+
+        .hero-bracket-top {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #E2E8F0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .hero-main-title {
+            font-family: var(--font-display);
+            font-size: 6.5rem;
+            line-height: 0.92;
+            color: var(--text-white);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-main-title span.accent-orange {
+            color: var(--accent-orange);
+            text-shadow: 0 0 35px rgba(255, 94, 20, 0.4);
+        }
+
+        /* Decorative bracket line graphics */
+        .bracket-decor-left, .bracket-decor-right {
+            position: absolute;
+            top: 50%;
+            width: 80px;
+            height: 2px;
+            background-color: var(--accent-orange);
+        }
+
+        .bracket-decor-left {
+            right: 102%;
+        }
+
+        .bracket-decor-left::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -12px;
+            width: 2px;
+            height: 26px;
+            background-color: var(--accent-orange);
+        }
+
+        .bracket-decor-right {
+            left: 102%;
+        }
+
+        .bracket-decor-right::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -12px;
+            width: 2px;
+            height: 26px;
+            background-color: var(--accent-orange);
+        }
+
+        .hero-desc {
+            font-size: 1.15rem;
+            color: #CBD5E1;
+            max-width: 720px;
+            margin: 0 auto 36px;
+            line-height: 1.7;
+            font-weight: 300;
+        }
+
+        .hero-cta-cluster {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+
+        /* ==========================================================================
+           4. FLOATING STATISTICAL METRIC CARDS (Exact 5-Card Layout from Reference)
+           ========================================================================== */
+        .floating-stats-wrapper {
+            position: relative;
+            margin-top: -85px;
+            z-index: 10;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+        }
+
+        .stat-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 28px 20px;
+            text-align: center;
+            box-shadow: var(--shadow-bold);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-orange);
+        }
+
+        /* Highlighted Stat Card (Second card highlighted in reference image) */
+        .stat-card.featured {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, #C43D00 100%);
+            border-color: #FFA07A;
+            box-shadow: 0 15px 35px rgba(255, 94, 20, 0.4);
+        }
+
+        .stat-card.featured .stat-number,
+        .stat-card.featured .stat-label,
+        .stat-card.featured .stat-icon {
+            color: #FFFFFF !important;
+        }
+
+        .stat-icon {
+            font-size: 2.2rem;
+            color: var(--accent-orange);
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+
+        .stat-number {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            line-height: 1;
+            color: var(--text-white);
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+
+        .stat-label {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-body);
+            text-transform: capitalize;
+        }
+
+        /* ==========================================================================
+           5. ABOUT & FACILITY SECTION (Layout Matching Reference Image)
+           ========================================================================== */
+        .about-section {
+            padding: 120px 0 100px;
+            background-color: var(--bg-darkest);
+            position: relative;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        /* Left Image with Circular Stamp Badge */
+        .about-visual-column {
+            position: relative;
+        }
+
+        .about-main-image-wrap {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid var(--border-card);
+            box-shadow: var(--shadow-bold);
+            height: 520px;
+        }
+
+        .about-main-image-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .about-main-image-wrap:hover img {
+            transform: scale(1.04);
+        }
+
+        /* Gold Circular Stamp Badge Overlapping Left Image */
+        .circular-stamp-badge {
+            position: absolute;
+            top: 40px;
+            left: -35px;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            border: 4px solid var(--accent-orange);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
+            animation: rotate-badge 28s linear infinite;
+        }
+
+        @keyframes rotate-badge {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .stamp-inner-content {
+            text-align: center;
+            color: var(--brand-blue);
+        }
+
+        .stamp-inner-content svg {
+            width: 44px;
+            height: 44px;
+            fill: var(--accent-orange);
+        }
+
+        .stamp-text {
+            font-family: var(--font-mono);
+            font-size: 0.62rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #0F172A;
+            margin-top: 4px;
+        }
+
+        /* Right Content Area */
+        .about-content-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .about-content-column .section-subtitle {
+            margin-bottom: 0;
+        }
+
+        .about-heading {
+            font-size: 2.6rem;
+            line-height: 1.15;
+            color: var(--text-white);
+        }
+
+        .about-lead {
+            font-size: 1.1rem;
+            color: #E2E8F0;
+            line-height: 1.7;
+        }
+
+        /* Interactive Capability Tabs */
+        .capability-tabs {
+            display: flex;
+            gap: 12px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-card);
+            color: var(--text-body);
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .tab-btn.active, .tab-btn:hover {
+            background: var(--accent-orange);
+            color: #FFFFFF;
+            border-color: var(--accent-orange);
+        }
+
+        /* Checklist Items */
+        .about-checklist {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 8px;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            font-size: 0.98rem;
+            color: #CBD5E1;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: rgba(255, 94, 20, 0.15);
+            border: 1px solid var(--accent-orange);
+            color: var(--accent-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.82rem;
+            font-weight: 800;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        /* Director Signature & Quote Box */
+        .director-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-card);
+            padding: 18px 24px;
+            border-radius: 12px;
+            margin-top: 14px;
+        }
+
+        .director-avatar {
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: var(--brand-blue);
+            border: 2px solid var(--accent-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .director-info h4 {
+            font-size: 1.05rem;
+            color: var(--text-white);
+            margin-bottom: 2px;
+        }
+
+        .director-info p {
+            font-size: 0.82rem;
+            font-family: var(--font-mono);
+            color: var(--accent-orange);
+        }
+
+        .about-actions {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            margin-top: 16px;
+        }
+
+        /* ==========================================================================
+           6. CLIENTS & CERTIFICATIONS LOGO TICKER (Reference Style)
+           ========================================================================== */
+        .partners-strip {
+            padding: 40px 0;
+            background: #0B0F19;
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .partners-title {
+            text-align: center;
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #64748B;
+            margin-bottom: 24px;
+        }
+
+        .ticker-grid {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            opacity: 0.75;
+        }
+
+        .partner-item {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #CBD5E1;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: opacity 0.25s ease;
+        }
+
+        .partner-item:hover {
+            opacity: 1;
+            color: var(--accent-orange);
+        }
+
+        /* ==========================================================================
+           7. CORE SERVICES & PRODUCTS SECTION ("We Are Quality General Service")
+           ========================================================================== */
+        .services-section {
+            padding: 120px 0;
+            background-color: var(--bg-dark);
+            position: relative;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .service-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-card);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow-bold);
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-orange);
+        }
+
+        /* Middle Active Card (from reference image) */
+        .service-card.highlighted {
+            border-color: var(--accent-orange);
+            box-shadow: 0 15px 40px rgba(255, 94, 20, 0.2);
+        }
+
+        .service-card.highlighted .service-header-strip {
+            background-color: var(--accent-orange);
+            color: #FFFFFF;
+        }
+
+        .service-img-wrap {
+            height: 240px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .service-card:hover .service-img-wrap img {
+            transform: scale(1.08);
+        }
+
+        .service-badge-icon {
+            position: absolute;
+            bottom: -24px;
+            right: 28px;
+            width: 54px;
+            height: 54px;
+            border-radius: 12px;
+            background: var(--accent-orange);
+            color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+            z-index: 3;
+        }
+
+        .service-content {
+            padding: 40px 30px 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-title {
+            font-size: 1.45rem;
+            color: var(--text-white);
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+
+        .service-desc {
+            font-size: 0.94rem;
+            color: var(--text-body);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .service-specs-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 28px;
+            flex-grow: 1;
+        }
+
+        .service-specs-list li {
+            font-size: 0.88rem;
+            color: #CBD5E1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-specs-list li::before {
+            content: '▪';
+            color: var(--accent-orange);
+            font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        /* Big Numbered Footer Tag (01, 02, 03 from Reference) */
+        .service-card-footer {
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .service-link {
+            font-size: 0.86rem;
+            font-weight: 700;
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .service-link:hover {
+            color: #FFFFFF;
+        }
+
+        .service-number {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            line-height: 1;
+            color: rgba(255, 255, 255, 0.12);
+        }
+
+        .services-bottom-action {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        /* ==========================================================================
+           8. WHY CHOOSE US ("Choose Central since 2003 Construction Region")
+           ========================================================================== */
+        .why-us-section {
+            padding: 120px 0;
+            background-color: var(--bg-darkest);
+            position: relative;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-us-text {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .features-2x2-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 24px;
+        }
+
+        .feature-box {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-card);
+            border-radius: 14px;
+            padding: 24px 20px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-box:hover {
+            border-color: var(--accent-orange);
+            transform: translateY(-4px);
+            background: var(--bg-surface-elevated);
+        }
+
+        .feature-box.featured-orange {
+            background: linear-gradient(135deg, rgba(255, 94, 20, 0.15) 0%, rgba(255, 94, 20, 0.05) 100%);
+            border-color: var(--accent-orange);
+        }
+
+        .feature-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 12px;
+        }
+
+        .feature-icon-circle {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: rgba(255, 94, 20, 0.15);
+            color: var(--accent-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+
+        .feature-box.featured-orange .feature-icon-circle {
+            background: var(--accent-orange);
+            color: #FFFFFF;
+        }
+
+        .feature-header h4 {
+            font-size: 1.15rem;
+            color: var(--text-white);
+        }
+
+        .feature-box p {
+            font-size: 0.88rem;
+            color: var(--text-body);
+            line-height: 1.55;
+        }
+
+        /* Right Specialist Photo with Geometric Framing */
+        .why-us-visual {
+            position: relative;
+        }
+
+        .why-us-frame {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid var(--accent-orange);
+            box-shadow: var(--shadow-bold);
+            height: 480px;
+        }
+
+        .why-us-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .experience-floating-pill {
+            position: absolute;
+            bottom: 30px;
+            right: -20px;
+            background: #FFFFFF;
+            color: #0F172A;
+            padding: 16px 26px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            border: 3px solid var(--accent-orange);
+            z-index: 4;
+        }
+
+        .exp-number {
+            font-family: var(--font-display);
+            font-size: 2.6rem;
+            color: var(--accent-orange);
+            line-height: 1;
+        }
+
+        .exp-text {
+            font-size: 0.82rem;
+            font-weight: 700;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        /* ==========================================================================
+           9. DEDICATED TECHNICAL TEAM / SPECIALISTS (Podium / Trapezoid Cards)
+           ========================================================================== */
+        .team-section {
+            padding: 120px 0;
+            background-color: var(--bg-dark);
+            position: relative;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        /* Distinctive Trapezoid Card Design from Reference */
+        .team-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-card);
+            border-radius: 18px;
+            padding: 30px 20px 24px;
+            text-align: center;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.35s ease;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .team-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-orange);
+        }
+
+        /* Highlighted Team Card (2nd card in reference image) */
+        .team-card.featured-leader {
+            border-color: var(--accent-orange);
+            background: linear-gradient(180deg, var(--bg-surface) 0%, rgba(255, 94, 20, 0.12) 100%);
+            box-shadow: 0 15px 35px rgba(255, 94, 20, 0.25);
+        }
+
+        .team-avatar-wrap {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid var(--border-card);
+            margin-bottom: 20px;
+            position: relative;
+            background: #1E293B;
+        }
+
+        .team-card.featured-leader .team-avatar-wrap {
+            border-color: var(--accent-orange);
+        }
+
+        .team-avatar-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .team-name {
+            font-size: 1.25rem;
+            color: var(--text-white);
+            margin-bottom: 4px;
+        }
+
+        .team-role {
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        .team-socials {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .social-circle {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.06);
+            color: #94A3B8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            transition: all 0.2s ease;
+        }
+
+        .social-circle:hover {
+            background: var(--accent-orange);
+            color: #FFFFFF;
+        }
+
+        /* ==========================================================================
+           10. FULL-WIDTH CALLOUT RIBBON ("We Provided Best Industry Services")
+           ========================================================================== */
+        .cta-ribbon-section {
+            background: linear-gradient(90deg, #101726 0%, #0B101D 100%);
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-ribbon-container {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+        }
+
+        .ribbon-left-visual {
+            width: 35%;
+            min-height: 160px;
+            background: url('assets/hero_plant.jpg') center/cover no-repeat;
+            position: relative;
+        }
+
+        .ribbon-left-visual::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent 0%, #101726 100%);
+        }
+
+        .ribbon-content-split {
+            flex-grow: 1;
+            padding: 40px 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background-color: var(--accent-orange);
+            color: #FFFFFF;
+            clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+        }
+
+        .ribbon-headline {
+            font-family: var(--font-heading);
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            line-height: 1.2;
+        }
+
+        .ribbon-btn {
+            background: #FFFFFF;
+            color: #0F172A;
+            padding: 14px 34px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.88rem;
+            white-space: nowrap;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .ribbon-btn:hover {
+            background: #0F172A;
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        /* ==========================================================================
+           11. RECENT PROJECTS & DISPATCHES ("Our Work Recent Projects")
+           ========================================================================== */
+        .projects-section {
+            padding: 120px 0;
+            background-color: var(--bg-darkest);
+        }
+
+        .projects-filter-bar {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-card);
+            color: #CBD5E1;
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--accent-orange);
+            color: #FFFFFF;
+            border-color: var(--accent-orange);
+        }
+
+        /* Grid Layout matching Reference Showcase */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 24px;
+        }
+
+        .project-card {
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            background: var(--bg-surface);
+            border: 1px solid var(--border-card);
+            height: 320px;
+            box-shadow: var(--shadow-subtle);
+        }
+
+        .project-card.tall {
+            grid-row: span 2;
+            height: 664px;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(10, 14, 23, 0.95) 0%, rgba(10, 14, 23, 0.4) 60%, transparent 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 26px;
+            opacity: 0.9;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+            background: linear-gradient(0deg, rgba(10, 14, 23, 0.98) 0%, rgba(255, 94, 20, 0.3) 100%);
+        }
+
+        .project-tag {
+            font-family: var(--font-mono);
+            font-size: 0.74rem;
+            font-weight: 700;
+            color: var(--accent-orange);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            color: #FFFFFF;
+            line-height: 1.25;
+        }
+
+        /* ==========================================================================
+           12. VIDEO BANNER & PERFORMANCE PROGRESS CIRCLES
+           ========================================================================== */
+        .video-metric-section {
+            padding: 120px 0 100px;
+            background: linear-gradient(180deg, rgba(16, 23, 38, 0.92) 0%, rgba(10, 14, 23, 0.98) 100%),
+                        url('assets/hero_plant.jpg') center/cover no-repeat;
+            position: relative;
+            border-top: 1px solid var(--border-subtle);
+            border-bottom: 1px solid var(--border-subtle);
+            text-align: center;
+        }
+
+        .video-headline-wrap {
+            max-width: 780px;
+            margin: 0 auto 60px;
+        }
+
+        .video-headline-wrap .play-icon-pulse {
+            margin: 0 auto 24px;
+            width: 72px;
+            height: 72px;
+        }
+
+        .video-headline-wrap .section-title {
+            font-size: 3rem;
+            margin-bottom: 16px;
+        }
+
+        /* 4 Circular Progress Gauge Bars from Reference Image */
+        .gauges-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .gauge-card {
+            background: #FFFFFF;
+            color: #0F172A;
+            padding: 34px 20px;
+            border-radius: 18px;
+            box-shadow: var(--shadow-bold);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .gauge-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .progress-circle {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: conic-gradient(var(--accent-orange) calc(var(--percent) * 1%), #E2E8F0 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+
+        .progress-circle::after {
+            content: '';
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: #FFFFFF;
+        }
+
+        .circle-text {
+            position: relative;
+            z-index: 2;
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            color: #0F172A;
+            line-height: 1;
+        }
+
+        .gauge-label {
+            font-size: 0.98rem;
+            font-weight: 700;
+            color: #0F172A;
+            text-transform: capitalize;
+        }
+
+        /* ==========================================================================
+           13. TECHNICAL BLOG & CASE STUDIES ("We Going Largest Our Blog")
+           ========================================================================== */
+        .blog-section {
+            padding: 120px 0;
+            background-color: var(--bg-darkest);
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .blog-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-card);
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: var(--shadow-subtle);
+            transition: all 0.35s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-orange);
+        }
+
+        .blog-thumb {
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .blog-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .blog-card:hover .blog-thumb img {
+            transform: scale(1.08);
+        }
+
+        .blog-date-tag {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: var(--accent-orange);
+            color: #FFFFFF;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .blog-body {
+            padding: 28px 24px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-meta {
+            display: flex;
+            gap: 16px;
+            font-family: var(--font-mono);
+            font-size: 0.78rem;
+            color: #94A3B8;
+            margin-bottom: 12px;
+        }
+
+        .blog-title {
+            font-size: 1.22rem;
+            color: var(--text-white);
+            margin-bottom: 14px;
+            line-height: 1.35;
+        }
+
+        .blog-read-more {
+            margin-top: auto;
+            color: var(--accent-orange);
+            font-size: 0.86rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .blog-read-more:hover {
+            color: #FFFFFF;
+        }
+
+        /* ==========================================================================
+           14. COMPREHENSIVE INDUSTRIAL FOOTER (Dark Theme with Watermark)
+           ========================================================================== */
+        footer.main-footer {
+            background-color: #060910;
+            border-top: 1px solid var(--border-subtle);
+            padding: 90px 0 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Subtle giant gear / factory watermark in background */
+        footer.main-footer::after {
+            content: '⚙';
+            position: absolute;
+            right: 40px;
+            bottom: -30px;
+            font-size: 24rem;
+            color: rgba(255, 255, 255, 0.015);
+            pointer-events: none;
+            line-height: 1;
+            font-family: sans-serif;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+            gap: 50px;
+            margin-bottom: 70px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-about p {
+            font-size: 0.94rem;
+            color: #94A3B8;
+            margin-top: 18px;
+            line-height: 1.7;
+        }
+
+        .footer-col-title {
+            font-size: 1.25rem;
+            color: #FFFFFF;
+            margin-bottom: 24px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-col-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 36px;
+            height: 2px;
+            background: var(--accent-orange);
+        }
+
+        .footer-links {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: #94A3B8;
+            font-size: 0.92rem;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-orange);
+            transform: translateX(4px);
+        }
+
+        .footer-contact-items {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            color: #CBD5E1;
+            font-size: 0.92rem;
+        }
+
+        .contact-icon {
+            color: var(--accent-orange);
+            font-size: 1.15rem;
+            margin-top: 2px;
+        }
+
+        .footer-newsletter-wrap {
+            margin-top: 16px;
+        }
+
+        .footer-input-group {
+            display: flex;
+            border-radius: 50px;
+            overflow: hidden;
+            border: 1px solid var(--border-card);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-input-group input {
+            background: transparent;
+            border: none;
+            padding: 12px 18px;
+            color: #FFFFFF;
+            font-family: var(--font-body);
+            font-size: 0.88rem;
+            outline: none;
+            flex-grow: 1;
+        }
+
+        .footer-input-group button {
+            background: var(--accent-orange);
+            color: #FFFFFF;
+            border: none;
+            padding: 0 20px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .footer-input-group button:hover {
+            background: var(--accent-orange-hover);
+        }
+
+        .footer-bottom-bar {
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            padding-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.84rem;
+            color: #64748B;
+            position: relative;
+            z-index: 2;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .footer-bottom-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        /* ==========================================================================
+           15. INTERACTIVE MODALS & TOAST NOTIFICATION
+           ========================================================================== */
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .modal-backdrop.active {
+            opacity: 1;
+            pointer-events: auto;
+            visibility: visible;
+        }
+
+        .modal-box {
+            background: var(--bg-surface-elevated);
+            border: 1px solid var(--border-card);
+            border-radius: 20px;
+            width: 100%;
+            max-width: 680px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+            position: relative;
+            padding: 40px;
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-backdrop.active .modal-box {
+            transform: scale(1);
+        }
+
+        .modal-close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #FFFFFF;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modal-close-btn:hover {
+            background: var(--accent-orange);
+        }
+
+        /* Modal Form Elements */
+        .modal-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin-top: 24px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .form-group.full-width {
+            grid-column: span 2;
+        }
+
+        .form-label {
+            font-size: 0.82rem;
+            font-family: var(--font-mono);
+            color: #CBD5E1;
+            font-weight: 600;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            background: #0D1424;
+            border: 1px solid var(--border-card);
+            padding: 12px 16px;
+            border-radius: 8px;
+            color: #FFFFFF;
+            font-family: var(--font-body);
+            font-size: 0.92rem;
+            outline: none;
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            border-color: var(--accent-orange);
+            box-shadow: 0 0 12px var(--accent-orange-glow);
+        }
+
+        /* Toast Popup Notification */
+        .toast-notification {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #10B981;
+            color: #FFFFFF;
+            padding: 16px 24px;
+            border-radius: 10px;
+            font-weight: 600;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 3000;
+            transform: translateY(120px);
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .toast-notification.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* ==========================================================================
+           RESPONSIVE MEDIA QUERIES (Mobile to Large Screens)
+           ========================================================================== */
+        @media (max-width: 1200px) {
+            .hero-main-title { font-size: 5rem; }
+            .bracket-decor-left, .bracket-decor-right { display: none; }
+            .stats-grid { grid-template-columns: repeat(3, 1fr); }
+            .team-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+        }
+
+        @media (max-width: 992px) {
+            .about-grid { grid-template-columns: 1fr; gap: 50px; }
+            .circular-stamp-badge { left: 20px; top: -30px; }
+            .why-us-grid { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+            .projects-grid { grid-template-columns: 1fr 1fr; }
+            .project-card.tall { grid-row: auto; height: 320px; }
+            .gauges-grid { grid-template-columns: 1fr 1fr; }
+            .blog-grid { grid-template-columns: 1fr; }
+            .ribbon-container { flex-direction: column; }
+            .ribbon-left-visual { display: none; }
+            .ribbon-content-split { clip-path: none; padding: 40px 30px; flex-direction: column; text-align: center; }
+            nav.nav-menu { display: none; }
+            .mobile-toggle { display: block; }
+        }
+
+        @media (max-width: 768px) {
+            .hero-main-title { font-size: 3.5rem; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .floating-stats-wrapper { margin-top: 0; padding-top: 40px; }
+            .projects-grid { grid-template-columns: 1fr; }
+            .gauges-grid { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .modal-form-grid { grid-template-columns: 1fr; }
+            .form-group.full-width { grid-column: span 1; }
+        }
+    </style>
+</head>
+<body class="tech-grid-overlay">
+
+    <!-- 1. TOP METROLOGY & LIVE FACILITY STATUS BAR -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+                <span class="live-indicator">
+                    <span class="live-dot"></span>
+                    PLANT 1 & 2 RUNNING 24/7 • HALOL GIDC, GUJARAT
+                </span>
+                <span style="opacity: 0.4;">|</span>
+                <span class="top-badge">A RAMDEV GROUP ENTERPRISE</span>
+                <span style="opacity: 0.4;">|</span>
+                <span>CO-EX ACCURACY ±2% • ASTM D882 / D1709 LAB TESTED</span>
+            </div>
+            <div class="top-bar-right">
+                <span class="top-badge">ISO 9001:2015</span>
+                <span class="top-badge">IPPC ISPM-15 HT</span>
+                <a href="tel:+918128539646">
+                    <span style="color: var(--accent-orange);">📞</span> +91-8128539646
+                </a>
+                <a href="mailto:info@dimplebags.in">
+                    <span>✉️</span> info@dimplebags.in
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. MAIN NAVIGATION HEADER -->
+    <header class="main-header" id="navbar">
+        <div class="container header-content">
+            <!-- Brand Logo with Crisp White Contrast Container -->
+            <a href="#hero" class="brand-logo-container">
+                <div class="logo-badge">
+                    <img src="logo-hd2.png" alt="Dimple Bags & Synthetics Logo" onerror="this.src='assets/logo_hd2.png'">
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="nav-menu">
+                <a href="#hero" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#team">Specialists</a>
+                <a href="#projects">Projects</a>
+                <a href="#insights">Insights</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <!-- Actions Cluster -->
+            <div class="header-actions">
+                <button class="icon-btn" onclick="openSpecSheetModal()" title="Download TDS Specifications">
+                    <span>📄</span>
+                </button>
+                <button class="icon-btn" onclick="openQuoteModal()" title="Search / Match Specifications">
+                    <span>🔍</span>
+                </button>
+                <button class="btn btn-orange" onclick="openQuoteModal()">
+                    <span>Contact Now</span>
+                    <span>→</span>
+                </button>
+                <button class="mobile-toggle" onclick="toggleMobileNav()" aria-label="Toggle navigation">
+                    ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. HERO SECTION (Matching Reference Image Visual Drama & Boldness) -->
+    <section class="hero-section" id="hero">
+        <div class="container hero-inner">
+            <span class="hero-tagline">HEAVY INDUSTRIAL POLYMER EXCELLENCE • EST. 2009</span>
+            
+            <div class="hero-title-wrap">
+                <div class="bracket-decor-left"></div>
+                <div class="hero-bracket-top">Building Safe Global Logistics</div>
+                <h1 class="hero-main-title">
+                    INDUSTRIAL <span class="accent-orange">PACKAGING</span> SOLUTIONS
+                </h1>
+                <div class="bracket-decor-right"></div>
+            </div>
+
+            <p class="hero-desc">
+                High-performance multi-layer stretch wrap, VCI molecular corrosion shields, heavy-gauge LDPE liners, 
+                and ISPM-15 wooden packaging engineered for zero-failure industrial logistics across India and global supply chains.
+            </p>
+
+            <div class="hero-cta-cluster">
+                <button class="btn btn-orange" onclick="openQuoteModal()">
+                    <span>Discover More</span>
+                    <span>→</span>
+                </button>
+                <button class="btn-play-trigger" onclick="openVideoTourModal()">
+                    <span class="play-icon-pulse">▶</span>
+                    <span>Watch Facility Tour</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FLOATING STATISTICAL METRIC CARDS (Exact 5-Card Layout from Reference) -->
+    <div class="floating-stats-wrapper">
+        <div class="container">
+            <div class="stats-grid">
+                <!-- Card 1 -->
+                <div class="stat-card">
+                    <div class="stat-icon">🏗️</div>
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">MT Polymer Annually</div>
+                </div>
+                <!-- Card 2 (Featured with orange background in reference) -->
+                <div class="stat-card featured">
+                    <div class="stat-icon">🏢</div>
+                    <div class="stat-number">450+</div>
+                    <div class="stat-label">Active Clients</div>
+                </div>
+                <!-- Card 3 -->
+                <div class="stat-card">
+                    <div class="stat-icon">🏭</div>
+                    <div class="stat-number">65,000</div>
+                    <div class="stat-label">Sq. Ft. Halol Plant</div>
+                </div>
+                <!-- Card 4 -->
+                <div class="stat-card">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-number">99.8%</div>
+                    <div class="stat-label">On-Time Despatch</div>
+                </div>
+                <!-- Card 5 -->
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Years of Mastery</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. ABOUT & FACILITY SECTION (Matching Reference Image Layout) -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Left Column Visual with Circular Rotating Gold/Bronze Badge -->
+                <div class="about-visual-column">
+                    <div class="circular-stamp-badge">
+                        <div class="stamp-inner-content">
+                            <span style="font-size: 1.8rem; display: block;">🛡️</span>
+                            <div class="stamp-text">ISO 9001<br>CERTIFIED</div>
+                        </div>
+                    </div>
+                    <div class="about-main-image-wrap">
+                        <img src="assets/vci_liners.jpg" alt="Dimple Bags Quality Inspection Halol">
+                    </div>
+                </div>
+
+                <!-- Right Column Content -->
+                <div class="about-content-column">
+                    <span class="section-subtitle">ABOUT DIMPLE BAGS</span>
+                    <h2 class="about-heading">Building Revolution For Heavy Industrial Packaging Facilities</h2>
+                    <p class="about-lead">
+                        As a trusted local and national packaging partner based in Halol GIDC, Gujarat, we engineer precision multi-layer polymer films and heavy protective packaging that defend your goods against moisture, puncture, corrosion, and transit stresses.
+                    </p>
+
+                    <!-- Interactive Capability Tabs -->
+                    <div class="capability-tabs">
+                        <button class="tab-btn active" onclick="switchAboutTab(this, 'extrusion')">Polymer Extrusion</button>
+                        <button class="tab-btn" onclick="switchAboutTab(this, 'vci')">VCI Technology</button>
+                        <button class="tab-btn" onclick="switchAboutTab(this, 'timber')">Heavy Pallets</button>
+                    </div>
+
+                    <!-- Dynamic Tab Checklist -->
+                    <ul class="about-checklist" id="about-checklist-container">
+                        <li class="checklist-item">
+                            <span class="check-icon">✓</span>
+                            <div><strong>100% Virgin Grade Resins:</strong> Processed from Reliance and IOCL polymers with uniform melt flow index.</div>
+                        </li>
+                        <li class="checklist-item">
+                            <span class="check-icon">✓</span>
+                            <div><strong>Micrometer Gauge Control:</strong> ±2% thickness tolerance across wide 2,400mm co-extrusion blown films.</div>
+                        </li>
+                        <li class="checklist-item">
+                            <span class="check-icon">✓</span>
+                            <div><strong>High Puncture & Tear Resistance:</strong> ASTM D882 certified tensile strength for rugged industrial freight.</div>
+                        </li>
+                    </ul>
+
+                    <!-- Director Quote & Credentials Card -->
+                    <div class="director-card">
+                        <div class="director-avatar">DB</div>
+                        <div class="director-info">
+                            <h4>Ramdev Group Enterprise</h4>
+                            <p>Plot No. 814, GIDC Estate, Halol, Gujarat</p>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <button class="btn btn-orange" onclick="openQuoteModal()">
+                            <span>Read More</span>
+                            <span>→</span>
+                        </button>
+                        <button class="btn-play-trigger" onclick="openVideoTourModal()">
+                            <span class="play-icon-pulse" style="width: 44px; height: 44px;">▶</span>
+                            <span>Watch Plant Video</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. CLIENTS & CERTIFICATIONS LOGO TICKER -->
+    <div class="partners-strip">
+        <div class="container">
+            <div class="partners-title">TRUSTED STANDARDS & SUPPLY PARTNERS</div>
+            <div class="ticker-grid">
+                <div class="partner-item"><span>🏅</span> ISO 9001:2015</div>
+                <div class="partner-item"><span>📦</span> IPPC ISPM-15</div>
+                <div class="partner-item"><span>🔬</span> ASTM D882 TESTED</div>
+                <div class="partner-item"><span>🛡️</span> REACH & RoHS COMPLIANT</div>
+                <div class="partner-item"><span>⚡</span> RELIANCE POLYMER ALLIANCE</div>
+                <div class="partner-item"><span>🏭</span> GIDC HALOL CHAMBER</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. CORE SERVICES & PRODUCTS ("We Are Quality General Service") -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">OUR PRIMARY VERTICALS</span>
+                <h2 class="section-title">We Provide Quality Industrial Packaging Services</h2>
+                <p class="section-desc">
+                    Comprehensive high-strength packaging engineered to reduce logistics loss, ensure corrosion immunity, and lower total packaging spend.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service Card 01 -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="assets/stretch_rolls.jpg" alt="LDPE Stretch Wrap Films">
+                        <div class="service-badge-icon">🌀</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Plastic Films & Multi-Layer Wraps</h3>
+                        <p class="service-desc">
+                            High-performance cast and blown stretch films with up to 300% pre-stretch yield, exceptional cling, and zero pinhole puncture resistance.
+                        </p>
+                        <ul class="service-specs-list">
+                            <li>Manual & Machine Grade Stretch Rolls</li>
+                            <li>UV-Stabilized Mulching & Agriculture Films</li>
+                            <li>High-Clarity Shrink Wrap Films</li>
+                            <li>15 to 50 Microns Custom Gauge</li>
+                        </ul>
+                        <div class="service-card-footer">
+                            <a href="#contact" onclick="openQuoteModal('Plastic Films')" class="service-link">Request Quote →</a>
+                            <span class="service-number">01</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 02 (Highlighted active card matching reference) -->
+                <div class="service-card highlighted">
+                    <div class="service-img-wrap">
+                        <img src="assets/vci_liners.jpg" alt="VCI Corrosion Protection Bags">
+                        <div class="service-badge-icon" style="background: #1657A8;">🛡️</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">VCI Anti-Corrosion & Heavy Liners</h3>
+                        <p class="service-desc">
+                            Molecular vapor corrosion inhibiting bags and jumbo box liners providing multi-metal preservation against sea moisture and monsoon humidity.
+                        </p>
+                        <ul class="service-specs-list">
+                            <li>VCI Bags, Rolls & 3D Gusseted Covers</li>
+                            <li>Heavy LDPE Sheets & High-Load Liners</li>
+                            <li>Biodegradable & Heavy Waste Sacks</li>
+                            <li>Corrosion Protection for Up to 24 Months</li>
+                        </ul>
+                        <div class="service-card-footer">
+                            <a href="#contact" onclick="openQuoteModal('VCI Bags & Liners')" class="service-link" style="color: #FF5E14;">Request Quote →</a>
+                            <span class="service-number" style="color: rgba(255, 94, 20, 0.4);">02</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 03 -->
+                <div class="service-card">
+                    <div class="service-img-wrap">
+                        <img src="assets/wooden_pallets.jpg" alt="ISPM-15 Wooden Pallets & Crates">
+                        <div class="service-badge-icon">🪵</div>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Industrial Wooden Boxes & Pallets</h3>
+                        <p class="service-desc">
+                            Certified ISPM-15 heat-treated pine and hardwood packaging designed to withstand extreme dynamic shipping loads and customs export rules.
+                        </p>
+                        <ul class="service-specs-list">
+                            <li>4-Way & 2-Way Export Wooden Pallets</li>
+                            <li>Heavy-Duty Wooden Boxes & Crates</li>
+                            <li>Corrugated Heavy Shippers & Mono-Cartons</li>
+                            <li>Heat Treated at 56°C for 30 Min IPPC</li>
+                        </ul>
+                        <div class="service-card-footer">
+                            <a href="#contact" onclick="openQuoteModal('Wooden Pallets & Boxes')" class="service-link">Request Quote →</a>
+                            <span class="service-number">03</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services-bottom-action">
+                <button class="btn btn-orange" onclick="openSpecSheetModal()">
+                    <span>View All Technical Specifications</span>
+                    <span>→</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. WHY CHOOSE US ("Choose Central since 2003 Construction Region") -->
+    <section class="why-us-section" id="why-us">
+        <div class="container">
+            <div class="why-us-grid">
+                <!-- Left 2x2 Feature Cluster -->
+                <div class="why-us-text">
+                    <span class="section-subtitle">WHY CHOOSE US</span>
+                    <h2 class="section-title">Choose Dimple Bags Since 2009 Industrial Excellence</h2>
+                    <p class="section-desc">
+                        Our integrated co-extrusion and packaging plant in Halol GIDC eliminates middleman markups while enforcing strict laboratory metrology on every single production run.
+                    </p>
+
+                    <div class="features-2x2-grid">
+                        <!-- Feature 1 -->
+                        <div class="feature-box">
+                            <div class="feature-header">
+                                <div class="feature-icon-circle">💰</div>
+                                <h4>Direct Mill Pricing</h4>
+                            </div>
+                            <p>Save 15% to 30% by buying directly from the primary co-extrusion converter with zero intermediate distribution layers.</p>
+                        </div>
+
+                        <!-- Feature 2 (Highlighted orange in reference) -->
+                        <div class="feature-box featured-orange">
+                            <div class="feature-header">
+                                <div class="feature-icon-circle">⚙️</div>
+                                <h4>Flexible Production</h4>
+                            </div>
+                            <p>Rapid run-time adjustments from custom micron thickness to specialized slitting widths delivered within 48 to 72 hours.</p>
+                        </div>
+
+                        <!-- Feature 3 -->
+                        <div class="feature-box">
+                            <div class="feature-header">
+                                <div class="feature-icon-circle">🚚</div>
+                                <h4>24/7 Dedicated Logistics</h4>
+                            </div>
+                            <p>Private company transport fleet guaranteeing uninterrupted doorstep delivery across Gujarat, Maharashtra, and North India.</p>
+                        </div>
+
+                        <!-- Feature 4 -->
+                        <div class="feature-box">
+                            <div class="feature-header">
+                                <div class="feature-icon-circle">🔬</div>
+                                <h4>On-Site ASTM Testing</h4>
+                            </div>
+                            <p>In-house laboratory equipped for Dart Drop Impact (ASTM D1709) and Elongation Yield (ASTM D882) verification.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual with Experience Pill -->
+                <div class="why-us-visual">
+                    <div class="why-us-frame">
+                        <img src="assets/wooden_pallets.jpg" alt="Packaging Specialist at Dimple Bags Halol">
+                    </div>
+                    <div class="experience-floating-pill">
+                        <div class="exp-number">15+</div>
+                        <div class="exp-text">Years of Industrial<br>Packaging Mastery</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. DEDICATED TECHNICAL SPECIALISTS (Trapezoid / Podium Cards) -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">MEET OUR EXPERTS</span>
+                <h2 class="section-title">Our Dedicated Engineering Team</h2>
+                <p class="section-desc">
+                    Decades of combined polymer engineering and logistical expertise ensuring your packaging protects your cargo with zero failures.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Team Member 1 -->
+                <div class="team-card">
+                    <div class="team-avatar-wrap">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Plant Operations Head">
+                    </div>
+                    <h3 class="team-name">Rajesh Patel</h3>
+                    <span class="team-role">Head of Plant Operations</span>
+                    <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 16px;">Over 22 years overseeing co-extrusion throughput & plant uptime.</p>
+                    <div class="team-socials">
+                        <a href="tel:+918128539646" class="social-circle">📞</a>
+                        <a href="mailto:info@dimplebags.in" class="social-circle">✉️</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 (Featured card from reference image) -->
+                <div class="team-card featured-leader">
+                    <div class="team-avatar-wrap">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80" alt="Polymer Lab Director">
+                    </div>
+                    <h3 class="team-name">Bhavin Shah</h3>
+                    <span class="team-role">Polymer QC & Formulation Lead</span>
+                    <p style="font-size: 0.85rem; color: #E2E8F0; margin-bottom: 16px;">Specialist in resin blending, VCI molecular additives & stretch ratios.</p>
+                    <div class="team-socials">
+                        <a href="tel:+918128539646" class="social-circle" style="background: var(--accent-orange); color: white;">📞</a>
+                        <a href="mailto:info@dimplebags.in" class="social-circle" style="background: var(--accent-orange); color: white;">✉️</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card">
+                    <div class="team-avatar-wrap">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Dispatch Logistics Manager">
+                    </div>
+                    <h3 class="team-name">Mukesh Prajapati</h3>
+                    <span class="team-role">Senior Dispatch & Freight Head</span>
+                    <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 16px;">Directs 24/7 fleet deliveries ensuring on-time supply continuity.</p>
+                    <div class="team-socials">
+                        <a href="tel:+918128539646" class="social-circle">📞</a>
+                        <a href="mailto:info@dimplebags.in" class="social-circle">✉️</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card">
+                    <div class="team-avatar-wrap">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Technical Specifications Consultant">
+                    </div>
+                    <h3 class="team-name">Suresh Verma</h3>
+                    <span class="team-role">Technical Specifications Consultant</span>
+                    <p style="font-size: 0.85rem; color: #94A3B8; margin-bottom: 16px;">Consults enterprise buyers on optimum micron gauges and box sizing.</p>
+                    <div class="team-socials">
+                        <a href="tel:+918128539646" class="social-circle">📞</a>
+                        <a href="mailto:info@dimplebags.in" class="social-circle">✉️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. FULL-WIDTH CALLOUT RIBBON ("We Provided Best Industry Services") -->
+    <section class="cta-ribbon-section">
+        <div class="cta-ribbon-container">
+            <div class="ribbon-left-visual"></div>
+            <div class="ribbon-content-split">
+                <div class="ribbon-headline">
+                    We Provide The Best Industrial Packaging Solutions For Your Business
+                </div>
+                <button class="ribbon-btn" onclick="openQuoteModal()">
+                    Contact Now →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. RECENT PROJECTS & INDUSTRIAL DISPATCHES ("Our Work Recent Projects") -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">DISPATCH PORTFOLIO</span>
+                <h2 class="section-title">Our High-Volume Industrial Executions</h2>
+                <p class="section-desc">
+                    Explore real-world packaging dispatches for automotive, heavy equipment, agricultural, and export shipping clients.
+                </p>
+            </div>
+
+            <!-- Category Filter Tabs -->
+            <div class="projects-filter-bar">
+                <button class="filter-btn active" onclick="filterProjects(this, 'all')">All Dispatches</button>
+                <button class="filter-btn" onclick="filterProjects(this, 'stretch')">Stretch Films</button>
+                <button class="filter-btn" onclick="filterProjects(this, 'vci')">VCI Corrosion</button>
+                <button class="filter-btn" onclick="filterProjects(this, 'pallets')">Wooden Pallets</button>
+                <button class="filter-btn" onclick="filterProjects(this, 'boxes')">Custom Boxes</button>
+            </div>
+
+            <!-- Dynamic Project Grid (Matching Reference Layout) -->
+            <div class="projects-grid">
+                <!-- Project 1 (Tall Card on Left) -->
+                <div class="project-card tall" data-cat="stretch">
+                    <img src="assets/stretch_rolls.jpg" alt="Automated Pallet Wrapping Run">
+                    <div class="project-overlay">
+                        <span class="project-tag">Automated Logistics</span>
+                        <h3 class="project-title">High-Tensile Machine Stretch Wrapping for Heavy Pallet Freight</h3>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-cat="vci">
+                    <img src="assets/vci_liners.jpg" alt="VCI Anti-Corrosion Protection">
+                    <div class="project-overlay">
+                        <span class="project-tag">Automotive Export</span>
+                        <h3 class="project-title">Precision VCI Gusseted Bags for Engine Blocks & Transmissions</h3>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-cat="pallets">
+                    <img src="assets/wooden_pallets.jpg" alt="ISPM-15 Heat Treated Pallet">
+                    <div class="project-overlay">
+                        <span class="project-tag">Heavy Engineering</span>
+                        <h3 class="project-title">Custom Heavy-Duty Pine Pallets for Sea Container Freight</h3>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card" data-cat="boxes">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80" alt="Corrugated Box Batch">
+                    <div class="project-overlay">
+                        <span class="project-tag">Pharma & Chemicals</span>
+                        <h3 class="project-title">Multi-Wall Heavy Corrugated Master Cartons with Moisture Shields</h3>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card" data-cat="stretch">
+                    <img src="assets/hero_plant.jpg" alt="Mulch & Agricultural Film Run">
+                    <div class="project-overlay">
+                        <span class="project-tag">Agri-Industrial</span>
+                        <h3 class="project-title">Silver-Black Heavy Agricultural Mulch Film for Saurashtra Farms</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. VIDEO BANNER & PERFORMANCE PROGRESS CIRCLES (Reference Motif) -->
+    <section class="video-metric-section">
+        <div class="container">
+            <div class="video-headline-wrap">
+                <button class="play-icon-pulse" onclick="openVideoTourModal()" aria-label="Play video">
+                    ▶
+                </button>
+                <span class="section-subtitle" style="color: #FBBF24;">PLANT METROLOGY TOUR</span>
+                <h2 class="section-title">Great Experience For This Video Tour</h2>
+                <p class="section-desc" style="color: #CBD5E1;">
+                    Witness how our state-of-the-art Halol co-extrusion blown film lines maintain ±2% gauge uniformity at peak throughput speeds.
+                </p>
+                <button class="btn btn-orange" onclick="openVideoTourModal()" style="margin-top: 20px;">
+                    <span>Watch Full Facility Tour</span>
+                    <span>→</span>
+                </button>
+            </div>
+
+            <!-- 4 Circular Progress Gauge Bars from Reference Image -->
+            <div class="gauges-grid">
+                <!-- Gauge 1 -->
+                <div class="gauge-card">
+                    <div class="progress-circle" style="--percent: 92;">
+                        <span class="circle-text">92%</span>
+                    </div>
+                    <span class="gauge-label">Virgin Polymer Purity</span>
+                </div>
+
+                <!-- Gauge 2 -->
+                <div class="gauge-card">
+                    <div class="progress-circle" style="--percent: 88;">
+                        <span class="circle-text">88%</span>
+                    </div>
+                    <span class="gauge-label">Customer Cost Savings</span>
+                </div>
+
+                <!-- Gauge 3 -->
+                <div class="gauge-card">
+                    <div class="progress-circle" style="--percent: 95;">
+                        <span class="circle-text">95%</span>
+                    </div>
+                    <span class="gauge-label">Pre-Stretch Elasticity</span>
+                </div>
+
+                <!-- Gauge 4 -->
+                <div class="gauge-card">
+                    <div class="progress-circle" style="--percent: 99;">
+                        <span class="circle-text">99%</span>
+                    </div>
+                    <span class="gauge-label">On-Schedule Despatch</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. TECHNICAL BLOG & CASE STUDIES ("We Going Largest Our Blog") -->
+    <section class="blog-section" id="insights">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">PACKAGING INTELLIGENCE</span>
+                <h2 class="section-title">Latest Technical Packaging Articles</h2>
+                <p class="section-desc">
+                    Actionable technical guides on polymer specification, corrosion inhibition chemistry, and export logistics compliance.
+                </p>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog 1 -->
+                <article class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="assets/stretch_rolls.jpg" alt="Stretch Film Calculation">
+                        <span class="blog-date-tag">OCT 2026</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>👤 By Polymer Lab</span>
+                            <span>💬 Case Study</span>
+                        </div>
+                        <h3 class="blog-title">
+                            Optimizing Stretch Film Pre-Stretch Ratios to Cut Industrial Freight Weight by 30%
+                        </h3>
+                        <p style="font-size: 0.9rem; color: #94A3B8; margin-bottom: 20px;">
+                            Learn how upgrading from standard 23 micron to high-yield 19 micron co-ex film lowers wrapping cost per pallet.
+                        </p>
+                        <a href="javascript:void(0)" onclick="openSpecSheetModal()" class="blog-read-more">Read Technical Paper →</a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="assets/vci_liners.jpg" alt="VCI Corrosion Mechanism">
+                        <span class="blog-date-tag">SEP 2026</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>👤 By Quality Head</span>
+                            <span>💬 Whitepaper</span>
+                        </div>
+                        <h3 class="blog-title">
+                            How VCI Molecular Inhibitors Protect Machined Automotive Parts in Monsoon Shipping
+                        </h3>
+                        <p style="font-size: 0.9rem; color: #94A3B8; margin-bottom: 20px;">
+                            A molecular analysis of vapor phase ionic protection inside sealed LDPE liners during containerized sea transit.
+                        </p>
+                        <a href="javascript:void(0)" onclick="openSpecSheetModal()" class="blog-read-more">Read Technical Paper →</a>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card">
+                    <div class="blog-thumb">
+                        <img src="assets/wooden_pallets.jpg" alt="ISPM 15 Guidelines">
+                        <span class="blog-date-tag">AUG 2026</span>
+                    </div>
+                    <div class="blog-body">
+                        <div class="blog-meta">
+                            <span>👤 By Logistics Desk</span>
+                            <span>💬 Compliance</span>
+                        </div>
+                        <h3 class="blog-title">
+                            ISPM-15 Heat Treatment Protocols: Navigating North American & EU Customs Cleared Pallets
+                        </h3>
+                        <p style="font-size: 0.9rem; color: #94A3B8; margin-bottom: 20px;">
+                            Core requirements for 56°C core-wood heat treatment stamps and documentation required to avoid shipment rejections.
+                        </p>
+                        <a href="javascript:void(0)" onclick="openSpecSheetModal()" class="blog-read-more">Read Technical Paper →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 14. COMPREHENSIVE INDUSTRIAL FOOTER (Dark Theme with Watermark) -->
+    <footer class="main-footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Col 1: Brand Info -->
+                <div class="footer-about">
+                    <div class="logo-badge" style="display: inline-block;">
+                        <img src="logo-hd2.png" alt="Dimple Bags Logo" style="height: 48px;">
+                    </div>
+                    <p>
+                        Leading industrial packaging manufacturer specializing in multi-layer LDPE stretch films, VCI anti-corrosion barrier bags, and ISPM-15 export wooden pallets.
+                    </p>
+                    <div style="margin-top: 18px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-orange);">
+                        ★ A RAMDEV GROUP ENTERPRISE • SINCE 2009
+                    </div>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div>
+                    <h4 class="footer-col-title">Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Home Facility</a></li>
+                        <li><a href="#about">About Company</a></li>
+                        <li><a href="#services">Primary Verticals</a></li>
+                        <li><a href="#why-us">The Dimple Advantage</a></li>
+                        <li><a href="#team">Technical Specialists</a></li>
+                        <li><a href="#projects">Recent Dispatches</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Product Verticals -->
+                <div>
+                    <h4 class="footer-col-title">Packaging Lines</h4>
+                    <ul class="footer-links">
+                        <li><a href="javascript:void(0)" onclick="openQuoteModal('Stretch Wrap Films')">LDPE Stretch Films</a></li>
+                        <li><a href="javascript:void(0)" onclick="openQuoteModal('VCI Bags & Rolls')">VCI Molecular Bags</a></li>
+                        <li><a href="javascript:void(0)" onclick="openQuoteModal('Heavy LD Liners')">Heavy LDPE Liners</a></li>
+                        <li><a href="javascript:void(0)" onclick="openQuoteModal('ISPM Wooden Pallets')">ISPM-15 Heat Pallets</a></li>
+                        <li><a href="javascript:void(0)" onclick="openQuoteModal('Corrugated Packaging')">Heavy Shippers & Boxes</a></li>
+                        <li><a href="javascript:void(0)" onclick="openQuoteModal('Mulch Agricultural Films')">Agricultural Mulch Films</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Facility Contact & Direct RFQ -->
+                <div>
+                    <h4 class="footer-col-title">Plant Contacts</h4>
+                    <div class="footer-contact-items">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Plot No. 814, GIDC Estate, Halol, Panch Mahals - 389350, Gujarat, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>+91-8128539646 / 24/7 Operations</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <span>info@dimplebags.in</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-newsletter-wrap">
+                        <div style="font-size: 0.82rem; color: #94A3B8; margin-bottom: 8px;">Request Immediate Spec Sheet:</div>
+                        <form class="footer-input-group" onsubmit="handleQuickSubscribe(event)">
+                            <input type="email" id="quickEmail" placeholder="Enter your work email" required>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="footer-bottom-bar">
+                <div>
+                    © 2026 Dimple Bags & Synthetics Pvt. Ltd. All Rights Reserved. ISO 9001:2015 Registered.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="javascript:void(0)" onclick="openSpecSheetModal()">Technical Terms</a>
+                    <a href="javascript:void(0)" onclick="openQuoteModal()">Privacy Policy</a>
+                    <a href="javascript:void(0)" onclick="openQuoteModal()">Direct Factory RFQ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================================
+         MODAL 1: INTERACTIVE RFQ / ESTIMATE GENERATOR
+         ========================================================================== -->
+    <div class="modal-backdrop" id="quoteModal">
+        <div class="modal-box">
+            <button class="modal-close-btn" onclick="closeQuoteModal()">✕</button>
+            <span class="section-subtitle">FACTORY DIRECT INQUIRY</span>
+            <h2 style="font-size: 1.8rem; margin-bottom: 8px;">Request Customized Packaging Quote</h2>
+            <p style="font-size: 0.92rem; color: #94A3B8;">Fill in your required technical specifications. Our Halol engineering desk responds within 2 business hours.</p>
+
+            <form onsubmit="handleQuoteSubmit(event)">
+                <div class="modal-form-grid">
+                    <div class="form-group">
+                        <label class="form-label">Full Name / Contact Person</label>
+                        <input type="text" class="form-input" placeholder="e.g. Rajesh Kumar" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Company / Enterprise Name</label>
+                        <input type="text" class="form-input" placeholder="e.g. Apex Engineering Ltd." required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Work Email Address</label>
+                        <input type="email" class="form-input" placeholder="rajesh@apexcorp.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Direct Phone / WhatsApp</label>
+                        <input type="tel" class="form-input" placeholder="+91 98765 43210" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Packaging Category</label>
+                        <select class="form-select" id="quoteCategorySelect">
+                            <option value="Stretch Wrap Films">LDPE Stretch Wrap Films</option>
+                            <option value="VCI Anti-Corrosion Bags">VCI Anti-Corrosion Bags & Liners</option>
+                            <option value="Heavy LDPE Sheets">Heavy LDPE Plastic Sheets & Rolls</option>
+                            <option value="Wooden Pallets & Crates">ISPM-15 Wooden Pallets & Crates</option>
+                            <option value="Agricultural Mulch Films">Agricultural Mulch Films</option>
+                            <option value="Corrugated Master Cartons">Corrugated Heavy Boxes</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Estimated Monthly Volume</label>
+                        <select class="form-select">
+                            <option value="Trial Batch">Trial Run / Sample Verification</option>
+                            <option value="1-5 MT">1 to 5 Metric Tons / Month</option>
+                            <option value="5-20 MT">5 to 20 Metric Tons / Month</option>
+                            <option value="20+ MT">20+ Metric Tons Bulk Mill Order</option>
+                        </select>
+                    </div>
+                    <div class="form-group full-width">
+                        <label class="form-label">Required Dimensions, Gauge & Custom Notes</label>
+                        <textarea class="form-textarea" rows="3" placeholder="Specify gauge (microns), roll width, pallet dimensions, or target delivery location..."></textarea>
+                    </div>
+                </div>
+
+                <div style="margin-top: 24px; display: flex; justify-content: flex-end; gap: 14px;">
+                    <button type="button" class="btn btn-outline" onclick="closeQuoteModal()">Cancel</button>
+                    <button type="submit" class="btn btn-orange">Submit Factory RFQ</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         MODAL 2: ASTM TECHNICAL DATA SHEET (TDS)
+         ========================================================================== -->
+    <div class="modal-backdrop" id="specModal">
+        <div class="modal-box" style="max-width: 820px;">
+            <button class="modal-close-btn" onclick="closeSpecSheetModal()">✕</button>
+            <span class="section-subtitle">LAB METROLOGY STANDARDS</span>
+            <h2 style="font-size: 1.8rem; margin-bottom: 14px;">Dimple Bags Technical Data Sheet (ASTM)</h2>
+            <p style="font-size: 0.92rem; color: #94A3B8; margin-bottom: 20px;">Tested under ambient factory conditioning (23°C ± 2°C, 50% RH) in compliance with international export standards.</p>
+
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 0.88rem; color: #CBD5E1;">
+                    <thead>
+                        <tr style="background: #111A2E; border-bottom: 2px solid var(--accent-orange); color: #FFFFFF;">
+                            <th style="padding: 12px;">Property / Parameter</th>
+                            <th style="padding: 12px;">Test Protocol</th>
+                            <th style="padding: 12px;">Machine Dir. (MD)</th>
+                            <th style="padding: 12px;">Transverse Dir. (TD)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--border-card);">
+                            <td style="padding: 12px;"><strong>Tensile Strength at Break</strong></td>
+                            <td style="padding: 12px; font-family: var(--font-mono);">ASTM D882</td>
+                            <td style="padding: 12px; color: #34D399;">38.5 MPa</td>
+                            <td style="padding: 12px; color: #34D399;">29.2 MPa</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-card);">
+                            <td style="padding: 12px;"><strong>Elongation at Break</strong></td>
+                            <td style="padding: 12px; font-family: var(--font-mono);">ASTM D882</td>
+                            <td style="padding: 12px;">480%</td>
+                            <td style="padding: 12px;">640%</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-card);">
+                            <td style="padding: 12px;"><strong>Dart Impact Resistance</strong></td>
+                            <td style="padding: 12px; font-family: var(--font-mono);">ASTM D1709</td>
+                            <td style="padding: 12px;" colspan="2">> 180 Grams (F50)</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-card);">
+                            <td style="padding: 12px;"><strong>VCI Anti-Corrosion Efficiency</strong></td>
+                            <td style="padding: 12px; font-family: var(--font-mono);">MIL-PRF-22019</td>
+                            <td style="padding: 12px; color: #34D399;" colspan="2">Grade A Pass (Steel, Copper, Brass)</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--border-card);">
+                            <td style="padding: 12px;"><strong>Timber Core Heat Treatment</strong></td>
+                            <td style="padding: 12px; font-family: var(--font-mono);">IPPC ISPM-15</td>
+                            <td style="padding: 12px; color: #34D399;" colspan="2">56°C for 30 Min Continuous Kiln</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="margin-top: 28px; display: flex; justify-content: flex-end; gap: 14px;">
+                <button class="btn btn-orange" onclick="triggerDownloadTds()">
+                    <span>Download Official PDF Spec</span>
+                    <span>⬇</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========================================================================
+         MODAL 3: FACILITY VIDEO TOUR SIMULATION
+         ========================================================================== -->
+    <div class="modal-backdrop" id="videoModal">
+        <div class="modal-box" style="max-width: 860px; padding: 24px;">
+            <button class="modal-close-btn" onclick="closeVideoTourModal()">✕</button>
+            <div style="position: relative; border-radius: 12px; overflow: hidden; background: #000; aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center;">
+                <img src="assets/hero_plant.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.6;" alt="Dimple Bags Plant Tour">
+                <div style="position: absolute; text-align: center; color: white; padding: 20px;">
+                    <span style="font-size: 3.5rem; display: block; margin-bottom: 10px; color: var(--accent-orange);">▶</span>
+                    <h3 style="font-size: 1.6rem; margin-bottom: 8px;">Halol High-Speed Co-Extrusion Line 1 & 2</h3>
+                    <p style="font-size: 0.9rem; color: #CBD5E1; max-width: 500px; margin: 0 auto;">Live operational walkthrough of virgin resin dosing, bubble extrusion, corona treatment, and automated slitting.</p>
+                </div>
+            </div>
+            <div style="margin-top: 18px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 0.8rem; color: #94A3B8;">
+                <span>DIMPLE BAGS & SYNTHETICS • HALOL GIDC PLOT 814</span>
+                <button class="btn btn-outline" style="padding: 8px 18px;" onclick="closeVideoTourModal()">Close Preview</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast-notification" id="toast">
+        <span style="font-size: 1.3rem;">✓</span>
+        <span id="toastMsg">Inquiry dispatched to Dimple Bags technical desk!</span>
+    </div>
+
+    <!-- ==========================================================================
+         JAVASCRIPT CONTROLLERS (Modal handling, Project Filter, Toast alerts)
+         ========================================================================== -->
+    <script>
+        // --- Navigation Scroll Effect ---
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('navbar');
+            if (window.scrollY > 40) {
+                header.style.background = 'rgba(10, 14, 23, 0.96)';
+                header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.5)';
+            } else {
+                header.style.background = 'rgba(13, 18, 28, 0.88)';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // --- Mobile Menu Toggle ---
+        function toggleMobileNav() {
+            const nav = document.querySelector('nav.nav-menu');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+                nav.style.flexDirection = 'column';
+                nav.style.position = 'absolute';
+                nav.style.top = '86px';
+                nav.style.left = '0';
+                nav.style.width = '100%';
+                nav.style.background = '#0F1626';
+                nav.style.padding = '24px';
+                nav.style.borderBottom = '1px solid var(--border-card)';
+            }
+        }
+
+        // --- About Capability Tabs Content Switcher ---
+        function switchAboutTab(btn, type) {
+            document.querySelectorAll('.capability-tabs .tab-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const container = document.getElementById('about-checklist-container');
+            if (type === 'extrusion') {
+                container.innerHTML = `
+                    <li class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div><strong>100% Virgin Grade Resins:</strong> Processed from Reliance and IOCL polymers with uniform melt flow index.</div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div><strong>Micrometer Gauge Control:</strong> ±2% thickness tolerance across wide 2,400mm co-extrusion blown films.</div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div><strong>High Puncture & Tear Resistance:</strong> ASTM D882 certified tensile strength for rugged industrial freight.</div>
+                    </li>
+                `;
+            } else if (type === 'vci') {
+                container.innerHTML = `
+                    <li class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div><strong>Vapor Phase Ionic Shield:</strong> Active molecular chemistry passivates ferrous and non-ferrous metals.</div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div><strong>24-Month Corrosion Protection:</strong> Keeps marine freight rust-free without messy grease or oil dips.</div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div><strong>Non-Toxic RoHS Compliant:</strong> Recyclable and safe for automotive assembly floor operations.</div>
+                    </li>
+                `;
+            } else if (type === 'timber') {
+                container.innerHTML = `
+                    <li class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div><strong>ISPM-15 Heat Treated:</strong> Certified 56°C core treatment for 30 minutes with official HT stencil.</div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div><strong>High Load Capacity:</strong> Static load handling up to 3,500 kg and dynamic forklift load up to 1,500 kg.</div>
+                    </li>
+                    <li class="checklist-item">
+                        <span class="check-icon">✓</span>
+                        <div><strong>Kiln Dried Seasoning:</strong> Low moisture content under 18% preventing fungal infestation or warping.</div>
+                    </li>
+                `;
+            }
+        }
+
+        // --- Filter Recent Projects Grid ---
+        function filterProjects(btn, category) {
+            document.querySelectorAll('.projects-filter-bar .filter-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            const cards = document.querySelectorAll('.projects-grid .project-card');
+            cards.forEach(card => {
+                const cat = card.getAttribute('data-cat');
+                if (category === 'all' || cat === category) {
+                    card.style.display = 'block';
+                    setTimeout(() => { card.style.opacity = '1'; }, 20);
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => { card.style.display = 'none'; }, 200);
+                }
+            });
+        }
+
+        // --- Quote Modal Functions ---
+        function openQuoteModal(preferredCategory) {
+            const modal = document.getElementById('quoteModal');
+            if (preferredCategory) {
+                const select = document.getElementById('quoteCategorySelect');
+                for (let i = 0; i < select.options.length; i++) {
+                    if (select.options[i].text.includes(preferredCategory)) {
+                        select.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+            modal.classList.add('active');
+        }
+
+        function closeQuoteModal() {
+            document.getElementById('quoteModal').classList.remove('active');
+        }
+
+        function handleQuoteSubmit(e) {
+            e.preventDefault();
+            closeQuoteModal();
+            showToast("RFQ received! A Dimple Bags packaging engineer will contact you within 2 hours.");
+        }
+
+        // --- TDS Spec Modal Functions ---
+        function openSpecSheetModal() {
+            document.getElementById('specModal').classList.add('active');
+        }
+
+        function closeSpecSheetModal() {
+            document.getElementById('specModal').classList.remove('active');
+        }
+
+        function triggerDownloadTds() {
+            closeSpecSheetModal();
+            showToast("Downloading Dimple Bags ASTM D882 Technical Data Sheet...");
+        }
+
+        // --- Video Modal Functions ---
+        function openVideoTourModal() {
+            document.getElementById('videoModal').classList.add('active');
+        }
+
+        function closeVideoTourModal() {
+            document.getElementById('videoModal').classList.remove('active');
+        }
+
+        // --- Quick Subscribe Handler ---
+        function handleQuickSubscribe(e) {
+            e.preventDefault();
+            const email = document.getElementById('quickEmail').value;
+            showToast("TDS spec catalog dispatched to " + email);
+            document.getElementById('quickEmail').value = "";
+        }
+
+        // --- Toast Notification Handler ---
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = message;
+            toast.classList.add('active');
+            setTimeout(() => {
+                toast.classList.remove('active');
+            }, 4500);
+        }
+
+        // Close modal on escape key
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeQuoteModal();
+                closeSpecSheetModal();
+                closeVideoTourModal();
+            }
+        });
+    </script>
+</body>
+</html>
