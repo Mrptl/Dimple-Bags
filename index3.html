@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimple Bags &amp; Synthetics Pvt. Ltd. | Precision Industrial Packaging &amp; Polymer Engineering</title>
+    <meta name="description" content="Dimple Bags & Synthetics Pvt. Ltd. (Since 2009) - Leading manufacturer of multi-layer LDPE stretch film, VCI anti-corrosion bags, heavy-gauge liners, and ISPM-15 wooden pallets in Halol GIDC, Gujarat. A Ramdev Group Enterprise.">
+    <meta name="keywords" content="Dimple Bags, Dimple Bags and Synthetics, stretch film manufacturer, VCI bags, Halol GIDC packaging, Ramdev Group, ISPM-15 wooden pallets">
+    <link rel="canonical" href="https://dimplebags.in/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/dimple_logo_transparent.png">
+
+    <!-- Google Fonts: Space Grotesk (Architectural Industrial), Inter (Legibility), JetBrains Mono (Specs) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+
+    <!-- Tailwind CSS with Forms -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1657A8',         // Exact primary blue from "DIMPLE BAGS" logo
+                            'blue-hover': '#114689',
+                            'blue-light': '#EBF3FC',
+                            'blue-tint': '#F0F6FD',
+                            bronze: '#8D4A27',       // Exact warm galloping horse bronze from logo
+                            'bronze-hover': '#743B1E',
+                            'bronze-light': '#FDF4ED',
+                            gray: '#939598',         // Exact slate gray from "& SYNTHETICS PVT. LTD."
+                            'gray-light': '#F3F4F6',
+                            dark: '#0A1128',         // Deep structural ocean navy from reference image
+                            surface: '#0E1733',
+                            canvas: '#F8FAFC',
+                            border: '#E2E8F0'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    }
+                }
+            }
+        };
+    </script>
+
+    <style>
+        /* Modern Industrial Blueprint Grid */
+        .bg-tech-grid {
+            background-size: 36px 36px;
+            background-image: 
+                linear-gradient(to right, rgba(226, 232, 240, 0.6) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(226, 232, 240, 0.6) 1px, transparent 1px);
+        }
+
+        .bg-dark-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        }
+
+        /* Reference Image 1 Offset Frame Signature Style */
+        .offset-blue-frame {
+            position: relative;
+        }
+        .offset-blue-frame::before {
+            content: '';
+            position: absolute;
+            inset: -14px -14px 14px 14px;
+            border: 2px solid #1657A8;
+            pointer-events: none;
+            z-index: 0;
+            transition: transform 0.3s ease;
+        }
+        .offset-blue-frame:hover::before {
+            transform: translate(-3px, -3px);
+        }
+
+        .offset-blue-frame-right {
+            position: relative;
+        }
+        .offset-blue-frame-right::before {
+            content: '';
+            position: absolute;
+            inset: 14px -14px -14px 14px;
+            border: 2px solid #1657A8;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Concentric Radar Rings from Reference Image Section 3 */
+        .radar-ring {
+            border: 1px solid rgba(22, 87, 168, 0.16);
+            border-radius: 9999px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        /* 3D Tilted Product Catalog Booklet from Reference Image Section 6 */
+        .booklet-container {
+            perspective: 1200px;
+        }
+        .booklet-3d {
+            transform: rotateY(-18deg) rotateX(10deg) rotateZ(-3deg);
+            transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.5s ease;
+            box-shadow: -22px 28px 45px rgba(10, 17, 40, 0.35), 0 10px 15px rgba(10, 17, 40, 0.1);
+        }
+        .booklet-container:hover .booklet-3d {
+            transform: rotateY(-8deg) rotateX(4deg) rotateZ(-1deg) scale(1.03);
+            box-shadow: -26px 36px 55px rgba(10, 17, 40, 0.42);
+        }
+
+        /* Pulsing Map Beacons */
+        @keyframes pulse-halo {
+            0% { transform: scale(0.9); opacity: 0.9; }
+            50% { transform: scale(2.2); opacity: 0.2; }
+            100% { transform: scale(2.8); opacity: 0; }
+        }
+        .beacon-halo {
+            animation: pulse-halo 2.4s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F1F5F9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #94A3B8;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1657A8;
+        }
+
+        /* Glassmorphism */
+        .glass-dark {
+            background: rgba(10, 17, 40, 0.85);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.96);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-brand-canvas text-slate-800 font-sans antialiased selection:bg-brand-blue selection:text-white overflow-x-hidden">
+
+    <!-- =========================================================================
+         1. TOP NAVIGATION BAR (Matching Reference Image Header Bar)
+         ========================================================================= -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="site-header">
+        <div class="glass-dark border-b border-white/10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+                
+                <!-- Logo & Brand Identity (Image 2) -->
+                <a href="#hero" class="flex items-center gap-3.5 group">
+                    <div class="bg-white p-1.5 rounded-lg shadow-sm border border-slate-200/80 transition-transform group-hover:scale-105 flex items-center justify-center">
+                        <img src="assets/dimple_logo_user.png" alt="Dimple Bags Logo" class="h-10 sm:h-11 w-auto object-contain">
+                    </div>
+                    <div class="hidden sm:flex flex-col">
+                        <span class="font-display font-bold text-lg sm:text-xl tracking-tight text-white leading-none">
+                            DIMPLE BAGS
+                        </span>
+                        <span class="text-[10px] tracking-wider text-slate-300 uppercase font-medium mt-1">
+                            &amp; Synthetics Pvt. Ltd. &bull; <span class="text-brand-bronze font-semibold">Since 2009</span>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links (Services, Opportunities, Clients, Contacts) -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-200">
+                    <a href="#services" class="hover:text-white transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-blue after:absolute after:bottom-0 after:left-0 after:transition-all">
+                        Services
+                    </a>
+                    <a href="#about-brand" class="hover:text-white transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-blue after:absolute after:bottom-0 after:left-0 after:transition-all">
+                        Opportunities
+                    </a>
+                    <a href="#goals" class="hover:text-white transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-blue after:absolute after:bottom-0 after:left-0 after:transition-all">
+                        Goals
+                    </a>
+                    <a href="#catalog" class="hover:text-white transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-blue after:absolute after:bottom-0 after:left-0 after:transition-all">
+                        Catalog
+                    </a>
+                    <a href="#customers" class="hover:text-white transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-blue after:absolute after:bottom-0 after:left-0 after:transition-all">
+                        Clients
+                    </a>
+                    <a href="#supply-areas" class="hover:text-white transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-blue after:absolute after:bottom-0 after:left-0 after:transition-all">
+                        Supply Areas
+                    </a>
+                    <a href="#contacts" class="hover:text-white transition-colors relative py-1 hover:after:w-full after:w-0 after:h-0.5 after:bg-brand-blue after:absolute after:bottom-0 after:left-0 after:transition-all">
+                        Contacts
+                    </a>
+                </nav>
+
+                <!-- Header Actions: Direct Call & Request Quote Button -->
+                <div class="hidden sm:flex items-center gap-4">
+                    <a href="tel:+918128539646" class="flex items-center gap-2 text-xs font-mono text-slate-300 hover:text-white transition-colors bg-white/5 border border-white/10 px-3 py-1.5 rounded-md">
+                        <span class="material-symbols-outlined text-sm text-brand-blue">call</span>
+                        +91 81285 39646
+                    </a>
+                    <a href="#inquiry" class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-brand-blue hover:bg-brand-blue-hover rounded transition-all shadow-md shadow-brand-blue/30 hover:shadow-brand-blue/50">
+                        Get Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobile-menu-btn" type="button" class="lg:hidden p-2 text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle mobile menu">
+                    <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden glass-dark border-b border-white/10 px-4 pt-3 pb-6 transition-all duration-300">
+            <nav class="flex flex-col space-y-3 text-base font-medium text-slate-200">
+                <a href="#services" class="mobile-nav-link hover:text-white hover:bg-white/5 px-3 py-2 rounded-md">Services</a>
+                <a href="#about-brand" class="mobile-nav-link hover:text-white hover:bg-white/5 px-3 py-2 rounded-md">Opportunities &amp; Advantages</a>
+                <a href="#goals" class="mobile-nav-link hover:text-white hover:bg-white/5 px-3 py-2 rounded-md">Goals &amp; Quality Commitment</a>
+                <a href="#catalog" class="mobile-nav-link hover:text-white hover:bg-white/5 px-3 py-2 rounded-md">Product Catalog (PDF)</a>
+                <a href="#customers" class="mobile-nav-link hover:text-white hover:bg-white/5 px-3 py-2 rounded-md">Our Enterprise Clients</a>
+                <a href="#supply-areas" class="mobile-nav-link hover:text-white hover:bg-white/5 px-3 py-2 rounded-md">Supply &amp; Export Areas</a>
+                <a href="#contacts" class="mobile-nav-link hover:text-white hover:bg-white/5 px-3 py-2 rounded-md">Contacts &amp; Plant Location</a>
+                <div class="pt-3 border-t border-white/10 flex flex-col gap-2">
+                    <a href="tel:+918128539646" class="text-sm font-mono text-slate-300 flex items-center gap-2 px-3 py-2">
+                        <span class="material-symbols-outlined text-sm text-brand-blue">call</span> +91 81285 39646
+                    </a>
+                    <a href="#inquiry" class="w-full text-center py-2.5 text-xs font-semibold uppercase tracking-wider text-white bg-brand-blue rounded hover:bg-brand-blue-hover">
+                        Request Industrial Quotation
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- =========================================================================
+         2. HERO SECTION (With High-Impact Industrial Vessel/Plant & Docked Cards)
+         Directly replicates Reference Image 1 Hero composition
+         ========================================================================= -->
+    <section id="hero" class="relative pt-28 pb-20 lg:pt-36 lg:pb-32 bg-brand-dark text-white overflow-hidden bg-dark-grid">
+        <!-- Ocean Blue Gradient Lighting & Atmospheric Overlays -->
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/90 to-brand-blue/30 pointer-events-none"></div>
+        <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-brand-blue/20 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content: High Impact Wholesale Title & CTA -->
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/15 text-xs font-mono tracking-wider text-slate-200">
+                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                        A RAMDEV GROUP ENTERPRISE &bull; HALOL GIDC, GUJARAT
+                    </div>
+
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-display font-extrabold tracking-tight text-white leading-tight">
+                        <span class="text-sky-300">Wholesale manufacturing</span> of industrial packaging &amp; polymer solutions
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-slate-300 max-w-2xl font-light leading-relaxed">
+                        Engineered multi-layer LDPE stretch film, VCI anti-corrosion barrier protection, high-gauge industrial liners, and ISPM-15 certified wooden export pallets directly from our state-of-the-art Halol facility.
+                    </p>
+
+                    <!-- Primary Action Button (Matches Reference Image "Learn More ->") -->
+                    <div class="pt-2 flex flex-wrap items-center gap-4">
+                        <a href="#services" class="inline-flex items-center gap-3 px-7 py-3.5 text-sm font-semibold text-white bg-brand-blue hover:bg-brand-blue-hover rounded shadow-lg shadow-brand-blue/40 transition-all hover:gap-4 group">
+                            <span>Learn More</span>
+                            <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+                        </a>
+                        <a href="#inquiry" class="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-semibold text-slate-200 bg-white/5 hover:bg-white/10 border border-white/20 rounded transition-all">
+                            <span>Instant Quotation</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual: High-End Maritime / Heavy Industrial Logistics Visual -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-white/15 group">
+                        <img src="assets/hero_plant.jpg" alt="Dimple Bags Extrusion Plant Halol" class="w-full h-80 sm:h-96 object-cover object-center transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/90 via-transparent to-transparent"></div>
+                        
+                        <!-- Floating Badge on Hero Image -->
+                        <div class="absolute bottom-4 left-4 right-4 bg-brand-dark/85 backdrop-blur-md p-4 rounded-xl border border-white/15 flex items-center justify-between">
+                            <div>
+                                <span class="text-[11px] font-mono text-sky-300 uppercase tracking-wider block">Production Hub</span>
+                                <span class="text-sm font-semibold text-white">Halol GIDC Manufacturing Complex</span>
+                            </div>
+                            <span class="px-2.5 py-1 bg-brand-bronze text-white text-[11px] font-semibold rounded uppercase tracking-wide">
+                                ISO 9001:2015
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Hero Ticker & Docked Split Feature Cards (Directly matching Reference Image 1) -->
+            <div class="mt-16 pt-8 border-t border-white/10 grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+                
+                <!-- Left Indicator: "Since 2009" -->
+                <div class="md:col-span-2 flex items-center justify-start md:justify-center border-b md:border-b-0 md:border-r border-white/10 pb-4 md:pb-0">
+                    <div class="text-left md:text-center">
+                        <span class="text-xs font-mono uppercase tracking-widest text-slate-400 block">— Since —</span>
+                        <span class="text-2xl font-display font-bold text-white tracking-wider">2009</span>
+                    </div>
+                </div>
+
+                <!-- Card 01: Fast Dispatch / Extrusion Speed (Matches Card 01 in Ref Image) -->
+                <div class="md:col-span-5 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-5 transition-all group">
+                    <div class="flex items-start gap-4">
+                        <span class="font-display font-bold text-xl text-sky-400 group-hover:translate-x-0.5 transition-transform">01</span>
+                        <div>
+                            <h3 class="text-sm font-semibold text-white tracking-wide uppercase font-display">
+                                Rapid dispatch &amp; bulk supply from 24-48 hrs
+                            </h3>
+                            <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                                Continuous 3-layer blown &amp; cast extrusion lines ensuring high capacity for scheduled JIT industrial deliveries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 02: Cargo transportation and delivery (Matches Card 02 in Ref Image) -->
+                <div class="md:col-span-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-xl p-5 transition-all group">
+                    <div class="flex items-start gap-4">
+                        <span class="font-display font-bold text-xl text-sky-400 group-hover:translate-x-0.5 transition-transform">02</span>
+                        <div>
+                            <h3 class="text-sm font-semibold text-white tracking-wide uppercase font-display">
+                                Pan-India &amp; Port Export logistics
+                            </h3>
+                            <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                                Seamless container stuffing and direct highway connection to Mundra, Kandla, and Nhava Sheva (JNPT) ports.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Down Scroll Arrow Indicator in Circle (Rightmost element in Reference Image) -->
+                <div class="md:col-span-1 hidden md:flex items-center justify-center">
+                    <a href="#services" class="w-12 h-12 rounded-full bg-brand-blue hover:bg-brand-blue-hover text-white flex items-center justify-center shadow-lg transition-transform hover:scale-110" aria-label="Scroll to services">
+                        <span class="material-symbols-outlined text-xl">keyboard_arrow_down</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         3. SERVICES SECTION (Matching Reference Image Asymmetric Grid)
+         Header: "Services" with "Choose what you need ->" link
+         ========================================================================= -->
+    <section id="services" class="py-20 bg-white bg-tech-grid border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header: "Services" + "Choose what you need" Link -->
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-xs font-mono uppercase tracking-wider text-brand-blue font-bold block mb-1">
+                        Manufacturing Spectrum
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight">
+                        Services &amp; Industrial Products
+                    </h2>
+                </div>
+                <a href="#catalog" class="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-blue hover:text-brand-blue-hover group">
+                    <span>Choose what you need</span>
+                    <span class="material-symbols-outlined text-base transition-transform group-hover:translate-x-1">arrow_forward</span>
+                </a>
+            </div>
+
+            <!-- Asymmetric Grid of 4 Industrial Product Cards (Directly Replicating Reference Image Layout) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                
+                <!-- Card 1 (Large Vertical Card on Left with Blue Feature Header & Photo) -->
+                <div class="lg:col-span-4 bg-slate-900 rounded-2xl overflow-hidden shadow-lg border border-slate-800 flex flex-col justify-between group transition-all hover:shadow-xl">
+                    <div class="p-6 bg-brand-blue text-white">
+                        <span class="text-[11px] font-mono uppercase tracking-widest text-sky-200 font-semibold block mb-1">
+                            Primary Product Line
+                        </span>
+                        <h3 class="text-xl font-display font-bold">
+                            Multi-Layer LDPE Stretch &amp; Shrink Films
+                        </h3>
+                    </div>
+                    <div class="relative overflow-hidden h-64 sm:h-72">
+                        <img src="assets/stretch_rolls.jpg" alt="LDPE Stretch Film Rolls" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <span class="text-xs font-mono text-sky-300 block">Gauge: 9µm to 50µm &bull; Cast &amp; Blown</span>
+                            <span class="text-xs text-slate-200">Manual &amp; automated high-speed wrapping grades</span>
+                        </div>
+                    </div>
+                    <div class="p-6 bg-slate-900 text-slate-300 space-y-4">
+                        <p class="text-xs leading-relaxed">
+                            Engineered from 100% prime virgin polymer resins with over 300% elongation for superior load retention and tear resistance.
+                        </p>
+                        <a href="#inquiry" class="inline-flex items-center gap-2 text-xs font-semibold text-sky-400 hover:text-sky-300 uppercase tracking-wider">
+                            <span>Request Specifications</span>
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Cards 2, 3, 4 (Wide Horizontal and Dual Bottom Cards) -->
+                <div class="lg:col-span-8 flex flex-col gap-6">
+                    
+                    <!-- Card 2: VCI Anti-Corrosion Protection & Heavy Liners (Wide Top Card) -->
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200/90 grid grid-cols-1 md:grid-cols-12 group hover:shadow-lg transition-all">
+                        <div class="md:col-span-7 p-6 sm:p-8 flex flex-col justify-between">
+                            <div>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="px-2.5 py-0.5 rounded bg-brand-blue-light text-brand-blue font-mono text-[10px] font-bold uppercase">
+                                        Active Chemistry
+                                    </span>
+                                    <span class="text-slate-400 text-xs">&bull; Export Grade</span>
+                                </div>
+                                <h3 class="text-xl font-display font-bold text-slate-900 mb-2">
+                                    VCI Anti-Corrosion Packaging &amp; Heavy 3D Liners
+                                </h3>
+                                <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                                    Patented vapor corrosion inhibitor molecules chemically passivate ferrous and non-ferrous metal surfaces, preventing rust during sea transit for up to 36 months without greasy oil coatings.
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+                                <span class="text-[11px] font-mono text-slate-500">Automotive &bull; Defense &bull; Heavy Machinery</span>
+                                <a href="#inquiry" class="text-xs font-semibold text-brand-blue hover:text-brand-blue-hover inline-flex items-center gap-1">
+                                    <span>Learn more</span>
+                                    <span class="material-symbols-outlined text-sm">chevron_right</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="md:col-span-5 relative h-48 md:h-auto overflow-hidden">
+                            <img src="assets/vci_liners.jpg" alt="VCI Liners and Heavy Protection" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                    </div>
+
+                    <!-- Bottom Row: Card 3 and Card 4 Side-by-Side -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        
+                        <!-- Card 3: ISPM-15 Wooden Pallets & Crates -->
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200/90 flex flex-col group hover:shadow-lg transition-all">
+                            <div class="relative h-44 overflow-hidden">
+                                <img src="assets/wooden_pallets.jpg" alt="ISPM-15 Wooden Pallets" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute top-3 left-3 bg-brand-bronze text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase">
+                                    ISPM-15 Certified
+                                </div>
+                            </div>
+                            <div class="p-6 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="text-base font-display font-bold text-slate-900 mb-1.5">
+                                        Heat-Treated Wooden Pallets &amp; Crates
+                                    </h3>
+                                    <p class="text-xs text-slate-600 leading-relaxed">
+                                        Kiln-dried, heat-treated pine and hardwood pallets engineered for heavy industrial load distribution and customs-cleared global export freight.
+                                    </p>
+                                </div>
+                                <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] font-mono text-slate-500">4-Way Entry &bull; Custom Racks</span>
+                                    <a href="#inquiry" class="text-xs font-semibold text-brand-blue hover:text-brand-blue-hover">Details &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Heavy Corrugated & Secondary Packaging -->
+                        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-slate-200/90 flex flex-col group hover:shadow-lg transition-all">
+                            <div class="relative h-44 overflow-hidden bg-slate-100">
+                                <img src="assets/ref1.jpg" alt="Industrial Packaging & Secondary Boxes" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute top-3 left-3 bg-brand-blue text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded uppercase">
+                                    Secondary Packaging
+                                </div>
+                            </div>
+                            <div class="p-6 flex-1 flex flex-col justify-between">
+                                <div>
+                                    <h3 class="text-base font-display font-bold text-slate-900 mb-1.5">
+                                        Corrugated Cartons, Rolls &amp; Corner Edge Boards
+                                    </h3>
+                                    <p class="text-xs text-slate-600 leading-relaxed">
+                                        Heavy-duty 3-ply, 5-ply, and 7-ply industrial corrugated boxes, air bubble rolls, and edge boards providing complete transit fortification.
+                                    </p>
+                                </div>
+                                <div class="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between">
+                                    <span class="text-[11px] font-mono text-slate-500">Custom Bursting Factor (BF)</span>
+                                    <a href="#inquiry" class="text-xs font-semibold text-brand-blue hover:text-brand-blue-hover">Details &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         4. CENTRAL BRAND RADAR & KEY METRICS SECTION
+         Directly replicates Reference Image 1 Section 3:
+         Concentric circles, central cargo carrier with big wordmark "DIMPLE BAGS",
+         water reflection, and 4 quadrant metric nodes pointing to center!
+         ========================================================================= -->
+    <section id="about-brand" class="py-24 bg-white relative overflow-hidden border-b border-slate-200">
+        
+        <!-- Concentric Circular Radar Orbit Rings in Background -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div class="radar-ring w-[320px] h-[320px]"></div>
+            <div class="radar-ring w-[540px] h-[540px]"></div>
+            <div class="radar-ring w-[760px] h-[760px]"></div>
+            <div class="radar-ring w-[980px] h-[980px]"></div>
+            <div class="radar-ring w-[1200px] h-[1200px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <!-- 4 Quadrant Grid Layout Surrounding the Central Showcase -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-y-16 md:gap-y-24 gap-x-12 items-center">
+                
+                <!-- Quadrant 1: Top-Left ("More than 15 years in the market") -->
+                <div class="space-y-2 max-w-sm">
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-brand-blue ring-4 ring-brand-blue/20"></span>
+                        <h3 class="text-base sm:text-lg font-display font-bold text-slate-900">
+                            More than 15 years in the market
+                        </h3>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-600 pl-5 leading-relaxed">
+                        Over the years we have implemented dedicated multi-layer extrusion systems and rigorous quality assurance protocols trusted by leading enterprises.
+                    </p>
+                </div>
+
+                <!-- Quadrant 2: Top-Right ("Impeccable reputation") -->
+                <div class="space-y-2 max-w-sm md:ml-auto md:text-right">
+                    <div class="flex items-center md:justify-end gap-2">
+                        <h3 class="text-base sm:text-lg font-display font-bold text-slate-900 order-2 md:order-1">
+                            Impeccable reputation
+                        </h3>
+                        <span class="w-3 h-3 rounded-full bg-brand-blue ring-4 ring-brand-blue/20 order-1 md:order-2"></span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-600 md:pr-5 leading-relaxed">
+                        Recognized winner of the India 5000 Best MSME Award (2023) and ISO 9001:2015 certified for precision polymer manufacturing excellence.
+                    </p>
+                </div>
+
+                <!-- Central Cargo Vessel with Wordmark "DIMPLE BAGS" (Spans 2 columns on Desktop) -->
+                <div class="md:col-span-2 my-4 sm:my-8 text-center relative py-6">
+                    
+                    <!-- SVG / Graphical Illustration of Industrial Cargo Container Ship + Reflection -->
+                    <div class="max-w-3xl mx-auto relative">
+                        
+                        <!-- Floating Wordmark Over the Ship (Exactly like "KOF CENTER" in Ref Image) -->
+                        <div class="relative z-20 mb-2">
+                            <span class="font-display font-black text-4xl sm:text-6xl md:text-7xl lg:text-8xl tracking-tight text-brand-blue drop-shadow-sm select-none">
+                                DIMPLE BAGS
+                            </span>
+                        </div>
+
+                        <!-- Illustrated Cargo Vessel / Freight Carrier with Brand Color Containers -->
+                        <div class="relative z-10 w-full px-4">
+                            <svg viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto max-h-56 mx-auto filter drop-shadow-md">
+                                <defs>
+                                    <!-- Reflection Gradient -->
+                                    <linearGradient id="waterReflect" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#1657A8" stop-opacity="0.35"/>
+                                        <stop offset="60%" stop-color="#1657A8" stop-opacity="0.08"/>
+                                        <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+                                    </linearGradient>
+                                    <linearGradient id="hullGrad" x1="0" y1="0" x2="1" y2="0">
+                                        <stop offset="0%" stop-color="#0E1733"/>
+                                        <stop offset="50%" stop-color="#1657A8"/>
+                                        <stop offset="100%" stop-color="#0E1733"/>
+                                    </linearGradient>
+                                </defs>
+
+                                <!-- Ship Hull -->
+                                <path d="M70 140 L730 140 L700 178 C680 186 640 188 600 188 L200 188 C160 188 120 186 100 178 Z" fill="url(#hullGrad)"/>
+                                <path d="M70 140 L730 140 L720 148 L80 148 Z" fill="#8D4A27"/>
+                                <rect x="90" y="148" width="620" height="3" fill="#FFFFFF" opacity="0.4"/>
+
+                                <!-- Cargo Stack Containers (Blue & Bronze matching logo) -->
+                                <!-- Row 1 -->
+                                <rect x="130" y="112" width="55" height="26" rx="2" fill="#1657A8" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="190" y="112" width="55" height="26" rx="2" fill="#8D4A27" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="250" y="112" width="55" height="26" rx="2" fill="#1E40AF" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="310" y="112" width="55" height="26" rx="2" fill="#939598" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="370" y="112" width="55" height="26" rx="2" fill="#1657A8" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="430" y="112" width="55" height="26" rx="2" fill="#8D4A27" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="490" y="112" width="55" height="26" rx="2" fill="#1657A8" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="550" y="112" width="55" height="26" rx="2" fill="#1E40AF" stroke="#0E1733" stroke-width="1.5"/>
+                                
+                                <!-- Row 2 -->
+                                <rect x="150" y="86" width="55" height="26" rx="2" fill="#8D4A27" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="210" y="86" width="55" height="26" rx="2" fill="#1657A8" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="270" y="86" width="55" height="26" rx="2" fill="#939598" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="330" y="86" width="55" height="26" rx="2" fill="#1657A8" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="390" y="86" width="55" height="26" rx="2" fill="#8D4A27" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="450" y="86" width="55" height="26" rx="2" fill="#1E40AF" stroke="#0E1733" stroke-width="1.5"/>
+                                <rect x="510" y="86" width="55" height="26" rx="2" fill="#1657A8" stroke="#0E1733" stroke-width="1.5"/>
+
+                                <!-- Ship Superstructure & Bridge on Stern -->
+                                <rect x="620" y="70" width="60" height="70" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+                                <rect x="635" y="45" width="35" height="25" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+                                <rect x="640" y="28" width="12" height="17" fill="#8D4A27"/>
+                                <rect x="628" y="78" width="44" height="6" fill="#1657A8"/>
+                                <circle cx="645" cy="98" r="4" fill="#64748B"/>
+                                <circle cx="660" cy="98" r="4" fill="#64748B"/>
+
+                                <!-- Container Vertical Lines -->
+                                <line x1="148" y1="112" x2="148" y2="138" stroke="#FFFFFF" stroke-opacity="0.3"/>
+                                <line x1="208" y1="112" x2="208" y2="138" stroke="#FFFFFF" stroke-opacity="0.3"/>
+                                <line x1="268" y1="112" x2="268" y2="138" stroke="#FFFFFF" stroke-opacity="0.3"/>
+                                <line x1="388" y1="112" x2="388" y2="138" stroke="#FFFFFF" stroke-opacity="0.3"/>
+                                <line x1="508" y1="112" x2="508" y2="138" stroke="#FFFFFF" stroke-opacity="0.3"/>
+
+                                <!-- Waterline & Dynamic Ripples -->
+                                <line x1="50" y1="188" x2="750" y2="188" stroke="#1657A8" stroke-width="2"/>
+                                <line x1="90" y1="193" x2="710" y2="193" stroke="#93C5FD" stroke-width="1" stroke-dasharray="16 8"/>
+                                <line x1="140" y1="198" x2="660" y2="198" stroke="#93C5FD" stroke-width="0.8" stroke-dasharray="24 12"/>
+
+                                <!-- Realistic Mirror Reflection into Water (Matches Ref Image Reflection!) -->
+                                <g transform="scale(1, -0.45) translate(0, -425)" opacity="0.35">
+                                    <path d="M70 140 L730 140 L700 178 C680 186 640 188 600 188 L200 188 C160 188 120 186 100 178 Z" fill="url(#waterReflect)"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Quadrant 3: Bottom-Left ("A wide range of polymer & export packaging") -->
+                <div class="space-y-2 max-w-sm">
+                    <div class="flex items-center gap-2">
+                        <span class="w-3 h-3 rounded-full bg-brand-blue ring-4 ring-brand-blue/20"></span>
+                        <h3 class="text-base sm:text-lg font-display font-bold text-slate-900">
+                            A wide range of polymer packaging
+                        </h3>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-600 pl-5 leading-relaxed">
+                        100% prime virgin polyethylene films, VCI rust inhibition liners, UV mulching rolls, and ISPM-15 certified secondary export packaging.
+                    </p>
+                </div>
+
+                <!-- Quadrant 4: Bottom-Right ("Direct manufacturer & bulk supply") -->
+                <div class="space-y-2 max-w-sm md:ml-auto md:text-right">
+                    <div class="flex items-center md:justify-end gap-2">
+                        <h3 class="text-base sm:text-lg font-display font-bold text-slate-900 order-2 md:order-1">
+                            Unique solutions and delivery conditions
+                        </h3>
+                        <span class="w-3 h-3 rounded-full bg-brand-blue ring-4 ring-brand-blue/20 order-1 md:order-2"></span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-slate-600 md:pr-5 leading-relaxed">
+                        Direct manufacturing pricing with zero distributor markup, custom engineered gauges, and scheduled inventory consignment.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         5. SOLID BLUE STATS RIBBON BANNER
+         Directly replicates Reference Image 1 Section 4:
+         Deep royal blue banner with 4 large metrics and line icons (2082, 13, +120, 1997)
+         ========================================================================= -->
+    <section class="py-12 bg-brand-blue text-white shadow-inner relative overflow-hidden">
+        <!-- Subtle Grid Pattern in Banner -->
+        <div class="absolute inset-0 bg-dark-grid opacity-20 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+                
+                <!-- Stat 1: Capacity (Matches 2082 in Ref Image) -->
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 border border-white/20">
+                        <span class="material-symbols-outlined text-2xl text-sky-200">precision_manufacturing</span>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold tracking-tight text-white">
+                            15,000+
+                        </div>
+                        <div class="text-xs font-mono uppercase tracking-wider text-sky-200 mt-0.5">
+                            MT Annual Processing
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stat 2: Clients (Matches 13 in Ref Image) -->
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 border border-white/20">
+                        <span class="material-symbols-outlined text-2xl text-sky-200">domain</span>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold tracking-tight text-white">
+                            500+
+                        </div>
+                        <div class="text-xs font-mono uppercase tracking-wider text-sky-200 mt-0.5">
+                            Industrial Clients
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stat 3: Formulations / SKUs (Matches +120 in Ref Image) -->
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 border border-white/20">
+                        <span class="material-symbols-outlined text-2xl text-sky-200">inventory_2</span>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold tracking-tight text-white">
+                            +120
+                        </div>
+                        <div class="text-xs font-mono uppercase tracking-wider text-sky-200 mt-0.5">
+                            Engineered SKUs &amp; Gauges
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stat 4: Year of Foundation (Matches 1997 in Ref Image -> 2009 for Dimple Bags) -->
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 border border-white/20">
+                        <span class="material-symbols-outlined text-2xl text-sky-200">verified</span>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl lg:text-4xl font-display font-bold tracking-tight text-white">
+                            2009
+                        </div>
+                        <div class="text-xs font-mono uppercase tracking-wider text-sky-200 mt-0.5">
+                            Year Established &bull; Halol
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         6. "GOALS OF DIMPLE BAGS" SECTION (With Offset Blue Frame & Tabs/Slider)
+         Directly replicates Reference Image 1 Section 5:
+         "Goals of KOF CENTER" -> "Goals of DIMPLE BAGS"
+         Photo with blue offset outline, "Play long", slider arrows [ < ] [ > ], and "01"
+         ========================================================================= -->
+    <section id="goals" class="py-24 bg-white border-b border-slate-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-14">
+                <span class="text-xs font-mono uppercase tracking-widest text-brand-blue font-bold block mb-1">
+                    Corporate Vision &amp; Quality
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight">
+                    Goals <span class="text-slate-400 font-light">of</span> DIMPLE BAGS
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left: Featured Photo with Signature Blue Offset Frame -->
+                <div class="lg:col-span-6">
+                    <div class="offset-blue-frame max-w-lg mx-auto lg:mx-0">
+                        <div class="relative z-10 rounded-lg overflow-hidden shadow-xl bg-slate-900">
+                            <img id="goal-photo" src="assets/ref2.jpg" alt="Dimple Bags Quality Assurance" class="w-full h-80 sm:h-96 object-cover transition-opacity duration-500">
+                            <div class="absolute bottom-4 left-4 right-4 bg-brand-dark/80 backdrop-blur-md px-4 py-2.5 rounded border border-white/15 text-white text-xs flex justify-between items-center">
+                                <span id="goal-photo-caption" class="font-mono text-sky-300">Continuous Extrusion Monitoring</span>
+                                <span class="text-slate-300">Halol Plant GIDC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Goal Narrative, Giant "01" Watermark & Slider Controls -->
+                <div class="lg:col-span-6 space-y-6 relative">
+                    
+                    <!-- Giant Watermark Number ("01") from Reference Image -->
+                    <div class="text-6xl sm:text-7xl font-display font-extrabold text-slate-200 select-none" id="goal-number-display">
+                        01
+                    </div>
+
+                    <!-- Dynamic Goal Heading -->
+                    <h3 class="text-2xl sm:text-3xl font-display font-bold text-brand-blue" id="goal-title">
+                        Play long
+                    </h3>
+
+                    <!-- Dynamic Goal Description -->
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed" id="goal-description">
+                        Our main mission is to establish long-term trust between Dimple Bags and our enterprise customers. Stability, efficiency, zero-transit damage, and technical confidence are priorities that are proven by our track record since 2009.
+                    </p>
+
+                    <!-- Interactive Slider Navigation Controls (Left & Right Arrows like Ref Image) -->
+                    <div class="pt-4 flex items-center gap-3">
+                        <button id="goal-prev-btn" type="button" class="w-10 h-10 rounded border border-slate-300 hover:border-brand-blue hover:text-brand-blue text-slate-600 flex items-center justify-center transition-colors shadow-sm" aria-label="Previous goal">
+                            <span class="material-symbols-outlined text-lg">chevron_left</span>
+                        </button>
+                        <button id="goal-next-btn" type="button" class="w-10 h-10 rounded border border-slate-300 hover:border-brand-blue hover:text-brand-blue text-slate-600 flex items-center justify-center transition-colors shadow-sm" aria-label="Next goal">
+                            <span class="material-symbols-outlined text-lg">chevron_right</span>
+                        </button>
+                        <span class="text-xs font-mono text-slate-500 ml-3" id="goal-counter">Goal 1 of 3</span>
+                    </div>
+
+                    <!-- Three Quick Bullet Objectives -->
+                    <div class="pt-6 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div class="p-3 bg-slate-50 rounded-lg border border-slate-200/60">
+                            <span class="text-[11px] font-mono font-bold text-brand-blue block">01 / ZERO DEFECTS</span>
+                            <span class="text-xs text-slate-600 mt-1 block">Tear-free high elongation polymer guarantee</span>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border border-slate-200/60">
+                            <span class="text-[11px] font-mono font-bold text-brand-bronze block">02 / CORROSION SHIELD</span>
+                            <span class="text-xs text-slate-600 mt-1 block">36-month rust protection for sea transit</span>
+                        </div>
+                        <div class="p-3 bg-slate-50 rounded-lg border border-slate-200/60">
+                            <span class="text-[11px] font-mono font-bold text-emerald-700 block">03 / CIRCULAR RECYCLING</span>
+                            <span class="text-xs text-slate-600 mt-1 block">100% recyclable virgin grade LDPE resins</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         7. "DOWNLOAD OUR PRODUCT CATALOG" SECTION (With 3D Booklet & Offset Frame)
+         Directly replicates Reference Image 1 Section 6:
+         "Download our product catalog", PDF 14.8 MB badge, "Get catalog" button,
+         and tilted 3D booklet in an offset blue frame.
+         ========================================================================= -->
+    <section id="catalog" class="py-24 bg-slate-50 bg-tech-grid border-b border-slate-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+                
+                <!-- Left Column: Catalog Information & Download CTA -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-mono uppercase tracking-widest text-brand-blue font-bold block">
+                        Technical Literature &bull; 2024-2026 Edition
+                    </span>
+
+                    <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight leading-tight">
+                        Download our <span class="text-brand-blue">product catalog</span>
+                    </h2>
+
+                    <p class="text-sm sm:text-base text-slate-600 leading-relaxed">
+                        Annual technical catalogue of polymer products, stretch films, VCI protective liners, and secondary packaging of the DIMPLE BAGS manufacturing company.
+                    </p>
+
+                    <!-- Technical Specs Included Tag List -->
+                    <div class="space-y-2 py-2">
+                        <div class="flex items-center gap-2 text-xs font-mono text-slate-700">
+                            <span class="material-symbols-outlined text-sm text-brand-blue">check_circle</span>
+                            Tensile strength, dart drop test &amp; elongation % charts
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-mono text-slate-700">
+                            <span class="material-symbols-outlined text-sm text-brand-blue">check_circle</span>
+                            VCI chemical migration &amp; salt spray test data
+                        </div>
+                        <div class="flex items-center gap-2 text-xs font-mono text-slate-700">
+                            <span class="material-symbols-outlined text-sm text-brand-blue">check_circle</span>
+                            ISPM-15 wooden pallet load capacities &amp; fumigation protocols
+                        </div>
+                    </div>
+
+                    <!-- PDF File Badge & CTA (Directly matching Reference Image) -->
+                    <div class="pt-2 space-y-4">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-slate-200/80 text-slate-700 font-mono text-xs font-bold">
+                            <span class="material-symbols-outlined text-sm text-red-600">picture_as_pdf</span>
+                            PDF 14.8 MB &bull; Comprehensive Datasheet
+                        </div>
+
+                        <div>
+                            <button id="open-catalog-modal" type="button" class="inline-flex items-center gap-3 px-8 py-3.5 text-sm font-semibold text-white bg-brand-blue hover:bg-brand-blue-hover rounded shadow-lg shadow-brand-blue/30 transition-all hover:gap-4 group">
+                                <span>Get catalog</span>
+                                <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: 3D Perspective Booklet Mockup in Offset Blue Frame -->
+                <div class="lg:col-span-6 flex justify-center">
+                    <div class="offset-blue-frame-right max-w-sm sm:max-w-md w-full">
+                        <div class="booklet-container relative z-10 py-6">
+                            
+                            <!-- 3D Realistic Catalog Cover -->
+                            <div class="booklet-3d bg-gradient-to-br from-brand-blue to-brand-dark p-6 sm:p-8 rounded-xl text-white border-r-4 border-b-4 border-slate-800/80 relative overflow-hidden cursor-pointer" onclick="document.getElementById('open-catalog-modal').click()">
+                                <!-- Glossy Light Sheen Reflection -->
+                                <div class="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/10 to-white/20 pointer-events-none"></div>
+
+                                <!-- Booklet Header -->
+                                <div class="flex items-center justify-between mb-8 pb-4 border-b border-white/20">
+                                    <div class="bg-white p-1 rounded">
+                                        <img src="assets/dimple_logo_user.png" alt="Dimple Bags" class="h-7 w-auto object-contain">
+                                    </div>
+                                    <span class="text-[10px] font-mono tracking-widest uppercase bg-white/20 px-2 py-0.5 rounded">
+                                        TECHNICAL EDITION
+                                    </span>
+                                </div>
+
+                                <!-- Booklet Title -->
+                                <div class="space-y-3 mb-10">
+                                    <span class="text-xs font-mono text-sky-300 uppercase tracking-widest block">Product Catalog 2024–2026</span>
+                                    <h4 class="text-2xl sm:text-3xl font-display font-black tracking-tight text-white leading-tight">
+                                        INDUSTRIAL POLYMER PACKAGING
+                                    </h4>
+                                    <p class="text-xs text-slate-300 font-light">
+                                        Stretch Wrap Films &bull; VCI Corrosion Protection &bull; ISPM-15 Wooden Pallets
+                                    </p>
+                                </div>
+
+                                <!-- Booklet Imagery -->
+                                <div class="rounded-lg overflow-hidden border border-white/20 shadow-md mb-8">
+                                    <img src="assets/stretch_rolls.jpg" alt="Catalog Preview" class="w-full h-32 object-cover">
+                                </div>
+
+                                <!-- Booklet Footer -->
+                                <div class="flex items-end justify-between pt-4 border-t border-white/20 text-xs">
+                                    <div>
+                                        <span class="font-display font-bold block text-white">DIMPLE BAGS &amp; SYNTHETICS</span>
+                                        <span class="text-[10px] text-slate-300">Halol GIDC, Gujarat &bull; Since 2009</span>
+                                    </div>
+                                    <span class="font-mono text-sky-300 font-bold">14.8 MB</span>
+                                </div>
+
+                                <!-- Booklet Spine Thickness Effect (Left Edge) -->
+                                <div class="absolute top-0 bottom-0 left-0 w-3 bg-gradient-to-r from-black/40 to-transparent"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         8. "WHO ARE OUR CUSTOMERS?" SECTION (With Industrial Container Crane Graphic)
+         Directly replicates Reference Image 1 Section 7:
+         "Who are our customers?", text paragraphs, and container hoisted by crane
+         ========================================================================= -->
+    <section id="customers" class="py-24 bg-white border-b border-slate-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Customer Descriptions & Industries Served -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-mono uppercase tracking-widest text-brand-blue font-bold block">
+                        Enterprise Partnerships
+                    </span>
+
+                    <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight">
+                        Who are <span class="text-brand-blue">our customers?</span>
+                    </h2>
+
+                    <div class="space-y-4 text-sm sm:text-base text-slate-600 leading-relaxed">
+                        <p class="pl-4 border-l-2 border-brand-blue">
+                            We work with top manufacturing plants in India, automotive OEMs, heavy engineering machinery exporters, and pharmaceutical companies that produce precision goods.
+                        </p>
+                        <p class="pl-4 border-l-2 border-brand-bronze">
+                            DIMPLE BAGS supplies precision packaging to customers where damage during domestic transport or ocean export freight is completely unacceptable.
+                        </p>
+                    </div>
+
+                    <!-- Client Sectors Badges -->
+                    <div class="pt-4 flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-700">
+                            Automotive OEMs &amp; Ancillaries
+                        </span>
+                        <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-700">
+                            Steel Coils &amp; Heavy Engineering
+                        </span>
+                        <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-700">
+                            Chemicals &amp; Agrochemicals
+                        </span>
+                        <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-700">
+                            Pharmaceutical Exports
+                        </span>
+                        <span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-xs font-medium text-slate-700">
+                            FMCG &amp; Warehousing Giants
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Right Column: Industrial Crane Hoisting Shipping Container Illustration -->
+                <div class="lg:col-span-6 flex justify-center">
+                    <div class="w-full max-w-lg bg-slate-50 p-6 rounded-2xl border border-slate-200/90 relative overflow-hidden shadow-md">
+                        
+                        <!-- Background Industrial Dock Silhouette -->
+                        <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-slate-200/50 to-transparent pointer-events-none"></div>
+
+                        <!-- SVG Crane & Container Hoist Graphic (Matches Reference Image Style) -->
+                        <svg viewBox="0 0 500 360" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                            <!-- Crane Spreader Bar & Cables -->
+                            <line x1="250" y1="0" x2="250" y2="70" stroke="#0E1733" stroke-width="4"/>
+                            
+                            <!-- Spreader Beam -->
+                            <rect x="150" y="70" width="200" height="12" rx="2" fill="#0E1733"/>
+                            <rect x="160" y="73" width="180" height="6" fill="#8D4A27"/>
+                            
+                            <!-- Hoisting Wire Cables -->
+                            <line x1="165" y1="82" x2="150" y2="140" stroke="#64748B" stroke-width="2.5"/>
+                            <line x1="335" y1="82" x2="350" y2="140" stroke="#64748B" stroke-width="2.5"/>
+                            <line x1="250" y1="82" x2="250" y2="140" stroke="#64748B" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+                            <!-- Container Corner Castings / Twistlocks -->
+                            <circle cx="150" cy="140" r="5" fill="#0E1733"/>
+                            <circle cx="350" cy="140" r="5" fill="#0E1733"/>
+
+                            <!-- Purple / Royal Blue Industrial Shipping Container (From Reference Image) -->
+                            <g transform="translate(100, 140)">
+                                <!-- Container Main Body -->
+                                <rect x="0" y="0" width="300" height="120" rx="4" fill="#1657A8" stroke="#0E1733" stroke-width="3"/>
+                                
+                                <!-- Container Vertical Corrugation Ribs -->
+                                <line x1="25" y1="8" x2="25" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="50" y1="8" x2="50" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="75" y1="8" x2="75" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="100" y1="8" x2="100" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="125" y1="8" x2="125" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="150" y1="8" x2="150" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="175" y1="8" x2="175" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="200" y1="8" x2="200" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="225" y1="8" x2="225" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="250" y1="8" x2="250" y2="112" stroke="#0E1733" stroke-width="3"/>
+                                <line x1="275" y1="8" x2="275" y2="112" stroke="#0E1733" stroke-width="3"/>
+
+                                <!-- Container Identification Markings -->
+                                <rect x="25" y="18" width="85" height="18" rx="2" fill="#FFFFFF" fill-opacity="0.9"/>
+                                <text x="32" y="31" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="bold" fill="#0E1733">DBSU 200914-8</text>
+                                
+                                <text x="25" y="55" font-family="'Space Grotesk', sans-serif" font-size="16" font-weight="bold" fill="#FFFFFF" letter-spacing="1.5">DIMPLE BAGS</text>
+                                <text x="25" y="70" font-family="'Inter', sans-serif" font-size="8" fill="#E2E8F0">MAX GROSS: 32,500 KG &bull; TARE: 3,750 KG</text>
+                                
+                                <!-- Safety Stripes Accent on Door End -->
+                                <rect x="260" y="90" width="30" height="8" fill="#8D4A27"/>
+                            </g>
+
+                            <!-- Dock Gantry Crane Skeleton in Background -->
+                            <line x1="40" y1="360" x2="110" y2="280" stroke="#CBD5E1" stroke-width="4"/>
+                            <line x1="460" y1="360" x2="390" y2="280" stroke="#CBD5E1" stroke-width="4"/>
+                            <line x1="110" y1="280" x2="390" y2="280" stroke="#CBD5E1" stroke-width="4"/>
+                        </svg>
+
+                        <!-- Live Metrics Overlay -->
+                        <div class="mt-4 pt-3 border-t border-slate-200 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>ISO Container Export</span>
+                            <span class="text-brand-blue font-bold">100% Transit Inspection Passed</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         9. "WANT TO WORK WITH US?" INLINE LEAD GENERATION FORM BAR
+         Directly replicates Reference Image 1 Section 8:
+         Dark industrial background with dock/vessel silhouette,
+         "Want to work with us?", "Your name", "Your phone number", and Blue button
+         ========================================================================= -->
+    <section id="inquiry" class="py-20 bg-brand-dark text-white relative overflow-hidden border-b border-white/10">
+        <!-- Background Imagery with Dark Overlay -->
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <img src="assets/hero_plant.jpg" alt="Dimple Bags Plant" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-dark/85 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <h2 class="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">
+                    Want to work <span class="text-sky-400">with us?</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-300 mt-2 font-light">
+                    Leave your contacts and our technical sales team will send you a customized quotation and product sample kit within 24 hours.
+                </p>
+            </div>
+
+            <!-- Inline Form Bar (Matching Reference Image Layout) -->
+            <form id="industrial-inquiry-form" class="max-w-5xl mx-auto bg-white/5 border border-white/15 p-4 sm:p-6 rounded-2xl backdrop-blur-md shadow-2xl">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-4 items-center">
+                    
+                    <!-- Input 1: Your name -->
+                    <div class="lg:col-span-3">
+                        <label for="contact-name" class="block text-[11px] font-mono uppercase text-slate-300 mb-1">Your name</label>
+                        <input type="text" id="contact-name" required placeholder="e.g. Rajesh Sharma" class="w-full bg-white/10 border border-white/20 rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                    </div>
+
+                    <!-- Input 2: Your phone number or email -->
+                    <div class="lg:col-span-4">
+                        <label for="contact-phone" class="block text-[11px] font-mono uppercase text-slate-300 mb-1">Your phone / Email</label>
+                        <input type="text" id="contact-phone" required placeholder="+91 98765 43210 or email" class="w-full bg-white/10 border border-white/20 rounded-lg px-3.5 py-2.5 text-sm text-white placeholder-slate-400 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                    </div>
+
+                    <!-- Input 3: Product of interest -->
+                    <div class="lg:col-span-3">
+                        <label for="contact-product" class="block text-[11px] font-mono uppercase text-slate-300 mb-1">Product Requirement</label>
+                        <select id="contact-product" class="w-full bg-slate-900 border border-white/20 rounded-lg px-3.5 py-2.5 text-sm text-white focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                            <option value="LDPE Stretch Films">LDPE Stretch Films (Cast/Blown)</option>
+                            <option value="VCI Anti-Corrosion Bags">VCI Anti-Corrosion Bags &amp; Liners</option>
+                            <option value="ISPM-15 Wooden Pallets">ISPM-15 Wooden Pallets &amp; Crates</option>
+                            <option value="Heavy Industrial Liners">Heavy Industrial Liners &amp; Mulch</option>
+                            <option value="Corrugated Packaging">Corrugated Boxes &amp; Rolls</option>
+                            <option value="Custom Technical Inquiry">Custom Technical Inquiry</option>
+                        </select>
+                    </div>
+
+                    <!-- Submit Button: Royal Blue "Order call" / "Request Quote" -->
+                    <div class="sm:col-span-2 lg:col-span-2 pt-2 sm:pt-0">
+                        <label class="hidden lg:block text-[11px] font-mono uppercase text-transparent mb-1">&nbsp;</label>
+                        <button type="submit" class="w-full bg-brand-blue hover:bg-brand-blue-hover text-white font-semibold text-xs uppercase tracking-wider py-3 px-4 rounded-lg shadow-lg shadow-brand-blue/40 transition-all hover:scale-[1.02] flex items-center justify-center gap-1.5">
+                            <span>Order call</span>
+                            <span class="material-symbols-outlined text-sm">send</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <!-- Form Feedback Message Container -->
+                <div id="form-feedback" class="hidden mt-4 p-3 rounded-lg text-xs font-mono text-center"></div>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         10. SUPPLY & EXPORT AREAS SECTION (With Interactive World & Domestic Map)
+         Directly replicates Reference Image 1 Section 9:
+         "Fishing areas" in Ref -> "Supply areas" for Dimple Bags
+         Map with destination points, active routes, and callout badge
+         ========================================================================= -->
+    <section id="supply-areas" class="py-24 bg-white border-b border-slate-200 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12 items-end">
+                <div class="lg:col-span-7">
+                    <span class="text-xs font-mono uppercase tracking-widest text-brand-blue font-bold block mb-1">
+                        Logistics Footprint
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 tracking-tight">
+                        Supply <span class="text-slate-400 font-light">areas</span>
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-600 mt-2 max-w-2xl leading-relaxed">
+                        The DIMPLE BAGS company works not only with the Indian industrial belts (Gujarat, Maharashtra, NCR, Tamil Nadu), but also exports specialized polymer packaging to global ports worldwide.
+                    </p>
+                </div>
+                
+                <div class="lg:col-span-5 flex lg:justify-end">
+                    <!-- Headquarters Callout Card (Matches "Ecuador" tag in Ref Image) -->
+                    <div class="bg-slate-50 border border-slate-200 p-4 rounded-xl shadow-sm flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-blue/10 flex items-center justify-center text-brand-blue flex-shrink-0">
+                            <span class="material-symbols-outlined">factory</span>
+                        </div>
+                        <div>
+                            <div class="text-xs font-mono uppercase text-slate-500">Manufacturing Base</div>
+                            <div class="text-sm font-bold text-slate-900">Halol GIDC, Gujarat, India</div>
+                            <div class="text-[11px] text-brand-bronze font-medium">Direct Highway to Mundra &amp; JNPT Ports</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive World & Domestic Supply Map (Vector Style matching Ref Image) -->
+            <div class="bg-slate-50 rounded-2xl p-6 sm:p-10 border border-slate-200/90 relative shadow-sm">
+                
+                <!-- SVG World Map with Pins and Pulse Radiations -->
+                <div class="relative w-full overflow-hidden">
+                    <svg viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+                        <!-- Stylized World Continents (Minimalist Slate Silhouette from Reference Image) -->
+                        <g fill="#CBD5E1" opacity="0.85">
+                            <!-- North America -->
+                            <path d="M140 90 L220 85 L260 120 L270 180 L230 210 L180 200 L150 160 Z"/>
+                            <path d="M160 50 L220 40 L240 70 L180 80 Z"/>
+                            <!-- South America -->
+                            <path d="M260 250 L320 270 L350 330 L310 410 L270 410 L250 320 Z"/>
+                            <!-- Europe -->
+                            <path d="M470 90 L550 80 L570 130 L520 160 L460 130 Z"/>
+                            <path d="M490 60 L520 50 L530 75 L500 80 Z"/>
+                            <!-- Africa -->
+                            <path d="M470 180 L560 170 L600 240 L570 340 L520 360 L470 270 Z"/>
+                            <!-- Asia & India -->
+                            <path d="M570 80 L760 70 L830 110 L840 180 L780 220 L680 180 L620 140 Z"/>
+                            <!-- Indian Subcontinent (Prominent Highlight) -->
+                            <path d="M640 170 L700 170 L710 210 L680 260 L650 220 Z" fill="#94A3B8"/>
+                            <!-- Australia -->
+                            <path d="M780 300 L870 290 L880 360 L800 370 Z"/>
+                        </g>
+
+                        <!-- Logistics Shipping Routes from Halol / Mundra to World -->
+                        <!-- Route to Europe / Rotterdam -->
+                        <path d="M665 210 Q 560 140 520 115" stroke="#1657A8" stroke-width="1.8" stroke-dasharray="6 4" fill="none" opacity="0.6"/>
+                        <!-- Route to Middle East / Dubai -->
+                        <path d="M665 210 Q 610 180 580 175" stroke="#1657A8" stroke-width="1.8" stroke-dasharray="6 4" fill="none" opacity="0.6"/>
+                        <!-- Route to East Africa / Mombasa -->
+                        <path d="M665 210 Q 600 240 560 260" stroke="#1657A8" stroke-width="1.8" stroke-dasharray="6 4" fill="none" opacity="0.6"/>
+                        <!-- Route to Southeast Asia / Singapore -->
+                        <path d="M665 210 Q 720 240 760 250" stroke="#1657A8" stroke-width="1.8" stroke-dasharray="6 4" fill="none" opacity="0.6"/>
+
+                        <!-- Interactive Nodes / Pins on Key Hubs -->
+                        
+                        <!-- 1. Halol GIDC Plant (Headquarters & Extrusion Center) -->
+                        <g class="cursor-pointer group" onclick="selectMapHub('halol')">
+                            <circle cx="665" cy="210" r="16" fill="#1657A8" class="beacon-halo"/>
+                            <circle cx="665" cy="210" r="7" fill="#1657A8" stroke="#FFFFFF" stroke-width="2"/>
+                            <!-- Label Pin -->
+                            <rect x="680" y="198" width="130" height="24" rx="4" fill="#0A1128" opacity="0.95"/>
+                            <text x="688" y="214" font-family="'Space Grotesk', sans-serif" font-size="10" font-weight="bold" fill="#FFFFFF">HALOL GIDC (HQ)</text>
+                        </g>
+
+                        <!-- 2. Mundra & Kandla Export Gateway -->
+                        <g class="cursor-pointer group" onclick="selectMapHub('mundra')">
+                            <circle cx="652" cy="202" r="5" fill="#8D4A27" stroke="#FFFFFF" stroke-width="1.5"/>
+                            <text x="610" y="195" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#0F172A">Mundra Port</text>
+                        </g>
+
+                        <!-- 3. Nhava Sheva (JNPT) / Mumbai Port -->
+                        <g class="cursor-pointer group" onclick="selectMapHub('mumbai')">
+                            <circle cx="664" cy="225" r="5" fill="#8D4A27" stroke="#FFFFFF" stroke-width="1.5"/>
+                            <text x="674" y="235" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#0F172A">JNPT Mumbai</text>
+                        </g>
+
+                        <!-- 4. Delhi-NCR Industrial Corridor -->
+                        <g class="cursor-pointer group" onclick="selectMapHub('delhi')">
+                            <circle cx="672" cy="185" r="4.5" fill="#1657A8" stroke="#FFFFFF" stroke-width="1.5"/>
+                            <text x="682" y="185" font-family="'Inter', sans-serif" font-size="8.5" fill="#334155">Delhi-NCR</text>
+                        </g>
+
+                        <!-- 5. Chennai & Bangalore South Industrial Belt -->
+                        <g class="cursor-pointer group" onclick="selectMapHub('chennai')">
+                            <circle cx="678" cy="245" r="4.5" fill="#1657A8" stroke="#FFFFFF" stroke-width="1.5"/>
+                            <text x="690" y="250" font-family="'Inter', sans-serif" font-size="8.5" fill="#334155">Chennai/South</text>
+                        </g>
+
+                        <!-- 6. Dubai / Middle East Corridor -->
+                        <g class="cursor-pointer group" onclick="selectMapHub('dubai')">
+                            <circle cx="580" cy="175" r="5" fill="#1657A8" stroke="#FFFFFF" stroke-width="1.5"/>
+                            <text x="525" y="172" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#0F172A">Jebel Ali (UAE)</text>
+                        </g>
+
+                        <!-- 7. Rotterdam / European Hub -->
+                        <g class="cursor-pointer group" onclick="selectMapHub('europe')">
+                            <circle cx="518" cy="115" r="5" fill="#1657A8" stroke="#FFFFFF" stroke-width="1.5"/>
+                            <text x="450" y="112" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#0F172A">Rotterdam (EU)</text>
+                        </g>
+
+                        <!-- 8. Mombasa / East Africa Hub -->
+                        <g class="cursor-pointer group" onclick="selectMapHub('africa')">
+                            <circle cx="560" cy="260" r="5" fill="#1657A8" stroke="#FFFFFF" stroke-width="1.5"/>
+                            <text x="495" y="265" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#0F172A">Mombasa (E. Africa)</text>
+                        </g>
+                    </svg>
+                </div>
+
+                <!-- Interactive Hub Details Ribbon Below Map -->
+                <div class="mt-6 pt-6 border-t border-slate-200 grid grid-cols-1 md:grid-cols-3 gap-4" id="map-hub-details">
+                    <div class="p-3 bg-white rounded-lg border border-slate-200">
+                        <span class="text-[10px] font-mono uppercase text-brand-blue font-bold block">DOMESTIC TURNAROUND</span>
+                        <span class="text-sm font-bold text-slate-800">24 to 48 Hours Dispatch</span>
+                        <p class="text-xs text-slate-500 mt-0.5">Gujarat, Maharashtra, Madhya Pradesh, Rajasthan, NCR &amp; South India.</p>
+                    </div>
+                    <div class="p-3 bg-white rounded-lg border border-slate-200">
+                        <span class="text-[10px] font-mono uppercase text-brand-bronze font-bold block">EXPORT GATEWAY</span>
+                        <span class="text-sm font-bold text-slate-800">Mundra &amp; Kandla Seaports</span>
+                        <p class="text-xs text-slate-500 mt-0.5">Customs-cleared 20ft &amp; 40ft container stuffing for Middle East, Europe &amp; Africa.</p>
+                    </div>
+                    <div class="p-3 bg-white rounded-lg border border-slate-200">
+                        <span class="text-[10px] font-mono uppercase text-emerald-700 font-bold block">PACKAGING COMPLIANCE</span>
+                        <span class="text-sm font-bold text-slate-800">ISPM-15 Certified Palletizing</span>
+                        <p class="text-xs text-slate-500 mt-0.5">Zero port quarantine delays with phytosanitary stamped heat-treated timber.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         11. SLEEK INDUSTRIAL FOOTER
+         Directly replicates Reference Image 1 Section 10:
+         Solid blue logo box on left, clear navigation columns, contacts, and
+         circular "↑ Back to top" button!
+         ========================================================================= -->
+    <footer id="contacts" class="bg-brand-dark text-slate-300 pt-16 pb-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-white/10 items-start">
+                
+                <!-- Left: Solid Blue Brand Card (Directly Matching Ref Image Footer Left Box!) -->
+                <div class="md:col-span-4">
+                    <div class="bg-brand-blue p-6 sm:p-8 rounded-2xl shadow-xl space-y-4 text-white">
+                        <div class="bg-white p-2 rounded-lg inline-block">
+                            <img src="assets/dimple_logo_user.png" alt="Dimple Bags Official Logo" class="h-12 w-auto object-contain">
+                        </div>
+                        <h3 class="font-display font-extrabold text-xl tracking-tight text-white leading-tight">
+                            DIMPLE BAGS &amp; SYNTHETICS PVT. LTD.
+                        </h3>
+                        <p class="text-xs text-sky-100 font-light leading-relaxed">
+                            Premier industrial polymer extrusion and export packaging manufacturer. Winner of India 5000 Best MSME Award (2023). A Ramdev Group Enterprise.
+                        </p>
+                        <div class="pt-2 border-t border-white/20 flex items-center justify-between text-[11px] font-mono text-sky-200">
+                            <span>CIN: U25202GJ2008PTC053075</span>
+                            <span>SINCE 2009</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Center: Navigation Columns -->
+                <div class="md:col-span-4 grid grid-cols-2 gap-8 pt-2">
+                    <div>
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-white font-bold mb-4">
+                            Navigation
+                        </h4>
+                        <ul class="space-y-2.5 text-xs">
+                            <li><a href="#hero" class="hover:text-white transition-colors">Home</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                            <li><a href="#about-brand" class="hover:text-white transition-colors">Opportunities</a></li>
+                            <li><a href="#goals" class="hover:text-white transition-colors">Goals &amp; Vision</a></li>
+                            <li><a href="#catalog" class="hover:text-white transition-colors">Product Catalog</a></li>
+                            <li><a href="#customers" class="hover:text-white transition-colors">Enterprise Clients</a></li>
+                            <li><a href="#supply-areas" class="hover:text-white transition-colors">Supply Areas</a></li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-white font-bold mb-4">
+                            Products
+                        </h4>
+                        <ul class="space-y-2.5 text-xs">
+                            <li><a href="#services" class="hover:text-white transition-colors">LDPE Stretch Wrap</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">VCI Anti-Corrosion</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Heavy 3D Liners</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Agricultural Mulch</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">ISPM-15 Wooden Pallets</a></li>
+                            <li><a href="#services" class="hover:text-white transition-colors">Corrugated Cartons</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Right: Contacts & Back-to-Top Button (Directly Matching Ref Image Right Box) -->
+                <div class="md:col-span-4 flex flex-col justify-between h-full pt-2">
+                    <div>
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-white font-bold mb-4">
+                            Contacts
+                        </h4>
+                        <div class="space-y-3 text-xs leading-relaxed">
+                            <div class="flex items-start gap-2.5">
+                                <span class="material-symbols-outlined text-sm text-brand-blue mt-0.5">location_on</span>
+                                <div>
+                                    <strong class="text-white">Plant &amp; Registered Office:</strong><br>
+                                    Plot No. 814, GIDC Estate, Savli-Halol Road, Halol, Panchmahal, Gujarat – 389350, India
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-sm text-brand-blue">call</span>
+                                <div>
+                                    <a href="tel:+918128539646" class="hover:text-white transition-colors">+91 81285 39646</a> &bull; 
+                                    <a href="tel:+918047627858" class="hover:text-white transition-colors">+91 80476 27858</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-sm text-brand-blue">mail</span>
+                                <div>
+                                    <a href="mailto:admin@dimplebags.com" class="hover:text-white transition-colors">admin@dimplebags.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <span class="material-symbols-outlined text-sm text-brand-blue">language</span>
+                                <div>
+                                    <a href="https://dimplebags.in" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors">www.dimplebags.in</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Circular Back to Top Button from Reference Image -->
+                    <div class="pt-8 flex items-center justify-start md:justify-end">
+                        <a href="#hero" class="group flex items-center gap-3 text-xs font-mono uppercase tracking-wider text-slate-400 hover:text-white transition-colors">
+                            <span>Back to top</span>
+                            <div class="w-11 h-11 rounded-full border border-white/20 bg-white/5 flex items-center justify-center transition-all group-hover:bg-brand-blue group-hover:border-brand-blue group-hover:text-white">
+                                <span class="material-symbols-outlined text-lg">north</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom Line: Copyright & Ramdev Group Note -->
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-300 gap-4">
+                <p>&copy; 2009–2026 Dimple Bags &amp; Synthetics Pvt. Ltd. All rights reserved.</p>
+                <div class="flex items-center gap-4 text-slate-300">
+                    <span>A Ramdev Group Enterprise</span>
+                    <span>&bull;</span>
+                    <span>ISO 9001:2015 Certified</span>
+                    <span>&bull;</span>
+                    <span>MSME India 5000 Winner</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- =========================================================================
+         MODAL: INTERACTIVE PRODUCT CATALOG VIEWER & DOWNLOAD
+         ========================================================================= -->
+    <div id="catalog-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
+        <div class="bg-white rounded-2xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative animate-in fade-in zoom-in duration-200">
+            <!-- Close Button -->
+            <button id="close-catalog-modal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 p-1" aria-label="Close dialog">
+                <span class="material-symbols-outlined text-2xl">close</span>
+            </button>
+
+            <div class="flex items-center gap-3 mb-6">
+                <div class="w-12 h-12 rounded-xl bg-brand-blue-light text-brand-blue flex items-center justify-center">
+                    <span class="material-symbols-outlined text-2xl">menu_book</span>
+                </div>
+                <div>
+                    <h3 class="text-xl font-display font-bold text-slate-900">Dimple Bags Technical Catalog</h3>
+                    <span class="text-xs font-mono text-slate-500">2024–2026 Edition &bull; PDF Specification Sheet (14.8 MB)</span>
+                </div>
+            </div>
+
+            <div class="space-y-4 text-xs text-slate-600 mb-6 bg-slate-50 p-4 rounded-xl border border-slate-200">
+                <div class="font-semibold text-slate-800 text-sm">Included in this Technical Manual:</div>
+                <ul class="space-y-2 list-disc list-inside">
+                    <li>LDPE Stretch Wrap: Micron gauges, yield calculations, tensile elongation &amp; dart impact data.</li>
+                    <li>VCI Corrosion Protection: Active volatile inhibitor chemical standards &amp; rust prevention duration.</li>
+                    <li>Agricultural Mulch &amp; Heavy Liners: UV degradation ratings, solar heating &amp; weed suppression.</li>
+                    <li>ISPM-15 Wooden Pallets: Heat treatment temperature curves, static vs dynamic load charts.</li>
+                </ul>
+            </div>
+
+            <form id="catalog-download-form" class="space-y-4">
+                <div>
+                    <label for="catalog-email" class="block text-xs font-mono uppercase text-slate-700 mb-1">Enter your work email</label>
+                    <input type="email" id="catalog-email" required placeholder="name@company.com" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                </div>
+                <div>
+                    <label for="catalog-company" class="block text-xs font-mono uppercase text-slate-700 mb-1">Company name</label>
+                    <input type="text" id="catalog-company" required placeholder="e.g. Tata Motors / Mahindra / L&amp;T" class="w-full border border-slate-300 rounded-lg px-3.5 py-2.5 text-sm text-slate-800 focus:outline-none focus:border-brand-blue focus:ring-1 focus:ring-brand-blue">
+                </div>
+
+                <div class="flex items-center gap-3 pt-2">
+                    <button type="submit" class="flex-1 bg-brand-blue hover:bg-brand-blue-hover text-white font-semibold text-xs uppercase tracking-wider py-3 px-4 rounded-lg shadow-md transition-all flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-sm">download</span>
+                        <span>Download Catalog PDF</span>
+                    </button>
+                    <button type="button" id="cancel-catalog-modal" class="px-4 py-3 text-xs font-semibold text-slate-600 hover:text-slate-900 border border-slate-300 rounded-lg">
+                        Cancel
+                    </button>
+                </div>
+            </form>
+            <div id="catalog-modal-feedback" class="hidden mt-3 text-center text-xs font-mono text-emerald-700 font-medium"></div>
+        </div>
+    </div>
+
+
+    <!-- =========================================================================
+         INTERACTIVE JAVASCRIPT LOGIC
+         (Goals Carousel, Modal Controls, Form Submissions, Responsive Nav, Map Pins)
+         ========================================================================= -->
+    <script>
+        // 1. Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    mobileMenu.classList.remove('hidden');
+                    menuIcon.textContent = 'close';
+                } else {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.textContent = 'menu';
+                }
+            });
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.textContent = 'menu';
+                });
+            });
+        }
+
+        // 2. Goals Section Interactive Tabs/Slider (Matching Ref Image Goals 01, 02, 03)
+        const goalsData = [
+            {
+                number: '01',
+                title: 'Play long',
+                description: 'Our main mission is to establish long-term trust between Dimple Bags and our corporate customers. Stability, efficiency, zero-transit damage, and technical confidence are priorities that are proven by our track record since 2009.',
+                photo: 'assets/ref2.jpg',
+                caption: 'Continuous 3-Layer Extrusion Monitoring'
+            },
+            {
+                number: '02',
+                title: 'Zero-Defect Quality Assurance',
+                description: 'We subject every extrusion batch to rigorous quality tests: Dart Drop Impact testing (ASTM D1709), ultimate tensile elongation (ASTM D882), and calibrated micron-gauge consistency across the entire web width.',
+                photo: 'assets/vci_liners.jpg',
+                caption: 'Quality Control Laboratory & Polymer Testing'
+            },
+            {
+                number: '03',
+                title: 'Sustainable Circular Packaging',
+                description: 'Committed to responsible polymer stewardship. We formulate downgauged ultra-thin films with equivalent load capacity, reducing polymer consumption by up to 25%, while remaining 100% recyclable virgin grade.',
+                photo: 'assets/ref3.jpg',
+                caption: 'Eco-Engineered Polymer Processing'
+            }
+        ];
+
+        let currentGoalIndex = 0;
+        const goalNumDisplay = document.getElementById('goal-number-display');
+        const goalTitleDisplay = document.getElementById('goal-title');
+        const goalDescDisplay = document.getElementById('goal-description');
+        const goalPhotoDisplay = document.getElementById('goal-photo');
+        const goalCaptionDisplay = document.getElementById('goal-photo-caption');
+        const goalCounterDisplay = document.getElementById('goal-counter');
+        const goalPrevBtn = document.getElementById('goal-prev-btn');
+        const goalNextBtn = document.getElementById('goal-next-btn');
+
+        function updateGoal(index) {
+            currentGoalIndex = (index + goalsData.length) % goalsData.length;
+            const data = goalsData[currentGoalIndex];
+            
+            goalNumDisplay.textContent = data.number;
+            goalTitleDisplay.textContent = data.title;
+            goalDescDisplay.textContent = data.description;
+            goalPhotoDisplay.src = data.photo;
+            goalCaptionDisplay.textContent = data.caption;
+            goalCounterDisplay.textContent = `Goal ${currentGoalIndex + 1} of ${goalsData.length}`;
+        }
+
+        if (goalPrevBtn && goalNextBtn) {
+            goalPrevBtn.addEventListener('click', () => updateGoal(currentGoalIndex - 1));
+            goalNextBtn.addEventListener('click', () => updateGoal(currentGoalIndex + 1));
+        }
+
+        // 3. Catalog Modal Open / Close
+        const catalogModal = document.getElementById('catalog-modal');
+        const openCatalogBtn = document.getElementById('open-catalog-modal');
+        const closeCatalogBtn = document.getElementById('close-catalog-modal');
+        const cancelCatalogBtn = document.getElementById('cancel-catalog-modal');
+        const catalogForm = document.getElementById('catalog-download-form');
+        const catalogFeedback = document.getElementById('catalog-modal-feedback');
+
+        function toggleCatalogModal(show) {
+            if (show) {
+                catalogModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            } else {
+                catalogModal.classList.add('hidden');
+                document.body.style.overflow = '';
+            }
+        }
+
+        if (openCatalogBtn) openCatalogBtn.addEventListener('click', () => toggleCatalogModal(true));
+        if (closeCatalogBtn) closeCatalogBtn.addEventListener('click', () => toggleCatalogModal(false));
+        if (cancelCatalogBtn) cancelCatalogBtn.addEventListener('click', () => toggleCatalogModal(false));
+
+        if (catalogForm) {
+            catalogForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = document.getElementById('catalog-email').value;
+                catalogFeedback.textContent = `Thank you! The catalog PDF (14.8 MB) has been dispatched to ${email}.`;
+                catalogFeedback.classList.remove('hidden');
+                setTimeout(() => {
+                    toggleCatalogModal(false);
+                    catalogFeedback.classList.add('hidden');
+                    catalogForm.reset();
+                }, 3000);
+            });
+        }
+
+        // 4. Industrial Inquiry Form Submission
+        const inquiryForm = document.getElementById('industrial-inquiry-form');
+        const formFeedback = document.getElementById('form-feedback');
+
+        if (inquiryForm) {
+            inquiryForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('contact-name').value;
+                const product = document.getElementById('contact-product').value;
+                
+                formFeedback.className = 'mt-4 p-3 rounded-lg text-xs font-mono text-center bg-emerald-500/20 border border-emerald-500/40 text-emerald-300';
+                formFeedback.textContent = `Thank you, ${name}! Your inquiry for ${product} has been registered. Our Halol sales technical team will connect with you within 2 business hours.`;
+                formFeedback.classList.remove('hidden');
+                inquiryForm.reset();
+
+                setTimeout(() => {
+                    formFeedback.classList.add('hidden');
+                }, 7000);
+            });
+        }
+
+        // 5. Interactive Map Pin Information Switcher
+        const hubDetails = {
+            halol: {
+                title: "HALOL GIDC (HEADQUARTERS & MANUFACTURING)",
+                lead: "Central Extrusion & Conversion Campus",
+                desc: "Plot No. 814, GIDC Estate, Savli-Halol Road. 15,000+ MT capacity, multi-layer extrusion, VCI compounding & testing laboratory."
+            },
+            mundra: {
+                title: "MUNDRA PORT (EXPORT GATEWAY)",
+                lead: "Dedicated Marine Freight Corridor",
+                desc: "Swift 8-hour container transit from Halol plant via national highway network, serving direct sailings to Middle East, Europe & Americas."
+            },
+            mumbai: {
+                title: "JNPT / NHAVA SHEVA PORT",
+                lead: "Western Seaboard Export Gateway",
+                desc: "Overnight dedicated container truck dispatch directly to Nhava Sheva container terminals for Africa, Europe, and Asia-Pacific export consignments."
+            },
+            delhi: {
+                title: "DELHI-NCR INDUSTRIAL BELT",
+                lead: "North India Automotive & FMCG Supply",
+                desc: "Dedicated scheduled express logistics to Gurgaon, Manesar, Faridabad, and Greater Noida industrial hubs within 36 hours."
+            },
+            chennai: {
+                title: "CHENNAI / SOUTH INDIA CORRIDOR",
+                lead: "Heavy Engineering & Auto Ancillaries",
+                desc: "Supplying precision VCI liners and high-tensile stretch film to Sriperumbudur, Oragadam, Coimbatore & Bangalore manufacturing zones."
+            },
+            dubai: {
+                title: "JEBEL ALI HUB (MIDDLE EAST)",
+                lead: "GCC Regional Export Logistics",
+                desc: "Regular container shipments of VCI rust-prevention rolls and stretch film supplying UAE, Saudi Arabia, Oman, and Qatar heavy industries."
+            },
+            europe: {
+                title: "ROTTERDAM & HAMBURG (EUROPE)",
+                lead: "European Machinery & Automotive Exporters",
+                desc: "RoHS and REACH compliant export stretch film and ISPM-15 heat-treated wood packaging for precision German and European machinery transit."
+            },
+            africa: {
+                title: "MOMBASA & DURBAN (AFRICA)",
+                lead: "Pan-African Mining & Agriculture Packaging",
+                desc: "Supplying durable UV-stabilized heavy liners and stretch wrap for mining equipment and agricultural export crops."
+            }
+        };
+
+        function selectMapHub(hubKey) {
+            const data = hubDetails[hubKey];
+            if (!data) return;
+
+            const container = document.getElementById('map-hub-details');
+            if (container) {
+                container.innerHTML = `
+                    <div class="col-span-1 md:col-span-3 p-4 bg-brand-dark text-white rounded-xl border border-brand-blue shadow-lg animate-in fade-in duration-300">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-[10px] font-mono uppercase tracking-widest text-sky-400 font-bold">${data.title}</span>
+                            <span class="text-xs text-brand-bronze font-mono font-semibold">Active Supply Corridor</span>
+                        </div>
+                        <div class="text-base font-bold text-white">${data.lead}</div>
+                        <p class="text-xs text-slate-300 mt-1 leading-relaxed">${data.desc}</p>
+                    </div>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
+
